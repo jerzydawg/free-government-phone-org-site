@@ -4,30 +4,33 @@ import { createCitySlug } from './slug-utils.js';
 
 const URLS_PER_SITEMAP = 10000;
 
-export async function getCitiesForSitemap(offset: number, limit: number): Promise<Array<{ name: string; state_abbr: string }>> {
-  let cities: Array<{ name: string; state_abbr: string }> = [];
+// Cache for deduplicated cities to avoid refetching
+let cachedCities: Array<{ name: string; state_abbr: string }> | null = null;
+let cacheTimestamp: number = 0;
+const CACHE_TTL = 3600000; // 1 hour cache
+
+async function fetchAllDeduplicatedCities(): Promise<Array<{ name: string; state_abbr: string }>> {
+  // Return cached data if available and fresh
+  const now = Date.now();
+  if (cachedCities && (now - cacheTimestamp) < CACHE_TTL) {
+    return cachedCities;
+  }
+
+  const useSubdomainMode = useSubdomains();
+  const SITE_URL = getSiteURL();
+  const cityUrls = new Set<string>();
+  const deduplicatedCities: Array<{ name: string; state_abbr: string }> = [];
   
   if (!supabase) {
-    return cities;
+    return deduplicatedCities;
   }
 
   try {
-    const pageSize = 1000; // Supabase limit
-    const useSubdomainMode = useSubdomains();
-    const SITE_URL = getSiteURL();
-    
-    // Track unique URLs to deduplicate
-    const cityUrls = new Set<string>();
-    const deduplicatedCities: Array<{ name: string; state_abbr: string }> = [];
-    
-    // Calculate how many unique cities we need total (offset + limit)
-    const totalNeeded = offset + limit;
-    
-    // Fetch cities incrementally until we have enough unique ones
+    const pageSize = 1000;
     let page = 0;
     let hasMore = true;
     
-    while (hasMore && deduplicatedCities.length < totalNeeded) {
+    while (hasMore) {
       const { data, error } = await supabase
         .from('cities')
         .select('name, states(abbreviation)')
@@ -40,7 +43,6 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
       }
       
       if (data && data.length > 0) {
-        // Process this batch and deduplicate
         for (const city of data) {
           const cityName = city.name;
           const stateAbbr = city.states?.abbreviation || '';
@@ -52,22 +54,12 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
             ? getCitySubdomainURL(citySlug, stateAbbr.toLowerCase())
             : `${SITE_URL}/${stateAbbr.toLowerCase()}/${citySlug}/`;
           
-          // Only add if URL is unique
           if (!cityUrls.has(cityUrl)) {
             cityUrls.add(cityUrl);
-            deduplicatedCities.push({
-              name: cityName,
-              state_abbr: stateAbbr
-            });
-            
-            // Stop if we have enough
-            if (deduplicatedCities.length >= totalNeeded) {
-              break;
-            }
+            deduplicatedCities.push({ name: cityName, state_abbr: stateAbbr });
           }
         }
         
-        // Check if we need to fetch more
         if (data.length < pageSize) {
           hasMore = false;
         } else {
@@ -78,14 +70,26 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
       }
     }
 
-    // Return the slice for this sitemap chunk
-    cities = deduplicatedCities.slice(offset, offset + limit);
-    
-    console.log(`[Sitemap] Generated chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, fetched pages: ${page + 1})`);
+    // Cache the result
+    cachedCities = deduplicatedCities;
+    cacheTimestamp = now;
+    console.log(`[Sitemap] Cached ${deduplicatedCities.length} deduplicated cities`);
   } catch (e) {
     console.error('[Sitemap] Error fetching cities:', e);
   }
 
+  return deduplicatedCities;
+}
+
+export async function getCitiesForSitemap(offset: number, limit: number): Promise<Array<{ name: string; state_abbr: string }>> {
+  // Use cached deduplicated cities for fast slicing
+  const allCities = await fetchAllDeduplicatedCities();
+  
+  // Return the slice for this sitemap chunk
+  const cities = allCities.slice(offset, offset + limit);
+  
+  console.log(`[Sitemap] Chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, total: ${allCities.length})`);
+  
   return cities;
 }
 

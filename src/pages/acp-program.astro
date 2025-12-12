@@ -9,9 +9,10 @@ const siteURL = getSiteURL();
 
 const title = `${keyword} - ACP Free Internet & Phone | ${siteName}`;
 const description = `Get free internet and phone through the ACP program. Learn how to qualify for ${keyword} benefits and apply for high-speed internet with your free phone service.`;
+const canonicalURL = `${siteURL}/acp-program/`;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
   <div class="min-h-screen bg-gray-50">
     <!-- Breadcrumb Navigation -->
     <nav class="bg-white border-b" aria-label="Breadcrumb">

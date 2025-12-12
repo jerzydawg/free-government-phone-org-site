@@ -1,0 +1,1934 @@
+{
+  "timestamp": "2025-12-12T15:15:18.269Z",
+  "domain": "free-government-phone.org",
+  "summary": {
+    "totalFilesAudited": 0,
+    "totalLinksFound": 193,
+    "domainIssues": 1,
+    "seoIssues": 227,
+    "technicalIssues": 1,
+    "accessibilityIssues": 3
+  },
+  "details": {
+    "links": {
+      "internal": [
+        {
+          "url": "/",
+          "file": "src/pages/tribal-programs.astro",
+          "line": 125
+        },
+        {
+          "url": "/",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 69
+        },
+        {
+          "url": "/privacy-policy",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 70
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 71
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 72
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 73
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/terms-of-service.astro",
+          "line": 74
+        },
+        {
+          "url": "/",
+          "file": "src/pages/state-programs.astro",
+          "line": 19
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/state-programs.astro",
+          "line": 31
+        },
+        {
+          "url": "/",
+          "file": "src/pages/providers.astro",
+          "line": 112
+        },
+        {
+          "url": "/",
+          "file": "src/pages/programs.astro",
+          "line": 120
+        },
+        {
+          "url": "/",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 69
+        },
+        {
+          "url": "/terms-of-service",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 70
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 71
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 72
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 73
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/privacy-policy.astro",
+          "line": 74
+        },
+        {
+          "url": "/",
+          "file": "src/pages/lifeline-program.astro",
+          "line": 19
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/lifeline-program.astro",
+          "line": 34
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/index.astro",
+          "line": 127
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/index.astro",
+          "line": 131
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/index.astro",
+          "line": 135
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/index.astro",
+          "line": 139
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/pages/index.astro",
+          "line": 143
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/pages/index.astro",
+          "line": 147
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 107
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 110
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 301
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 316
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 331
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/free-government-phone-near-me.astro",
+          "line": 495
+        },
+        {
+          "url": "/",
+          "file": "src/pages/faq.astro",
+          "line": 126
+        },
+        {
+          "url": "/",
+          "file": "src/pages/emergency-broadband.astro",
+          "line": 141
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/eligibility.astro",
+          "line": 95
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/eligibility.astro",
+          "line": 249
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/eligibility.astro",
+          "line": 289
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/eligibility.astro",
+          "line": 307
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/eligibility.astro",
+          "line": 310
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/eligibility.astro",
+          "line": 324
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/pages/eligibility.astro",
+          "line": 329
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/pages/eligibility.astro",
+          "line": 334
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/eligibility.astro",
+          "line": 339
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/contact.astro",
+          "line": 95
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/contact.astro",
+          "line": 96
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/contact.astro",
+          "line": 97
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/contact.astro",
+          "line": 118
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/contact.astro",
+          "line": 132
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/contact.astro",
+          "line": 152
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/contact.astro",
+          "line": 166
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/contact.astro",
+          "line": 173
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/contact.astro",
+          "line": 180
+        },
+        {
+          "url": "/",
+          "file": "src/pages/apply.astro",
+          "line": 20
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/apply.astro",
+          "line": 120
+        },
+        {
+          "url": "/",
+          "file": "src/pages/acp-program.astro",
+          "line": 20
+        },
+        {
+          "url": "/",
+          "file": "src/pages/404.astro",
+          "line": 25
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/404.astro",
+          "line": 57
+        },
+        {
+          "url": "/favicon.svg",
+          "file": "src/layouts/Layout.astro",
+          "line": 57
+        },
+        {
+          "url": "/favicon.ico",
+          "file": "src/layouts/Layout.astro",
+          "line": 58
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "file": "src/layouts/Layout.astro",
+          "line": 59
+        },
+        {
+          "url": "/manifest.json",
+          "file": "src/layouts/Layout.astro",
+          "line": 60
+        },
+        {
+          "url": "//fonts.googleapis.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 109
+        },
+        {
+          "url": "//fonts.gstatic.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 110
+        },
+        {
+          "url": "/apply",
+          "file": "src/layouts/Layout.astro",
+          "line": 166
+        },
+        {
+          "url": "/",
+          "file": "src/layouts/Layout.astro",
+          "line": 186
+        },
+        {
+          "url": "/",
+          "file": "src/layouts/Layout.astro",
+          "line": 199
+        },
+        {
+          "url": "/apply",
+          "file": "src/layouts/Layout.astro",
+          "line": 209
+        },
+        {
+          "url": "/favicon.svg",
+          "file": "src/layouts/AdminLayout.astro",
+          "line": 14
+        },
+        {
+          "url": "/",
+          "file": "src/components/TextLogo.astro",
+          "line": 68
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/StickyCTA.astro",
+          "line": 54
+        },
+        {
+          "url": "/ca",
+          "file": "src/components/StateSelector.astro",
+          "line": 131
+        },
+        {
+          "url": "/tx",
+          "file": "src/components/StateSelector.astro",
+          "line": 132
+        },
+        {
+          "url": "/fl",
+          "file": "src/components/StateSelector.astro",
+          "line": 133
+        },
+        {
+          "url": "/ny",
+          "file": "src/components/StateSelector.astro",
+          "line": 134
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/StateSelector.astro",
+          "line": 218
+        },
+        {
+          "url": "/states/",
+          "file": "src/components/SimilarCities.astro",
+          "line": 104
+        },
+        {
+          "url": "/",
+          "file": "src/components/RegionalStates.astro",
+          "line": 115
+        },
+        {
+          "url": "/",
+          "file": "src/components/ProgramCities.astro",
+          "line": 106
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/HowItWorks.astro",
+          "line": 220
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/Footer.astro",
+          "line": 47
+        },
+        {
+          "url": "/privacy-policy",
+          "file": "src/components/Footer.astro",
+          "line": 64
+        },
+        {
+          "url": "/terms-of-service",
+          "file": "src/components/Footer.astro",
+          "line": 68
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/EligibilityHero.astro",
+          "line": 98
+        },
+        {
+          "url": "/",
+          "file": "src/pages/states/index.astro",
+          "line": 156
+        },
+        {
+          "url": "/admin",
+          "file": "src/pages/admin/seo.astro",
+          "line": 20
+        },
+        {
+          "url": "/admin",
+          "file": "src/pages/admin/seo.astro",
+          "line": 29
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/admin/login.astro",
+          "line": 73
+        },
+        {
+          "url": "/admin/seo",
+          "file": "src/pages/admin/index.astro",
+          "line": 106
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/index.astro",
+          "line": 406
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/index.astro",
+          "line": 409
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/index.astro",
+          "line": 429
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/index.astro",
+          "line": 436
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/index.astro",
+          "line": 485
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/pages/[state]/all.astro",
+          "line": 189
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/pages/[state]/all.astro",
+          "line": 189
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/[state]/all.astro",
+          "line": 201
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/[state]/all.astro",
+          "line": 201
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/all.astro",
+          "line": 262
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/[state]/all.astro",
+          "line": 277
+        },
+        {
+          "url": "/programs",
+          "file": "src/pages/[state]/all.astro",
+          "line": 281
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/[state]/all.astro",
+          "line": 285
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/pages/[state]/all.astro",
+          "line": 289
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/pages/[state]/all.astro",
+          "line": 293
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 435
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 438
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 732
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 737
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 742
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 747
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 944
+        },
+        {
+          "url": "/contact",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 951
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 962
+        },
+        {
+          "url": "/apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 977
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 988
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 997
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 998
+        },
+        {
+          "url": "/providers",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 999
+        },
+        {
+          "url": "/faq",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 1000
+        },
+        {
+          "url": "/contact",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 1001
+        },
+        {
+          "url": "/states/",
+          "file": "src/components/sections/StatesSection.astro",
+          "line": 64
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/components/sections/ProgramsSection.astro",
+          "line": 53
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/components/sections/ProgramsSection.astro",
+          "line": 70
+        },
+        {
+          "url": "/tribal-programs",
+          "file": "src/components/sections/ProgramsSection.astro",
+          "line": 87
+        },
+        {
+          "url": "/states/",
+          "file": "src/components/sections/CitiesSection.astro",
+          "line": 86
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/sections/CTASection.astro",
+          "line": 40
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/sections/CTASection.astro",
+          "line": 43
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/sections/CTASection.astro",
+          "line": 46
+        },
+        {
+          "url": "/",
+          "file": "src/components/navbars/NavbarStandard.astro",
+          "line": 21
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarStandard.astro",
+          "line": 31
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/navbars/NavbarMinimal.astro",
+          "line": 21
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/navbars/NavbarMinimal.astro",
+          "line": 22
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/navbars/NavbarMinimal.astro",
+          "line": 23
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarMinimal.astro",
+          "line": 24
+        },
+        {
+          "url": "/",
+          "file": "src/components/navbars/NavbarFloating.astro",
+          "line": 22
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/navbars/NavbarFloating.astro",
+          "line": 23
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/navbars/NavbarFloating.astro",
+          "line": 24
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/navbars/NavbarFloating.astro",
+          "line": 25
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarFloating.astro",
+          "line": 29
+        },
+        {
+          "url": "/",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 22
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 23
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 24
+        },
+        {
+          "url": "/",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 29
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 36
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 37
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarCenteredLogo.astro",
+          "line": 38
+        },
+        {
+          "url": "/",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 21
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 22
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 23
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 33
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 34
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/navbars/NavbarCentered.astro",
+          "line": 35
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/footers/FooterSimple.astro",
+          "line": 40
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/footers/FooterMinimal.astro",
+          "line": 29
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/footers/FooterMinimal.astro",
+          "line": 30
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/footers/FooterMinimal.astro",
+          "line": 31
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 40
+        },
+        {
+          "url": "/lifeline-program",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 54
+        },
+        {
+          "url": "/acp-program",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 55
+        },
+        {
+          "url": "/tribal-programs",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 56
+        },
+        {
+          "url": "/state-programs",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 57
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 65
+        },
+        {
+          "url": "/providers",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 66
+        },
+        {
+          "url": "/faq",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 67
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 68
+        },
+        {
+          "url": "/states",
+          "file": "src/components/footers/FooterMega.astro",
+          "line": 76
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/footers/FooterCentered.astro",
+          "line": 33
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroWave.astro",
+          "line": 71
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroWave.astro",
+          "line": 77
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroSplitLeft.astro",
+          "line": 64
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroSplitLeft.astro",
+          "line": 70
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroGradientMesh.astro",
+          "line": 61
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroGradientMesh.astro",
+          "line": 67
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroDiagonal.astro",
+          "line": 67
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroDiagonal.astro",
+          "line": 120
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 72
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 76
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 116
+        },
+        {
+          "url": "/eligibility",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 119
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 170
+        },
+        {
+          "url": "/apply",
+          "file": "src/components/advanced/HeroAdvanced.astro",
+          "line": 228
+        }
+      ],
+      "external": [
+        {
+          "url": "https://fonts.googleapis.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 69
+        },
+        {
+          "url": "https://fonts.gstatic.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 70
+        },
+        {
+          "url": "https://fonts.googleapis.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 101
+        },
+        {
+          "url": "https://fonts.gstatic.com",
+          "file": "src/layouts/Layout.astro",
+          "line": 102
+        }
+      ],
+      "broken": [],
+      "anchor": [
+        {
+          "url": "#eligibility-checker",
+          "file": "src/pages/apply.astro",
+          "line": 38
+        },
+        {
+          "url": "#application-steps",
+          "file": "src/pages/apply.astro",
+          "line": 76
+        },
+        {
+          "url": "#main-content",
+          "file": "src/layouts/Layout.astro",
+          "line": 117
+        },
+        {
+          "url": "#",
+          "file": "src/pages/[state]/all.astro",
+          "line": 245
+        },
+        {
+          "url": "#eligibility",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 542
+        },
+        {
+          "url": "#how-to-apply",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 543
+        },
+        {
+          "url": "#providers",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 544
+        },
+        {
+          "url": "#benefits",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 545
+        },
+        {
+          "url": "#faq",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 546
+        },
+        {
+          "url": "#contact",
+          "file": "src/pages/[state]/[city].astro",
+          "line": 547
+        }
+      ],
+      "stateCity": []
+    },
+    "domainIssues": [
+      {
+        "file": "src/lib/site-config.ts",
+        "line": 271,
+        "issue": "Hardcoded URL found (should use getSiteURL() function)",
+        "context": "https://{city-slug}-{state-abbr}.free-government-phone"
+      }
+    ],
+    "contentIssues": [],
+    "seoIssues": [
+      {
+        "file": "src/pages/state-programs.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/providers.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/programs.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/lifeline-program.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/faq.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/eligibility.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/apply.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/acp-program.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/[...all].astro",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/[...all].astro",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/[...all].astro",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/404.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/admin/seo.astro",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/admin/seo.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/admin/login.astro",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/admin/login.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/admin/login.astro",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/admin/index.astro",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/admin/index.astro",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/middleware.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/middleware.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/middleware.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/middleware.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/env.d.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/env.d.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/env.d.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/env.d.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap-main.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap-main.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap-main.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap-main.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap-5.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap-5.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap-5.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap-5.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap-4.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap-4.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap-4.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap-4.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap-3.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap-3.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap-3.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap-3.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/sitemap-2.xml.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/sitemap-2.xml.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/sitemap-2.xml.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/sitemap-2.xml.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/pages/robots.txt.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/pages/robots.txt.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/pages/robots.txt.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/pages/robots.txt.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/supabase.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/supabase.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/supabase.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/supabase.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/state-content-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/state-content-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/state-content-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/state-content-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/sitemap-utils.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/sitemap-utils.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/sitemap-utils.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/sitemap-utils.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/site-config.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/site-config.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/site-config.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/site-config.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/site-architecture.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/site-architecture.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/site-architecture.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/site-architecture.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/microcopy-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/microcopy-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/microcopy-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/microcopy-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/legal-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/legal-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/legal-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/legal-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/legal-content-generator.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/legal-content-generator.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/legal-content-generator.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/legal-content-generator.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/design-dna.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/design-dna.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/design-dna.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/design-dna.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/db.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/db.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/db.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/db.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/color-utils.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/color-utils.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/color-utils.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/color-utils.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/city-content-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/city-content-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/city-content-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/city-content-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/cache.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/cache.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/cache.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/cache.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keyword-config.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keyword-config.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keyword-config.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keyword-config.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/index.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/index.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/index.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/index.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-types.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-types.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-types.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-types.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-enhancers.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-enhancers.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-enhancers.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/variation-enhancers.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/trust-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/trust-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/trust-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/trust-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/schema-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/schema-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/schema-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/schema-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/provider-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/provider-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/provider-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/provider-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/program-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/program-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/program-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/program-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-loader.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-loader.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-loader.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-loader.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-density-optimizer.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-density-optimizer.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-density-optimizer.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/keyword-density-optimizer.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/hash-utils.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/hash-utils.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/hash-utils.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/hash-utils.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/form-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/form-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/form-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/form-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/cta-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/cta-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/cta-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/cta-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/schema-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/schema-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/schema-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/schema-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/provider-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/provider-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/provider-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/provider-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/program-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/program-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/program-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/program-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/meta-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/meta-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/meta-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/meta-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h2-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h2-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h2-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h2-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h1-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h1-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h1-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/h1-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/faq-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/faq-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/faq-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/faq-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/eligibility-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/eligibility-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/eligibility-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/eligibility-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/apply-page-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/apply-page-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/apply-page-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/shared/_legacy/apply-page-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/meta-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/meta-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/meta-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/meta-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/index.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/index.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/index.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/index.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h3-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h3-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h3-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h3-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h2-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h2-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h2-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h2-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h1-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h1-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h1-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/h1-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/faq-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/faq-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/faq-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/faq-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/body-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/body-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/body-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/body-variations.ts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/apply-variations.ts",
+        "issue": "Missing title tag or title prop"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/apply-variations.ts",
+        "issue": "Missing meta description"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/apply-variations.ts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "file": "src/lib/variations/keywords/free-government-phone/apply-variations.ts",
+        "issue": "Missing H1 tag"
+      }
+    ],
+    "technicalIssues": [
+      {
+        "file": "public/robots.txt",
+        "issue": "robots.txt file is missing"
+      }
+    ],
+    "accessibilityIssues": [
+      {
+        "file": "src/components/HowItWorks.astro",
+        "line": 155,
+        "issue": "Button missing aria-label or text content",
+        "context": "<button class=\"w-2.5 h-2.5 rounded-full carousel-dot active\" style={`background-color: ${designDNA.colors.primary};`} data-step=\"0\"></button>"
+      },
+      {
+        "file": "src/components/HowItWorks.astro",
+        "line": 156,
+        "issue": "Button missing aria-label or text content",
+        "context": "<button class=\"w-2.5 h-2.5 bg-gray-300 rounded-full carousel-dot\" data-step=\"1\"></button>"
+      },
+      {
+        "file": "src/components/HowItWorks.astro",
+        "line": 157,
+        "issue": "Button missing aria-label or text content",
+        "context": "<button class=\"w-2.5 h-2.5 bg-gray-300 rounded-full carousel-dot\" data-step=\"2\"></button>"
+      }
+    ]
+  }
+}

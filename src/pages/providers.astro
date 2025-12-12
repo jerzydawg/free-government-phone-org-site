@@ -9,6 +9,7 @@ const siteURL = getSiteURL();
 
 const pageTitle = `${keyword} - Top Free Phone Providers | ${siteName}`;
 const pageDescription = `Compare the best free government phone providers. Find the right company for your Free Government Phone service with detailed provider reviews and coverage maps.`;
+const canonicalURL = `${siteURL}/providers/`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -102,7 +103,7 @@ const jsonLd = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} canonicalURL={canonicalURL}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <!-- Breadcrumb Navigation -->

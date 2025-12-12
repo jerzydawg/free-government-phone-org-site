@@ -9,9 +9,10 @@ const siteURL = getSiteURL();
 
 const title = `${keyword} - Common Questions Answered | ${siteName}`;
 const description = "Get answers to your most pressing questions about free government phone programs. Learn about eligibility, applications, service features, and provider options.";
+const canonicalURL = `${siteURL}/faq/`;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

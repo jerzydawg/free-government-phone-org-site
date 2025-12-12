@@ -9,9 +9,10 @@ const siteURL = getSiteURL();
 
 const title = `${keyword} - All Free Phone Programs | ${siteName}`;
 const description = `Discover every free phone program available in 2025. Compare Lifeline, ACP, and state-specific programs to find the best free government phone option for your needs.`;
+const canonicalURL = `${siteURL}/programs/`;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
   <!-- Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

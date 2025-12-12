@@ -43,8 +43,28 @@ export const onRequest = async (context: any, next: any) => {
     // Invalid subdomain - let route handler return 404
   }
 
+  // If subdomains are enabled but we're accessing path-based URLs, redirect to subdomain format
+  if (useSubdomains() && isExactDomain && !isPreviewHost) {
+    // Check if this is a state page: /nj/ or /nj
+    const stateMatch = url.pathname.match(/^\/([a-z]{2})\/?$/);
+    if (stateMatch) {
+      const stateAbbr = stateMatch[1];
+      const subdomainUrl = `https://${stateAbbr}.${configuredDomain}/`;
+      return context.redirect(subdomainUrl, 301);
+    }
+    
+    // Check if this is a city page: /nj/wayne/ or /nj/wayne
+    const cityMatch = url.pathname.match(/^\/([a-z]{2})\/([a-z0-9-]+)\/?$/);
+    if (cityMatch) {
+      const stateAbbr = cityMatch[1];
+      const citySlug = cityMatch[2];
+      const subdomainUrl = `https://${citySlug}-${stateAbbr}.${configuredDomain}/`;
+      return context.redirect(subdomainUrl, 301);
+    }
+  }
+
   // Allow preview hosts and the configured domain
-  if (isPreviewHost || isExactDomain || isSubdomain) {
+  if (isPreviewHost || isExactDomain || (isSubdomain && useSubdomains())) {
     // Only redirect www to non-www if we're on the production domain
     if (isWwwDomain && !isPreviewHost) {
       const destination = `https://${configuredDomain}${url.pathname}${url.search}`;

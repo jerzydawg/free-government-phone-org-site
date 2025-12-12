@@ -94,14 +94,20 @@ export const GET: APIRoute = async ({ params }) => {
 
   // Calculate offset: sitemap-2 = 0-9999, sitemap-3 = 10000-19999, etc.
   const offset = (sitemapNum - 2) * URLS_PER_SITEMAP;
-  const cities = await getCitiesForSitemap(offset, URLS_PER_SITEMAP);
-  const xml = generateCitySitemapXML(cities);
+  
+  try {
+    const cities = await getCitiesForSitemap(offset, URLS_PER_SITEMAP);
+    const xml = generateCitySitemapXML(cities);
 
-  return new Response(xml, {
-    headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600',
-    },
-  });
+    return new Response(xml, {
+      headers: {
+        'Content-Type': 'application/xml',
+        'Cache-Control': 'public, max-age=3600',
+      },
+    });
+  } catch (error) {
+    console.error(`[Sitemap] Error generating sitemap-${sitemapNum}.xml:`, error);
+    return new Response('Error generating sitemap', { status: 500 });
+  }
 };
 

@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const pageTitle = `${keyword} - Free Internet Program | Emergency Broadband Benefits`;
+const pageDescription = `Get free internet through government assistance programs. Learn about the EBB to ACP transition and discover current options for qualifying households in 2025.`;
+const canonicalURL = `${siteURL}/emergency-broadband`;
+---
+
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalURL={canonicalURL}
+>
+  <!-- Breadcrumb Navigation -->
+  <nav class="bg-gray-50 py-3 px-4">
+    <div class="max-w-6xl mx-auto">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
+        <li class="text-gray-500">/</li>
+        <li class="text-gray-700">Free Internet Program</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Free Government Phone</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        Access free internet service through federal assistance programs. Learn how to get connected with no-cost broadband options available for qualifying households.
+      </p>
+      <a 
+        href="/apply" 
+        class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg inline-block"
+      >
+        Check Your Internet Eligibility
+      </a>
+      <p class="text-sm text-gray-500 mt-3">See if you qualify for free broadband service today</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <article>
+          <!-- What is Free Internet Support -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Get Connected with Free Internet Benefits</h2>
+            <p class="mb-4 text-gray-700">
+              Federal internet assistance helps millions of Americans stay connected online without the burden of monthly bills. These programs provide qualifying households with free or heavily discounted broadband service, ensuring everyone has access to essential online resources for work, education, and healthcare.
+            </p>
+            <p class="mb-4 text-gray-700">
+              The <strong style="color: var(--color-primary)">Free Government Phone</strong> program works alongside internet benefits to create comprehensive communication solutions. Eligible families can receive both wireless service and home broadband through coordinated federal assistance programs.
+            </p>
+            <p class="text-gray-700">
+              Current internet support reaches over 23 million households across all 50 states. Whether you need basic web browsing or high-speed connections for remote work, these programs offer flexible options to meet your specific connectivity needs.
+            </p>
+          </section>
+
+          <!-- Understanding the EBB Program -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Emergency Broadband Benefit Program Overview</h2>
+            <p class="mb-4 text-gray-700">
+              The Emergency Broadband Benefit launched in 2021 as a temporary response to pandemic-related connectivity challenges. This groundbreaking initiative provided $50 monthly discounts for broadband service plus one-time device discounts for eligible households nationwide.
+            </p>
+            <p class="mb-4 text-gray-700">
+              EBB enrollment peaked at over 9 million participating households before transitioning to permanent assistance programs. The temporary nature of EBB created urgency for lawmakers to establish lasting solutions for digital equity challenges.
+            </p>
+            <p class="text-gray-700">
+              Program success demonstrated clear demand for ongoing internet assistance. Families who relied on EBB benefits showed improved outcomes in employment, education, and healthcare access when consistent broadband connectivity was available.
+            </p>
+          </section>
+
+          <!-- Transition to ACP -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">From Emergency Aid to Permanent Solutions</h2>
+            <p class="mb-4 text-gray-700">
+              When EBB ended in December 2021, the Affordable Connectivity Program took over to provide continuous internet support. ACP offered $30 monthly discounts for most households and $75 discounts for those on Tribal lands, making it more sustainable for long-term implementation.
+            </p>
+            <p class="mb-4 text-gray-700">
+              The transition preserved benefits for existing EBB participants while opening enrollment to additional qualified families. <strong style="color: var(--color-primary)">Free Government Phone</strong> providers coordinated closely with ACP to ensure seamless service continuation for their customers.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+              <p class="text-blue-800">
+                <strong>Important:</strong> ACP funding ended in 2024, but several alternative programs now provide internet assistance to eligible households.
+              </p>
+            </div>
+            <p class="text-gray-700">
+              Current programs focus on targeted assistance through state initiatives, provider-specific discounts, and expanded Lifeline benefits that now include broadband options in many areas.
+            </p>
+          </section>
+
+          <!-- Current Options -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Available Internet Assistance Programs Today</h2>
+            <p class="mb-4 text-gray-700">
+              Multiple pathways exist for accessing affordable internet service in 2025. State-funded programs, expanded Lifeline benefits, and provider discount initiatives create a comprehensive network of support options.
+            </p>
+            
+            <h3 class="text-lg font-semibold mb-3 text-gray-900" style="color: var(--color-primary)">Lifeline Broadband Expansion</h3>
+            <p class="mb-4 text-gray-700">
+              Traditional Lifeline now includes internet options in participating areas. Households already receiving <strong style="color: var(--color-primary)">Free Government Phone</strong> service may qualify for broadband discounts through the same provider, creating convenient bundled savings.
+            </p>
+
+            <h3 class="text-lg font-semibold mb-3 text-gray-900" style="color: var(--color-primary)">State Digital Equity Programs</h3>
+            <p class="mb-4 text-gray-700">
+              Individual states launched targeted internet assistance using federal infrastructure funding. These programs often provide deeper discounts than previous federal options and may include device support or digital literacy training.
+            </p>
+
+            <h3 class="text-lg font-semibold mb-3 text-gray-900" style="color: var(--color-primary)">Provider-Based Discount Programs</h3>
+            <p class="text-gray-700">
+              Major internet companies offer their own low-income discount programs. Many accept the same eligibility criteria used for phone assistance programs, making it easier to qualify if you already receive government benefits.
+            </p>
+          </section>
+
+          <!-- How to Apply -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Steps to Secure Your Free Internet Service</h2>
+            <p class="mb-4 text-gray-700">
+              Getting connected starts with determining which programs serve your area and match your specific needs. The application process varies by program but generally follows similar steps for documentation and approval.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full text-white font-bold text-sm flex items-center justify-center" style="background-color: var(--color-primary)">1</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Confirm Your Eligibility Status</h3>
+                  <p class="text-gray-700">Review qualification requirements for available programs in your area. Most use similar income thresholds and benefit participation criteria as phone assistance programs.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full text-white font-bold text-sm flex items-center justify-center" style="background-color: var(--color-primary)">2</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Research Local Internet Options</h3>
+                  <p class="text-gray-700">Contact providers in your area to learn about discount programs. Many companies offer special rates for households receiving government assistance benefits.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full text-white font-bold text-sm flex items-center justify-center" style="background-color: var(--color-primary)">3</div>

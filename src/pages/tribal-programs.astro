@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const pageTitle = `${keyword} - Tribal Lands Free Phone | ${siteName}`;
+const pageDescription = `Enhanced Free Government Phone benefits for Native Americans on tribal lands. Get free phones, unlimited service, and priority support through expanded Lifeline programs.`;
+const pageUrl = `${siteURL}/tribal-programs`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Enhanced Phone Benefits Available for Tribal Communities",
+      "description": "Native Americans living on tribal lands can access expanded free phone services with enhanced benefits including unlimited data and priority network access.",
+      "author": {
+        "@type": "Organization",
+        "name": siteName
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": siteName,
+        "url": siteURL
+      },
+      "datePublished": "2025-12-12",
+      "dateModified": "2025-12-12",
+      "url": pageUrl
+    },
+    {
+      "@type": "GovernmentService",
+      "name": "Enhanced Lifeline for Tribal Lands",
+      "description": "Expanded federal program providing free wireless service to eligible Native Americans on tribal territories with enhanced benefits including unlimited data and priority network support.",
+      "provider": {
+        "@type": "GovernmentOrganization",
+        "name": "Federal Communications Commission"
+      },
+      "areaServed": "Tribal Lands",
+      "audience": "Native Americans on Tribal Territories"
+    },
+    {
+      "@type": "HowTo",
+      "name": "Get Your Enhanced Tribal Free Phone Service",
+      "description": "Step-by-step process to obtain enhanced free phone benefits for Native Americans on tribal lands",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Confirm Tribal Status",
+          "text": "Verify your enrollment status with your federally recognized tribe and gather required documentation proving tribal membership."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review Enhanced Benefits",
+          "text": "Understand the expanded benefits available to tribal members including unlimited data allowances and priority network access."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Submit Application",
+          "text": "Complete the application process with tribal documentation and select from available enhanced service plans designed for tribal communities."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What enhanced benefits do tribal members receive beyond standard Lifeline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Native Americans on tribal lands receive unlimited data, priority network access during emergencies, enhanced customer support, and access to additional devices including tablets and mobile hotspots."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can non-tribal members living on reservations access these enhanced benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enhanced tribal benefits are exclusively for enrolled members of federally recognized tribes. Non-tribal residents on reservations can still access standard Lifeline benefits if they meet income requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does tribal documentation work for program enrollment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Applicants must provide tribal enrollment verification directly from their tribe's enrollment office, CDIB card, or other official tribal membership documentation recognized by federal agencies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there special provisions for tribal elders or veterans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, tribal elders over 60 and Native American veterans receive priority processing, additional tech support, and may qualify for multiple devices including emergency backup phones."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout title={pageTitle} description={pageDescription} url={pageUrl} jsonLd={jsonLd}>
+  <!-- Breadcrumb -->
+  <nav class="bg-gray-50 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center space-x-2 text-sm">
+        <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
+        <span class="text-gray-500">/</span>
+        <span class="text-gray-600">Tribal Programs</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Header Section -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
+      <p class="text-xl text-gray-700 max-w-3xl mx-auto">Enhanced benefits and priority support for Native Americans living on tribal lands through expanded federal programs</p>
+    </div>
+
+    <!-- Enhanced Benefits for Tribal Communities -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Enhanced Benefits for Tribal Communities</h2>
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-8">
+        <p class="text-lg text-gray-700 mb-4">Native Americans living on federally recognized tribal lands receive significantly expanded benefits through the Enhanced Lifeline program. These enhanced services address the unique communication challenges faced by tribal communities, including remote locations and limited infrastructure access.</p>
+        
+        <p class="text-lg text-gray-700">Unlike standard Lifeline benefits, tribal members gain access to unlimited high-speed data, priority network access during emergencies, and specialized customer support trained in tribal community needs. The <span class="font-semibold" style="color: var(--color-primary)">Free Government Phone</span> program recognizes that reliable communication is essential for accessing healthcare, education, and employment opportunities in remote tribal areas.</p>
+      </div>
+    </section>
+
+    <!-- What Enhanced Services Include -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">What Enhanced Services Include</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
+              <span class="text-white font-bold">✓</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Unlimited High-Speed Data</h3>
+              <p class="text-gray-700">Tribal members receive unlimited 4G LTE data with no throttling, ensuring consistent connectivity for education, telehealth, and remote work opportunities.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
+              <span class="text-white font-bold">✓</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Priority Emergency Access</h3>
+              <p class="text-gray-700">During natural disasters or emergencies, tribal members receive priority network access to ensure critical communications remain available.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
+              <span class="text-white font-bold">✓</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Multiple Device Options</h3>
+              <p class="text-gray-700">Access to smartphones, tablets, and mobile hotspots to support household connectivity needs and remote learning requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
+              <span class="text-white font-bold">✓</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Specialized Tribal Support</h3>
+              <p class="text-gray-700">Dedicated customer service representatives trained in tribal community needs and cultural considerations provide personalized assistance.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
+              <span class="text-white font-bold">✓</span>
+            </div>
+            <div>

@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const title = "Apply for Free Government Phone - Get Approved in 2 Minutes";
+const description = "Apply now for your free government phone. Quick 2-minute application process. Get approved instantly and receive your phone within days. No credit check required.";
+---
+
+<Layout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4">
+      <nav class="text-sm breadcrumbs">
+        <ol class="flex space-x-2 text-gray-600">
+          <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
+          <li><span class="mx-2">›</span></li>
+          <li class="text-gray-500">Apply for Free Phone</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          Free Government Phone
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto">
+          Get approved for your Free Government Phone in just 2 minutes. No credit checks, no contracts, and completely free service with data and minutes included.
+        </p>
+        <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Start Your Application Now</h2>
+          <a href="#eligibility-checker" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg inline-block mb-4">
+            CHECK IF YOU QUALIFY
+          </a>
+          <p class="text-gray-600">Takes less than 2 minutes • Instant approval • No paperwork</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eligibility Checker Section -->
+    <section id="eligibility-checker" class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Quick Eligibility Assessment</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Income-Based Qualification</h3>
+              <p class="text-gray-700 mb-4">Your household income must be at or below 135% of Federal Poverty Guidelines. This varies by family size but generally means:</p>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>Single person: $20,385 or less</li>
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>Family of 2: $27,465 or less</li>
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>Family of 4: $41,625 or less</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Program-Based Qualification</h3>
+              <p class="text-gray-700 mb-4">Already receiving government benefits? You automatically qualify with any of these programs:</p>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>SNAP (Food Stamps)</li>
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>Medicaid</li>
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>SSI</li>
+                <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: var(--color-primary)"></span>WIC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#application-steps" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg">
+              I QUALIFY - START APPLICATION
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Steps Section -->
+    <section id="application-steps" class="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Complete Your Application in 3 Easy Steps</h2>
+          
+          <div class="space-y-8">
+            <div class="flex items-start space-x-6 bg-white p-8 rounded-xl shadow-lg">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl" style="background-color: var(--color-primary)">1</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Submit Basic Information</h3>
+                <p class="text-gray-700 mb-4">Provide your name, address, date of birth, and contact information. We'll also ask about your household size and which qualifying program you participate in.</p>
+                <p class="text-sm text-gray-600">Required: Valid ID, proof of address, benefit award letter</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-6 bg-white p-8 rounded-xl shadow-lg">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl" style="background-color: var(--color-primary)">2</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Upload Required Documents</h3>
+                <p class="text-gray-700 mb-4">Take photos of your documents using your smartphone or upload scanned copies. Our system automatically verifies your eligibility within minutes.</p>
+                <p class="text-sm text-gray-600">Tip: Make sure photos are clear and all text is readable</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-6 bg-white p-8 rounded-xl shadow-lg">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl" style="background-color: var(--color-primary)">3</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Get Instant Approval</h3>
+                <p class="text-gray-700 mb-4">Once approved, choose your phone model and service provider. Your Free Government Phone ships the same day and arrives within 3-5 business days.</p>
+                <p class="text-sm text-gray-600">Free shipping to your door • No activation fees</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-4 px-8 rounded-xl shadow-lg text-xl">
+              BEGIN APPLICATION NOW
+            </a>
+            <p class="text-gray-600 mt-4">Over 95% approval rate • Process takes under 5 minutes</p>
+          </div>
+        </div>
+      </div>

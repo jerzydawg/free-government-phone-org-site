@@ -1,0 +1,186 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const title = `${keyword} - ACP Free Internet & Phone | ${siteName}`;
+const description = "Get free internet and phone service through the ACP program. Up to $30/month discount plus free device. Check eligibility and apply for your Free Government Phone today.";
+---
+
+<Layout title={title} description={description}>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Complete ACP Program Coverage: Free Internet and Phone Service Available",
+          "description": "Discover how the Affordable Connectivity Program delivers free internet service and phones to eligible households nationwide.",
+          "author": {
+            "@type": "Organization",
+            "name": "Free Government Phone"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Free Government Phone"
+          },
+          "datePublished": "2025-12-12",
+          "dateModified": "2025-12-12",
+          "url": "https://free-government-phone.org/acp-program"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Does the ACP program provide both internet and phone service together?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the ACP offers up to $30 monthly toward internet service plus a free or discounted device. Many providers bundle phone and internet services under this program."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What internet speeds can I get through ACP?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ACP internet plans typically offer speeds ranging from 25 Mbps to 100+ Mbps, depending on your provider and location. Many plans include unlimited data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does the ACP device cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The ACP provides up to $100 toward a connected device like a laptop, tablet, or smartphone. Many devices are completely free with no upfront cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I switch ACP providers if needed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can transfer your ACP benefit to a different participating provider at any time. Contact your new provider to initiate the transfer process."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to Apply for ACP Free Internet and Phone",
+          "description": "Step-by-step process to get your ACP benefit",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Confirm Your Eligibility Status",
+              "text": "Review income requirements and qualifying assistance programs to ensure you meet ACP guidelines."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Gather Required Documentation",
+              "text": "Collect proof of income, government assistance enrollment, or other qualifying documents."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Submit Your Application",
+              "text": "Complete the ACP application online, by mail, or through a participating provider."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Select Your Provider and Plan",
+              "text": "Choose from participating internet and phone service providers in your area."
+            }
+          ]
+        },
+        {
+          "@type": "GovernmentService",
+          "name": "Affordable Connectivity Program",
+          "description": "Federal program offering monthly internet discounts and device support for qualifying low-income households.",
+          "provider": {
+            "@type": "GovernmentOrganization",
+            "name": "Federal Communications Commission"
+          },
+          "areaServed": "United States",
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://free-government-phone.org/apply"
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="bg-gray-50 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-2 py-3 text-sm">
+        <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
+        <span class="text-gray-500">/</span>
+        <span class="text-gray-700 font-medium">ACP Program</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
+      <p class="text-xl text-gray-600 mb-6">Get free internet service plus a free phone through the ACP program</p>
+      <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-lg inline-block">
+        Check ACP Eligibility Now
+      </a>
+      <p class="text-sm text-gray-600 mt-2">See if you qualify for up to $30/month off internet + free device</p>
+    </header>
+
+    <article class="prose max-w-none">
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900">Transform Your Digital Access with ACP Benefits</h2>
+        <p class="text-gray-700 mb-4">Need reliable internet and a Free Government Phone? The Affordable Connectivity Program delivers both essentials to eligible households nationwide. This federal initiative provides monthly internet discounts up to $30 plus device support, ensuring families stay connected without breaking their budget.</p>
+        
+        <p class="text-gray-700 mb-4">Over 21 million households have already discovered how ACP transforms their digital experience. Whether you're working from home, attending virtual classes, or keeping in touch with loved ones, this program removes financial barriers to essential connectivity services.</p>
+        
+        <p class="text-gray-700">Your Free Government Phone works seamlessly with ACP internet plans, creating a complete communication solution. Many providers offer bundled services that maximize your savings while delivering the speed and reliability you need for daily activities.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900">What ACP Delivers to Your Household</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold mb-3" style="color: var(--color-primary)">Monthly Internet Discount</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>• Up to $30 off monthly internet bills</li>
+              <li>• $75 discount on Tribal lands</li>
+              <li>• Works with hundreds of providers</li>
+              <li>• No contract requirements</li>
+            </ul>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold mb-3" style="color: var(--color-primary)">Connected Device Support</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>• Up to $100 toward device purchase</li>
+              <li>• Smartphones, tablets, laptops eligible</li>
+              <li>• Many devices completely free</li>
+              <li>• One-time benefit per household</li>
+            </ul>
+          </div>
+        </div>
+        
+        <p class="text-gray-700">ACP internet plans typically offer speeds from 25 Mbps to 100+ Mbps, perfect for streaming, video calls, online work, and educational activities. Combined with your Free Government Phone service, you'll have comprehensive connectivity coverage for all household needs.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900">Who Can Access ACP Benefits</h2>
+        
+        <p class="text-gray-700 mb-4">ACP eligibility extends to households meeting income guidelines or participating in qualifying assistance programs. If you already receive a Free Government Phone through Lifeline, you likely qualify for ACP internet discounts too.</p>
+        
+        <h3 class="text-lg font-semibold mb-3">Income Qualification</h3>
+        <p class="text-gray-700 mb-4">Households earning at or below 200% of Federal Poverty Guidelines qualify for ACP benefits. This income threshold is significantly higher than many assistance programs, making ACP accessible to working families facing connectivity challenges.</p>
+        
+        <h3 class="text-lg font-semibold mb-3">Program Participation Routes</h3>
+        <div class="bg-gray-50 p-4 rounded-lg mb-4

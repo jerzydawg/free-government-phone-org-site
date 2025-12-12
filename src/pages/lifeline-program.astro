@@ -1,0 +1,186 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const title = `Lifeline Free Phone Program - ${siteName}`;
+const description = "Get a free smartphone and monthly service through the Lifeline program. Check eligibility requirements and apply for your free government phone today.";
+---
+
+<Layout title={title} description={description}>
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Complete Guide to Getting Your Lifeline Free Phone",
+    "description": "Discover how to qualify for and obtain a free smartphone with monthly service through the federal Lifeline assistance program.",
+    "author": {
+      "@type": "Organization",
+      "name": siteName
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": siteName,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteURL}/logo.png`
+      }
+    },
+    "datePublished": "2025-12-12",
+    "dateModified": "2025-12-12",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${siteURL}/lifeline-program`
+    }
+  })}></script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to receive my Lifeline phone after approval?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most approved applicants receive their free phone within 7-10 business days. Some carriers ship phones within 3-5 days, while others may take up to 2 weeks depending on your location and phone availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use my existing phone with the Lifeline program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, many Lifeline providers allow you to bring your own compatible device. You'll need to check with your chosen carrier to ensure your phone works with their network and meets their technical requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I lose my Lifeline phone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact your Lifeline carrier immediately to report a lost or stolen phone. Most providers offer phone replacement options, though you may need to pay a small replacement fee depending on your carrier's policies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can multiple people in my household get Lifeline phones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, the Lifeline program provides one free phone per household. This is strictly enforced, and attempting to receive multiple phones can result in removal from the program and potential penalties."
+        }
+      }
+    ]
+  })}></script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Get Your Free Lifeline Phone",
+    "description": "Step-by-step process to obtain a free smartphone through the Lifeline assistance program",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Confirm Your Eligibility Status",
+        "text": "Review the income requirements and qualifying assistance programs to ensure you meet Lifeline eligibility criteria before starting your application."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Gather Required Documentation",
+        "text": "Collect proof of income or participation in qualifying programs, along with valid identification and address verification documents."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Choose Your Lifeline Provider",
+        "text": "Research available Lifeline carriers in your area and compare their phone options, service plans, and coverage areas."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Submit Your Application",
+        "text": "Complete the application process online or by phone with your chosen Lifeline provider, including all required documentation."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Receive Your Phone",
+        "text": "Wait for approval notification and phone delivery, which typically arrives within 7-10 business days of approval."
+      }
+    ]
+  })}></script>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="bg-gray-50 py-3" aria-label="Breadcrumb">
+    <div class="max-w-6xl mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-600">Lifeline Program</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Header Section -->
+    <header class="text-center mb-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Get your free smartphone and monthly service through the Lifeline program. Over 2 million Americans already receive free wireless service to stay connected with family, employers, and emergency services.
+      </p>
+    </header>
+
+    <!-- What is Lifeline Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Discover the Lifeline Free Phone Program</h2>
+      <div class="bg-blue-50 p-6 rounded-lg mb-6">
+        <p class="text-lg text-gray-700 mb-4">
+          Lifeline provides essential communication services to low-income households across America. This federal program ensures eligible families can access emergency services, connect with healthcare providers, and maintain employment opportunities.
+        </p>
+        <p class="text-gray-700">
+          Created in 1985, Lifeline has evolved to meet modern communication needs. Today's program offers smartphones with data, unlimited texting, and voice minutes - everything you need to stay connected in our digital world.
+        </p>
+      </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits You Receive</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-left-color: var(--color-primary)">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">📱 Free Smartphone</h3>
+          <p class="text-gray-700">
+            Receive a modern Android smartphone at no cost. Most carriers offer devices with cameras, internet access, and the ability to download essential apps for work, health, and education.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-left-color: var(--color-primary)">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">📞 Monthly Service</h3>
+          <p class="text-gray-700">
+            Get free monthly service including unlimited texting, voice minutes, and high-speed data. Different carriers offer varying amounts, but all provide enough for essential communication needs.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-left-color: var(--color-primary)">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">🌐 Data Allowance</h3>
+          <p class="text-gray-700">
+            Access high-speed internet data for job searches, medical appointments, educational resources, and staying connected with family and friends through social media and video calls.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-left-color: var(--color-primary)">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">🚨 Emergency Access</h3>
+          <p class="text-gray-700">
+            Maintain critical access to 911 emergency services, medical alerts, and disaster notifications. Your <span style="color: var(--color-primary)">Free Government Phone</span> ensures help is always available when needed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Qualification Requirements</h2>
+      <div class="bg-green-50 p-6 rounded-lg mb-6">
+        <h3 class="text-xl font-semibold text-gray-900 mb

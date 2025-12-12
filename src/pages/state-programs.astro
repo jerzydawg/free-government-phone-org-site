@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
+
+const title = `${keyword} - Get Your Free Phone Today`;
+const description = `Discover how to get a ${keyword} in your state. Complete guide to free phone programs, eligibility requirements, and application process.`;
+---
+
+<Layout title={title} description={description}>
+  <!-- Breadcrumb Navigation -->
+  <nav class="bg-gray-50 py-3 border-b">
+    <div class="max-w-7xl mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
+        <li class="text-gray-500">/</li>
+        <li class="text-gray-700">State Programs</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 to-purple-50 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Free Government Phone</h1>
+      <p class="text-xl text-gray-600 mb-8">Connect with family and friends through state-specific free phone programs available nationwide.</p>
+      <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg">CHECK YOUR STATE ELIGIBILITY</a>
+      <p class="text-sm text-gray-600 mt-4">No credit checks or hidden fees required</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Intro Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Access Free Phone Service in Your State</h2>
+      <p class="text-lg text-gray-700 mb-6">Getting a <strong class="text-[var(--color-primary)]">Free Government Phone</strong> is easier than most people realize. The Lifeline program operates in all 50 states, providing essential communication services to qualifying low-income households. Whether you live in California, Texas, Florida, or any other state, you can access free phone service through approved providers in your area.</p>
+      
+      <p class="text-lg text-gray-700 mb-6">Many states also offer additional programs that work alongside federal Lifeline benefits. These enhanced services might include extra data, unlimited texting, or upgraded devices. Your state's Public Utilities Commission oversees these programs, ensuring residents get the best possible service options.</p>
+
+      <p class="text-lg text-gray-700">The application process varies slightly by state, but the core requirements remain consistent nationwide. Most applicants receive approval within 7-10 business days, with phones shipped directly to their address at no cost.</p>
+    </section>
+
+    <!-- How to Get Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Simple Steps to Get Your Free Phone</h2>
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full text-white flex items-center justify-center font-bold text-sm" style="background-color: var(--color-primary)">1</div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Review Your State's Requirements</h3>
+            <p class="text-gray-700">Each state may have specific income guidelines or additional qualifying programs. Check if you participate in SNAP, Medicaid, WIC, or receive SSI benefits in your state.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full text-white flex items-center justify-center font-bold text-sm" style="background-color: var(--color-primary)">2</div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Submit Application Online</h3>
+            <p class="text-gray-700">Complete your application through your state's designated portal or approved provider websites. Upload required documents like proof of income or benefit participation.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full text-white flex items-center justify-center font-bold text-sm" style="background-color: var(--color-primary)">3</div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Choose Your Provider</h3>
+            <p class="text-gray-700">Select from approved carriers operating in your state. Each provider offers different phones, data plans, and coverage areas to meet your needs.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full text-white flex items-center justify-center font-bold text-sm" style="background-color: var(--color-primary)">4</div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Receive Your Device</h3>
+            <p class="text-gray-700">Once approved, your <strong class="text-[var(--color-primary)]">Free Government Phone</strong> ships within 5-7 business days. Activation is simple and customer support helps with setup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">What's Included with State Programs</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-700">Free smartphone device</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-700">Monthly service plan</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-700">Unlimited texting</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-700">Voice minutes included</span>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <svg class="

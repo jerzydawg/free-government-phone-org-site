@@ -1,0 +1,349 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AboveFoldCTA from '../components/AboveFoldCTA.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import RelatedContent from '../components/RelatedContent.astro';
+import { getSiteURL, getDomain, getKeywordId, getDesignDNA, getSiteName } from '../lib/site-config';
+import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getUrgencyBadge } from '../lib/microcopy-variations';
+
+const SITE_URL = getSiteURL();
+const domain = getDomain();
+const keywordId = getKeywordId(); // Already has fallback in getKeywordId() function
+const designDNA = getDesignDNA();
+const SITE_NAME = getSiteName();
+
+// Load keyword-specific variations with comprehensive error handling
+let metaContent = { title: 'Frequently Asked Questions', description: 'Get answers to common questions' };
+let h1Content = { h1: 'Frequently Asked Questions' };
+let faqContent: any = null;
+
+try {
+  const keywordModule = await loadKeywordVariations(keywordId);
+  
+  if (keywordModule && typeof keywordModule.getH1Variation === 'function' && typeof keywordModule.getMetaVariations === 'function') {
+    try {
+      metaContent = keywordModule.getMetaVariations(SITE_NAME, domain, 'faq');
+      h1Content = keywordModule.getH1Variation(domain, 'faq');
+      
+      // Validate results
+      if (!metaContent || !metaContent.title || !metaContent.description) {
+        metaContent = { title: 'Frequently Asked Questions', description: 'Get answers to common questions' };
+      }
+      if (!h1Content || !h1Content.h1) {
+        h1Content = { h1: 'Frequently Asked Questions' };
+      }
+      
+      // Get FAQ sections if available
+      if (typeof keywordModule.getFAQSections === 'function') {
+        faqContent = keywordModule.getFAQSections(domain);
+      }
+    } catch (variationError: any) {
+      console.error('Error calling variation functions:', variationError?.message || variationError);
+      // Use fallback values already set above
+    }
+  } else {
+    console.warn('Variation functions not available, using fallback content');
+  }
+} catch (e: any) {
+  console.error('Failed to load keyword variations for FAQ:', e?.message || e);
+  // Use fallback values already set above - page will still render
+}
+
+// Get urgency badge variations
+const urgencyBadge = getUrgencyBadge(domain);
+
+// Dynamic SEO Meta Tags from keyword variations (or fallback)
+const title = metaContent.title;
+const description = metaContent.description;
+const canonicalURL = `${SITE_URL}/faq/`;
+---
+
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
+  <Breadcrumbs items={[
+    { label: 'Home', href: '/' },
+    { label: 'FAQ', href: '/faq' }
+  ]} />
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section style={`background: linear-gradient(135deg, ${designDNA.colors.primary} 0%, ${designDNA.colors.primaryDark || designDNA.colors.primary} 100%);`} class="text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-gray-900 text-4xl md:text-6xl font-bold mb-6 ">
+          {h1Content.h1}
+        </h1>
+        <p class="text-gray-900 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Discover answers to frequently asked questions about federal communication assistance programs, 
+          qualification criteria, and application procedures. Learn about Lifeline and ACP benefits, 
+          eligibility requirements, and how to access telecommunications support through government programs.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA Above Fold -->
+    <div class="bg-white">
+      <AboveFoldCTA context="faq" />
+    </div>
+
+    <!-- Introduction Content -->
+    <section class="py-8 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-gray-900 text-2xl font-bold mb-4">Understanding Government Phone Programs</h2>
+            <p class="text-gray-900 mb-4">
+              Government phone assistance programs like <a href="/lifeline-program" class="style={`color: ${designDNA.colors.primary};`} hover:underline">Lifeline</a> and <a href="/acp-program" class="text-green-600 hover:underline">ACP (Affordable Connectivity Program)</a> provide essential communication services to eligible low-income households. These federal programs ensure that all Americans have access to phone and internet services, regardless of their financial situation. Whether you need help with monthly service costs or need a device to get started, these programs offer comprehensive support.
+            </p>
+            <p class="text-gray-900 mb-4">
+              The application process is straightforward and typically takes just a few minutes. Most applicants qualify through income-based eligibility (household income at or below 135-200% of Federal Poverty Guidelines) or by participating in government assistance programs like SNAP, Medicaid, or SSI. Once approved, benefits are applied directly to your monthly service bill, reducing or eliminating your phone and internet costs.
+            </p>
+            <p class="text-gray-900">
+              Below, you'll find detailed answers to the most frequently asked questions about eligibility, application procedures, program benefits, and provider selection. If you have additional questions after reviewing this information, you can <a href="/contact" class="style={`color: ${designDNA.colors.primary};`} hover:underline">contact our support team</a> or <a href="/apply" class="text-green-600 hover:underline font-semibold">start your application</a> to get personalized assistance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <!-- FAQ Accordion -->
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <h2 class="text-white p-6 text-2xl font-bold" style={`background-color: ${designDNA.colors.primary};`}>
+              {faqContent && faqContent.sections && faqContent.sections.eligibility ? faqContent.sections.eligibility.title : 'Frequently Asked Questions'}
+            </h2>
+            
+            <div class="space-y-4 p-6">
+              {faqContent && faqContent.sections && faqContent.sections.eligibility && faqContent.sections.eligibility.faqs ? faqContent.sections.eligibility.faqs.map((faq, index) => (
+                <div class={index < faqContent.sections.eligibility.faqs.length - 1 ? "border-b border-gray-200 pb-4" : "pb-4"}>
+                  <h3 class="text-gray-900 text-lg font-bold mb-2">{faq.question}</h3>
+                  <p class="text-gray-900 mb-3">{faq.answer}</p>
+                  {index === 0 && (
+                    <p class="text-gray-900 text-sm text-gray-600">
+                      For more detailed information about eligibility requirements, visit our <a href="/eligibility" class="style={`color: ${designDNA.colors.primary};`} hover:underline">eligibility page</a> or check out the <a href="/programs" class="text-green-600 hover:underline">programs overview</a>.
+                    </p>
+                  )}
+                </div>
+              )) : (
+                <div class="text-gray-900">
+                  <p>FAQ content is loading. Please check back shortly or <a href="/contact" class="style={`color: ${designDNA.colors.primary};`} hover:underline">contact us</a> for immediate assistance.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional FAQ Sections -->
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Application Process FAQs -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+            <h2 class="text-white p-6 text-2xl font-bold" style={`background-color: ${designDNA.colors.accent};`}>
+              Application Process Questions
+            </h2>
+            <div class="space-y-4 p-6">
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">How long does the application process take?</h3>
+                <p class="text-gray-900 mb-3">
+                  Most online applications are processed instantly or within 24 hours. If you qualify through income-based eligibility, you may need to provide proof of income documents, which can extend processing to 1-3 business days. Program-based eligibility (SNAP, Medicaid, etc.) is typically verified automatically and approved immediately. The entire process from start to approval usually takes less than 5 minutes online.
+                </p>
+                <p class="text-gray-900 text-sm text-gray-600">
+                  <a href="/apply" class="style={`color: ${designDNA.colors.primary};`} hover:underline">Start your application now</a> to see how quickly you can get approved.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">What documents do I need to apply?</h3>
+                <p class="text-gray-900 mb-3">
+                  If you qualify through program participation (SNAP, Medicaid, SSI, etc.), you typically don't need any documents - your participation is verified automatically. For income-based eligibility, you'll need proof of income such as pay stubs, tax returns, or a benefits statement. You may also need proof of identity (driver's license, state ID, or passport) and proof of address (utility bill, lease agreement, or mail). Most providers allow you to upload documents directly through their online portal.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Can I apply for both Lifeline and ACP?</h3>
+                <p class="text-gray-900 mb-3">
+                  Yes! Eligible households can receive both Lifeline and ACP benefits simultaneously. Lifeline provides up to $9.25/month off phone or internet service (or $34.25/month on Tribal lands), while ACP provides up to $30/month off internet service (or $75/month on Tribal lands). Combined, this can significantly reduce or eliminate your monthly communication costs. You must apply for each program separately, but the application process is similar and can often be done with the same provider.
+                </p>
+                <p class="text-gray-900 text-sm text-gray-600">
+                  Learn more about <a href="/lifeline-program" class="style={`color: ${designDNA.colors.primary};`} hover:underline">Lifeline benefits</a> and <a href="/acp-program" class="text-green-600 hover:underline">ACP benefits</a>.
+                </p>
+              </div>
+              <div class="pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">How do I choose a provider?</h3>
+                <p class="text-gray-900 mb-3">
+                  When selecting a provider, consider factors like network coverage in your area, available plans, device options, and customer service reputation. All approved providers offer the same federal benefits, but service quality and additional features may vary. You can <a href="/providers" class="style={`color: ${designDNA.colors.primary};`} hover:underline">compare providers</a> on our website to find the best option for your location and needs. Many providers offer online tools to check coverage in your specific area before you apply.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Benefits FAQs -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+            <h2 class="text-white p-6 text-2xl font-bold" style={`background-color: ${designDNA.colors.secondary};`}>
+              Program Benefits & Features
+            </h2>
+            <div class="space-y-4 p-6">
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">What services are included with free government phone programs?</h3>
+                <p class="text-gray-900 mb-3">
+                  Government phone programs typically include unlimited talk and text, monthly data allowances (ranging from 3GB to unlimited depending on provider), and a free smartphone. Some providers also offer additional features like voicemail, caller ID, call waiting, and international calling options. Internet service through ACP includes high-speed broadband access suitable for video calls, online learning, and remote work. The exact features vary by provider, so it's important to <a href="/providers" class="style={`color: ${designDNA.colors.primary};`} hover:underline">compare provider plans</a> before selecting.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Do I get to keep my phone number?</h3>
+                <p class="text-gray-900 mb-3">
+                  Yes, in most cases you can transfer your existing phone number to your new government phone service provider. This process is called "porting" and is typically free. When you apply, indicate that you want to keep your current number and provide your account information from your previous carrier. The porting process usually takes 1-2 business days to complete. If you're getting a new number, it will be assigned immediately upon activation.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Are there any hidden fees or contracts?</h3>
+                <p class="text-gray-900 mb-3">
+                  No, there are no hidden fees or long-term contracts required for government phone programs. The service is completely free for eligible households, with no activation fees, monthly service charges, or cancellation penalties. You can cancel your service at any time without penalty. However, if you exceed your monthly data allowance, some providers may offer additional data packages for purchase, but this is optional and clearly disclosed upfront.
+                </p>
+              </div>
+              <div class="pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">How long do benefits last?</h3>
+                <p class="text-gray-900 mb-3">
+                  Benefits continue as long as you remain eligible and recertify annually. You'll receive a notice before your recertification date with instructions on how to verify your continued eligibility. Most recertifications can be completed online in just a few minutes. If your circumstances change (income increases, you no longer participate in qualifying programs), you must notify your provider. Benefits are typically reviewed once per year, and you'll be notified well in advance of any required action.
+                </p>
+                <p class="text-gray-900 text-sm text-gray-600">
+                  Learn more about <a href="/programs" class="style={`color: ${designDNA.colors.primary};`} hover:underline">program requirements and benefits</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eligibility Scenarios FAQs -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <h2 class="text-white p-6 text-2xl font-bold" style={`background-color: ${designDNA.colors.primary};`}>
+              Eligibility Scenarios & Special Cases
+            </h2>
+            <div class="space-y-4 p-6">
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Can college students qualify for government phone programs?</h3>
+                <p class="text-gray-900 mb-3">
+                  Yes, college students can qualify if they meet income requirements or if they receive a Federal Pell Grant in the current award year. Pell Grant recipients automatically qualify for ACP benefits. Students living on campus may need to provide documentation showing their household income if they're applying based on income rather than program participation. Many students find that their financial aid status makes them eligible for these programs.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">What if I live in a group home or assisted living facility?</h3>
+                <p class="text-gray-900 mb-3">
+                  Residents of group homes and assisted living facilities can qualify for government phone programs. Each resident can apply individually if they have their own income or program participation. If the facility receives benefits on behalf of residents, those residents may also qualify. You'll need to provide documentation showing your individual eligibility status. Contact your facility administrator or <a href="/contact" class="style={`color: ${designDNA.colors.primary};`} hover:underline">our support team</a> for assistance with your specific situation.
+                </p>
+              </div>
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Do I qualify if I'm on unemployment or disability?</h3>
+                <p class="text-gray-900 mb-3">
+                  Yes, if you receive unemployment benefits or disability payments (SSI or SSDI), you may qualify based on your income level. Unemployment benefits count as income, so if your total household income is at or below 135-200% of Federal Poverty Guidelines, you'll qualify. SSI recipients automatically qualify for Lifeline benefits. Disability payments are also considered income, but many recipients find they still qualify due to the income thresholds. Use our <a href="/eligibility" class="style={`color: ${designDNA.colors.primary};`} hover:underline">eligibility checker</a> to see if you qualify.
+                </p>
+              </div>
+              <div class="pb-4">
+                <h3 class="text-gray-900 text-lg font-bold mb-2">Can I transfer benefits if I move to a different state?</h3>
+                <p class="text-gray-900 mb-3">
+                  Yes, you can transfer your benefits when you move, but you'll need to update your address with your provider and may need to select a new provider if your current one doesn't serve your new location. The transfer process is straightforward - notify your provider of your move, verify your new address, and they'll help you transition your service. If you need to switch providers, you can do so without losing your benefits, though you may need to reapply with the new provider in your new state.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold mb-6 ">
+          Still Have Questions?
+        </h2>
+        <p class="text-gray-900 text-xl mb-8 max-w-2xl mx-auto">
+          If you couldn't find the answer you're looking for, start your application now to get connected with free government phone service.
+        </p>
+        <div class="flex justify-center">
+          <a href="/apply" class="inline-block py-4 px-10 text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition-all duration-300 no-underline text-center" style={`background: linear-gradient(135deg, ${designDNA.colors.accent} 0%, ${designDNA.colors.accentDark || designDNA.colors.accent} 100%); color: white;`}>
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
+          Related Resources
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <a href="/eligibility" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
+            <div class="style={`color: ${designDNA.colors.primary};`} text-3xl mb-4 text-gray-900">✅</div>
+            <h3 class="text-gray-900 text-lg font-bold mb-2 ">Check Eligibility</h3>
+            <p class="text-gray-900">
+              Use our quick eligibility checker to see if you qualify for free phone service.
+            </p>
+          </a>
+          <a href="/programs" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
+            <div class="text-green-600 text-3xl mb-4 text-gray-900">📋</div>
+            <h3 class="text-gray-900 text-lg font-bold mb-2 ">Program Guide</h3>
+            <p class="text-gray-900">
+              Learn about Lifeline and ACP programs and their benefits.
+            </p>
+          </a>
+          <a href="/providers" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
+            <div class="text-purple-600 text-3xl mb-4" aria-label="Phone icon">📱</div>
+            <h3 class="text-gray-900 text-lg font-bold mb-2 ">Compare Providers</h3>
+            <p class="text-gray-900">
+              Find the best provider for your needs and location.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Internal Links -->
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
+          Learn More About Government Phone Programs
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <a href="/lifeline-program" class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+            <h3 class="text-gray-900 font-bold mb-2 style={`color: ${designDNA.colors.primary};`}">Lifeline Program</h3>
+            <p class="text-gray-900 text-sm ">Federal phone assistance program</p>
+          </a>
+          <a href="/acp-program" class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+            <h3 class="text-gray-900 font-bold mb-2 text-green-600">ACP Program</h3>
+            <p class="text-gray-900 text-sm ">Affordable Connectivity Program</p>
+          </a>
+          <a href="/tribal-programs" class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+            <h3 class="text-gray-900 font-bold mb-2 text-purple-600">Tribal Programs</h3>
+            <p class="text-gray-900 text-sm ">Enhanced benefits for tribal communities</p>
+          </a>
+          <a href="/state-programs" class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+            <h3 class="text-gray-900 font-bold mb-2 text-orange-600">State Programs</h3>
+            <p class="text-gray-900 text-sm ">State-specific assistance programs</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Content Section -->
+    <RelatedContent currentPage="home" />
+  </main>
+  
+  {/* FAQPage Structured Data */}
+  {faqContent && faqContent.sections && faqContent.sections.eligibility && faqContent.sections.eligibility.faqs && faqContent.sections.eligibility.faqs.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqContent.sections.eligibility.faqs.map((faq: any) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    })} />
+  )}
+</Layout> 

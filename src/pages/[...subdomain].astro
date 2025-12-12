@@ -44,9 +44,11 @@ if (!subdomainInfo) {
   return Astro.redirect('/404', 404);
 }
 
-// Redirect any path to root (should be handled by middleware, but double-check)
+// Vercel rewrites subdomains to paths like /nj/wayne/, so we should allow those paths
+// Only redirect if it's an unexpected path that doesn't match the rewrite pattern
 const url = new URL(Astro.request.url);
-if (url.pathname !== '/') {
+const isRewrittenPath = url.pathname.match(/^\/([a-z]{2})\/?$/) || url.pathname.match(/^\/([a-z]{2})\/([a-z0-9-]+)\/?$/);
+if (!isRewrittenPath && url.pathname !== '/') {
   return Astro.redirect(`https://${host}/`, 301);
 }
 

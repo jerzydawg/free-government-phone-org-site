@@ -31,10 +31,14 @@ export const onRequest = async (context: any, next: any) => {
     // Check if it's a state subdomain (2-letter abbreviation, e.g., "nj")
     const isStateSubdomain = subdomainPart.length === 2 && /^[a-z]{2}$/.test(subdomainPart);
     
-    // If it's a valid city subdomain or state subdomain, redirect any path to root
+    // If it's a valid city subdomain or state subdomain, allow the request to proceed
+    // Vercel rewrites will route it to the correct page, and the page will render with subdomain canonical URL
     if (subdomainInfo || isStateSubdomain) {
-      // If there's a path (not just /), redirect to subdomain root
-      if (url.pathname !== '/') {
+      // Only redirect if there's an unexpected path (not the rewritten path from Vercel)
+      // Vercel rewrites subdomains to paths like /nj/wayne/, so we should allow those
+      // But if someone accesses wayne-nj.domain.com/some-other-path, redirect to root
+      const isRewrittenPath = url.pathname.match(/^\/([a-z]{2})\/?$/) || url.pathname.match(/^\/([a-z]{2})\/([a-z0-9-]+)\/?$/);
+      if (!isRewrittenPath && url.pathname !== '/') {
         const subdomainRoot = `https://${host}/`;
         return context.redirect(subdomainRoot, 301);
       }

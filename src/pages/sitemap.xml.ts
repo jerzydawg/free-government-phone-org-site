@@ -38,15 +38,15 @@ export const GET: APIRoute = async () => {
     }
   }
 
-  // Fetch cities (limit to most popular for performance)
+  // Fetch all cities for sitemap
   let cities: Array<{ name: string; state_abbr: string }> = [];
   if (supabase) {
     try {
+      // Fetch all cities (no limit - Google allows up to 50k URLs per sitemap)
       const { data } = await supabase
         .from('cities')
         .select('name, states(abbreviation)')
-        .order('population', { ascending: false })
-        .limit(1000);
+        .order('population', { ascending: false });
       if (data) {
         cities = data.map((city: any) => ({
           name: city.name,

@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.free-government-phone.org"
+        }
+      ],
+      "destination": "https://free-government-phone.org/:1",
+      "permanent": true
+    }
+  ]
+}
+

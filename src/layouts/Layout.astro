@@ -145,7 +145,7 @@ const currentPath = Astro.url.pathname;
         <!-- Menu Items - Dynamic from navContent -->
         <nav class="flex-1 py-6 overflow-y-auto">
           {navContent.navItems.map((item) => (
-            <a href={item.href} class="mobile-nav-link block px-6 py-4 text-gray-900 hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary)] transition-colors border-b border-gray-100">
+            <a href={item.href} class="mobile-nav-link block px-6 py-4 text-gray-900 hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-readable)] transition-colors border-b border-gray-100">
               <div class="flex items-center">
                 <svg class="w-5 h-5 mr-3 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {item.href === '/' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />}
@@ -367,13 +367,13 @@ const currentPath = Astro.url.pathname;
     border-width: 0;
   }
   
-  /* Dynamic hover colors using CSS variables */
+  /* Dynamic hover colors using CSS variables - Always use readable version for text */
   .nav-link:hover {
-    color: var(--color-primary) !important;
+    color: var(--color-primary-readable, var(--color-primary)) !important;
   }
   .nav-link-mobile:hover {
     background-color: color-mix(in srgb, var(--color-primary) 10%, white);
-    color: var(--color-primary) !important;
+    color: var(--color-primary-readable, var(--color-primary)) !important;
   }
   .nav-link-mobile:active {
     background-color: color-mix(in srgb, var(--color-primary) 20%, white);
@@ -391,11 +391,137 @@ const currentPath = Astro.url.pathname;
     background-color: var(--color-primary) !important;
   }
   
-  /* Dynamic link colors */
+  /* Dynamic link colors - Always use readable version for text */
   .dynamic-link {
-    color: var(--color-primary);
+    color: var(--color-primary-readable, var(--color-primary));
   }
   .dynamic-link:hover {
     opacity: 0.8;
+  }
+  
+  /* Global rule: Prevent light colors for text - force readable primary color */
+  /* This ensures any text using primary color is always readable */
+  [style*="color: var(--color-primary)"],
+  [style*="color:var(--color-primary)"],
+  .text-\\[var\\(--color-primary\\)\\] {
+    color: var(--color-primary-readable, var(--color-primary)) !important;
+  }
+  
+  /* Ensure state abbreviations and badges use readable colors */
+  /* Match patterns like: style="background-color: X; color: var(--color-primary)" */
+  span[style*="var(--color-primary)"][style*="color"],
+  div[style*="var(--color-primary)"][style*="color"],
+  a[style*="var(--color-primary)"][style*="color"],
+  p[style*="var(--color-primary)"][style*="color"],
+  h1[style*="var(--color-primary)"][style*="color"],
+  h2[style*="var(--color-primary)"][style*="color"],
+  h3[style*="var(--color-primary)"][style*="color"] {
+    color: var(--color-primary-readable, var(--color-primary)) !important;
+  }
+  
+  /* Prevent light orange/yellow colors from being used for text */
+  /* Force dark colors for any light color text */
+  .text-orange-200,
+  .text-orange-300,
+  .text-orange-400,
+  .text-orange-500,
+  .text-yellow-200,
+  .text-yellow-300,
+  .text-yellow-400 {
+    color: #92400E !important; /* Dark orange */
+  }
+  
+  .text-orange-600 {
+    color: #EA580C !important; /* Darker orange */
+  }
+  
+  /* Global rule: All text using primary color CSS variable must use readable version */
+  /* This catches inline styles, Tailwind classes, and any other usage */
+  [style*="color: var(--color-primary)"],
+  [style*="color:var(--color-primary)"],
+  [style*="color: var(--color-primary);"],
+  [style*="color:var(--color-primary);"],
+  .text-\\[var\\(--color-primary\\)\\],
+  .text-\\[var\\(--color-primary\\)\\]\\! {
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
+  /* Force readable colors for any element with primary color in style attribute for text */
+  span[style*="var(--color-primary)"],
+  div[style*="var(--color-primary)"],
+  a[style*="var(--color-primary)"],
+  p[style*="var(--color-primary)"],
+  h1[style*="var(--color-primary)"],
+  h2[style*="var(--color-primary)"],
+  h3[style*="var(--color-primary)"],
+  h4[style*="var(--color-primary)"],
+  h5[style*="var(--color-primary)"],
+  h6[style*="var(--color-primary)"],
+  li[style*="var(--color-primary)"] {
+    /* Only apply if it's a color style, not background */
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
+  /* Ensure state buttons and badges use readable colors */
+  .state-btn,
+  [class*="state-btn"],
+  [class*="badge"],
+  [class*="tag"] {
+    /* State buttons should use readable colors on hover */
+  }
+  
+  .state-btn:hover,
+  [class*="state-btn"]:hover {
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
+  /* Prevent any light background with light text color combinations */
+  [style*="background-color: var(--color-primary)"][style*="color: var(--color-primary)"],
+  [style*="background: var(--color-primary)"][style*="color: var(--color-primary)"] {
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
+  /* Ensure all city/state name text is dark and readable */
+  [class*="city-name"],
+  [class*="state-name"],
+  [class*="city-abbr"],
+  [class*="state-abbr"] {
+    color: #111827 !important; /* Very dark gray */
+  }
+  
+  /* Popular Cities section - ensure all text is dark */
+  section[class*="cities"],
+  section[class*="Cities"],
+  [id*="cities"],
+  [id*="Cities"] {
+    /* Force dark text colors */
+  }
+  
+  section[class*="cities"] h2,
+  section[class*="cities"] h3,
+  section[class*="cities"] p,
+  section[class*="cities"] span,
+  section[class*="cities"] a {
+    color: #111827 !important;
+  }
+  
+  section[class*="cities"] a[style*="color"] {
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
+  /* States Coverage section - ensure all text is dark */
+  section[class*="state"],
+  section[class*="State"],
+  [id*="states"],
+  [id*="States"] {
+    /* Force dark text colors */
+  }
+  
+  section[class*="state"] h2,
+  section[class*="state"] h3,
+  section[class*="state"] p,
+  section[class*="state"] span,
+  section[class*="state"] a:not([style*="background"]) {
+    color: #111827 !important;
   }
 </style> 

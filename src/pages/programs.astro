@@ -1,499 +1,190 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import AboveFoldCTA from '../components/AboveFoldCTA.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import RelatedContent from '../components/RelatedContent.astro';
-import { getSiteURL, getDomain, getSiteName, getKeywordId, getDesignDNA } from '../lib/site-config';
-import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
-import { getBodyContentVariations } from '../lib/variations/keywords/free-government-phone/body-variations';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
 
-const SITE_URL = getSiteURL();
-const domain = getDomain();
 const siteName = getSiteName();
-const keywordId = getKeywordId(); // Already has fallback in getKeywordId() function
-const designDNA = getDesignDNA();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
 
-// Load keyword-specific variations with comprehensive error handling
-let h1Content = { h1: 'Free Government Phone Programs' };
-let metaContent = { 
-  title: 'Free Government Phone Programs | Lifeline & ACP Benefits Overview 2025',
-  description: 'Explore federal communication assistance programs including Lifeline and ACP. Understand program benefits, qualification criteria, and application processes for discounted phone and internet services.'
-};
-
-try {
-  const keywordModule = await loadKeywordVariations(keywordId);
-  
-  if (keywordModule && typeof keywordModule.getH1Variation === 'function' && typeof keywordModule.getMetaVariations === 'function') {
-    try {
-      h1Content = keywordModule.getH1Variation(domain, 'programs');
-      metaContent = keywordModule.getMetaVariations(siteName, domain, 'programs');
-      
-      // Validate results
-      if (!h1Content || !h1Content.h1) {
-        h1Content = { h1: 'Free Government Phone Programs' };
-      }
-      if (!metaContent || !metaContent.title || !metaContent.description) {
-        metaContent = { 
-          title: 'Free Government Phone Programs | Lifeline & ACP Benefits Overview 2025',
-          description: 'Explore federal communication assistance programs including Lifeline and ACP. Understand program benefits, qualification criteria, and application processes for discounted phone and internet services.'
-        };
-      }
-    } catch (variationError: any) {
-      console.error('Error calling variation functions:', variationError?.message || variationError);
-      // Use fallback values already set above
-    }
-  } else {
-    console.warn('Variation functions not available, using fallback content');
-  }
-} catch (e: any) {
-  console.error('Failed to load keyword variations for programs page:', e?.message || e);
-  // Use fallback values already set above - page will still render
-}
-
-const title = metaContent.title;
-const description = metaContent.description;
-const canonical = `${SITE_URL}/programs`;
-
-// Get body content variations for uniqueness
-const bodyVariations = getBodyContentVariations(domain);
+const title = `All Free Phone Programs - ${siteName}`;
+const description = `Discover every free phone program available in 2025. From Lifeline to ACP, find the perfect Free Government Phone option that matches your needs and situation.`;
 ---
 
-<Layout title={title} description={description} canonical={canonical}>
-  <Breadcrumbs items={[
-    { label: 'Home', href: '/' },
-    { label: 'Programs', href: '/programs' }
-  ]} />
-  <main class="min-h-screen">
+<Layout title={title} description={description}>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Complete Guide to Every Free Government Phone Program Available",
+      "description": "Explore all available free phone programs including federal assistance, state options, and special provider offers to find your perfect match.",
+      "author": {
+        "@type": "Organization",
+        "name": "Free Government Phone"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Free Government Phone",
+        "url": "https://free-government-phone.org"
+      },
+      "datePublished": "2025-12-12",
+      "dateModified": "2025-12-12"
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which free phone program offers the best data allowance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ACP typically provides higher data allowances compared to traditional Lifeline service. Many ACP providers offer 10-15GB monthly data plans, while some Lifeline services provide 4-8GB depending on your carrier choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can someone receive benefits from multiple phone assistance programs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, eligible households can combine certain programs. You might qualify for both Lifeline and ACP benefits simultaneously, effectively reducing or eliminating monthly phone service costs entirely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do state-specific programs require different applications than federal ones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "State programs often have separate application processes from federal assistance. While Lifeline and ACP use standardized federal applications, state programs typically require direct applications through local agencies or program administrators."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I move between states while receiving benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Federal programs like Lifeline and ACP transfer with you when you relocate. However, state-specific benefits typically end when you move, requiring new applications in your destination state if similar programs exist there."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Choose the Best Free Phone Program",
+      "description": "Step-by-step process to evaluate and select the ideal free government phone program for your specific needs and circumstances.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Assess Your Current Situation",
+          "text": "Review your income level, participation in assistance programs, and household size to understand which programs you might qualify for."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Compare Data and Calling Features",
+          "text": "Examine monthly data allowances, unlimited calling options, and text messaging limits across different program providers."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Research Provider Coverage",
+          "text": "Verify network coverage in your area by checking provider coverage maps and reading local reviews about service quality."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Submit Your Application",
+          "text": "Complete the application process through your chosen provider or program, ensuring all required documentation is included."
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Free Government Phone Programs",
+      "description": "Federal and state assistance programs providing free mobile phones and wireless service to eligible low-income households across America.",
+      "provider": {
+        "@type": "GovernmentOrganization",
+        "name": "Federal Communications Commission"
+      },
+      "serviceType": "Telecommunications Assistance",
+      "audience": "Low-income households and individuals"
+    }
+  </script>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="bg-gray-50 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center space-x-2 text-sm">
+        <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
+        <span class="text-gray-500">/</span>
+        <span class="text-gray-600">All Programs</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-8">
-      <div class="container mx-auto px-4 text-center">
-        <h1 class="text-gray-900 text-4xl md:text-6xl font-bold mb-6 ">
-          {h1Content.h1}
-        </h1>
-        <p class="text-gray-900 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Discover the federal assistance programs that provide free communication service 
-          and internet access to qualifying households across America. Explore Lifeline, 
-          ACP, tribal programs, and state-specific benefits that help low-income families 
-          access essential telecommunications services.
-        </p>
-        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto">
-          <p class="text-gray-900 text-lg mb-4 ">Available Programs</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-            <div class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span>
-              <span>Lifeline Program</span>
-            </div>
-            <div class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span>
-              <span>ACP Program</span>
-            </div>
-            <div class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span>
-              <span>Tribal Programs</span>
-            </div>
-            <div class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span>
-              <span>State Programs</span>
-            </div>
-          </div>
-        </div>
+    <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Free Government Phone</h1>
+        <p class="text-xl text-gray-600 mb-8">Explore every available program to find the perfect free phone service that fits your needs and qualifications.</p>
+        <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg inline-block">Find Your Perfect Program</a>
+        <p class="text-sm text-gray-600 mt-3">Compare all options • No credit checks required</p>
       </div>
     </section>
 
-    <!-- CTA Above Fold -->
-    <AboveFoldCTA context="programs" />
-
-    <!-- Main Programs Overview -->
-    <section class="py-10">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Free Government Phone Programs
-        </h2>
-        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <!-- Lifeline Program -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div style={`background: ${designDNA.colors.primary};`} class="text-white p-6">
-              <h3 class="text-gray-900 text-3xl font-bold mb-2 ">Lifeline Program</h3>
-              <p class="text-lg" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>Established in 1985</p>
-            </div>
-            <div class="p-8">
-              <p class="text-gray-900 mb-6 ">
-                {bodyVariations.intro} Learn more about the <a href="/lifeline-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline font-semibold">Lifeline program details</a> and how it can be combined with <a href="/acp-program" class="text-green-600 hover:underline">ACP benefits</a> for maximum savings.
-              </p>
-              <div class="space-y-4 mb-6 text-gray-900">
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">$9.25 monthly discount</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">Free smartphone included</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">Unlimited talk & text</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">Monthly data allowance</span>
-                </div>
-              </div>
-              <a href="/lifeline-program" style={`background: ${designDNA.colors.primary};`} class="inline-block text-white font-bold py-3 px-6 rounded-lg transition duration-300" onmouseover={`this.style.background='${designDNA.colors.secondary}';`} onmouseout={`this.style.background='${designDNA.colors.primary}';`}>
-                Learn More
-              </a>
-            </div>
-          </div>
-
-          <!-- ACP Program -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="bg-green-600 text-white p-6">
-              <h3 class="text-gray-900 text-3xl font-bold mb-2 ">ACP Program</h3>
-              <p class="text-green-100 text-lg">Affordable Connectivity Program</p>
-            </div>
-            <div class="p-8">
-              <p class="text-gray-900 mb-6 ">
-                The Affordable Connectivity Program (ACP) is a newer federal benefit that helps qualifying 
-                households afford internet service and connected devices. This program was created to 
-                bridge the digital divide.
-              </p>
-              <div class="space-y-4 mb-6 text-gray-900">
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">$30 monthly internet discount</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">One-time device discount</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">Can combine with Lifeline</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-green-500 mr-3 text-xl">✓</span>
-                  <span class="text-gray-900 font-semibold ">Higher income limits</span>
-                </div>
-              </div>
-              <a href="/acp-program" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-                Learn More
-              </a>
-            </div>
-          </div>
+    <!-- Main Content -->
+    <section class="py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        
+        <!-- Introduction -->
+        <div class="mb-12">
+          <p class="text-lg text-gray-700 mb-4">Multiple programs exist to help Americans access free phone service, each with unique benefits and requirements. Understanding your options helps you choose the best <strong>Free Government Phone</strong> program for your situation.</p>
+          <p class="text-gray-600 mb-4">From federal assistance programs to state-specific initiatives, qualifying households can access free smartphones, unlimited calling, and generous data allowances without monthly bills or activation fees.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Program Comparison -->
-    <section class="py-10 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Program Comparison
-        </h2>
-        <div class="overflow-x-auto">
-          <table class="w-full bg-white rounded-lg shadow-lg">
-            <thead style={`background: ${designDNA.colors.primary};`} class="text-white">
-              <tr>
-                <th class="p-4 text-left">Feature</th>
-                <th class="p-4 text-center">Lifeline</th>
-                <th class="p-4 text-center">ACP</th>
-                <th class="p-4 text-center">Combined</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-gray-200">
-                <td class="p-4 font-semibold text-gray-900">Monthly Discount</td>
-                <td class="p-4 text-center text-gray-900">$9.25</td>
-                <td class="p-4 text-center text-gray-900">$30</td>
-                <td class="p-4 text-center text-gray-900">$39.25</td>
-              </tr>
-              <tr class="border-b border-gray-200 bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900">Income Limit (135%)</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-              </tr>
-              <tr class="border-b border-gray-200">
-                <td class="p-4 font-semibold text-gray-900">Income Limit (200%)</td>
-                <td class="p-4 text-center text-gray-900">✗</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-              </tr>
-              <tr class="border-b border-gray-200 bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900">Free Smartphone</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✗</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-              </tr>
-              <tr class="border-b border-gray-200">
-                <td class="p-4 font-semibold text-gray-900">Device Discount</td>
-                <td class="p-4 text-center text-gray-900">✗</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900">Internet Service</td>
-                <td class="p-4 text-center text-gray-900">Limited</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-                <td class="p-4 text-center text-gray-900">✓</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Specialized Programs -->
-    <section class="py-10">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Free Government Phone Programs
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <!-- Tribal Programs -->
-          <div class="bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-lg p-6">
-            <div class="text-4xl mb-4 text-gray-900">🏛️</div>
-            <h3 class="text-gray-900 text-2xl font-bold mb-4 ">Tribal Programs</h3>
-            <p class="text-gray-900 mb-6 ">
-              Enhanced benefits for tribal communities with higher monthly discounts and 
-              specialized eligibility criteria for tribal lands.
-            </p>
-            <ul class="space-y-2 mb-6 text-gray-900">
-              <li>• $34.25 monthly discount (vs $9.25 standard)</li>
-              <li>• Tribal land qualification</li>
-              <li>• Specialized tribal programs</li>
-              <li>• Enhanced device benefits</li>
+        <!-- Federal Programs Section -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Major Federal Assistance Programs</h2>
+          <div class="bg-blue-50 rounded-xl p-6 mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Lifeline Program</h3>
+            <p class="text-gray-700 mb-3">America's longest-running phone assistance program provides monthly discounts on wireless service for qualifying low-income households. Participants receive free phones plus monthly service credits.</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Monthly service discount up to $9.25</li>
+              <li>Free smartphone with qualifying plans</li>
+              <li>Available in all 50 states and territories</li>
+              <li>Works with major wireless carriers</li>
             </ul>
-            <a href="/tribal-programs" class="inline-block bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">
-              Learn More
-            </a>
           </div>
-
-          <!-- State Programs -->
-          <div class="bg-gradient-to-br from-orange-600 to-red-600 text-white rounded-lg p-6">
-            <div class="text-4xl mb-4 text-gray-900">🗺️</div>
-            <h3 class="text-gray-900 text-2xl font-bold mb-4 ">State Programs</h3>
-            <p class="text-gray-900 mb-6 ">
-              Additional assistance programs offered by individual states to supplement 
-              federal benefits and provide enhanced local support.
-            </p>
-            <ul class="space-y-2 mb-6 text-gray-900">
-              <li>• State-specific benefits</li>
-              <li>• Additional discounts</li>
-              <li>• Local provider options</li>
-              <li>• Enhanced eligibility</li>
+          
+          <div class="bg-green-50 rounded-xl p-6 mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Affordable Connectivity Program (ACP)</h3>
+            <p class="text-gray-700 mb-3">This newer federal program offers enhanced benefits for internet and phone service, including higher monthly discounts and device subsidies for eligible participants.</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Monthly discount up to $30 on service</li>
+              <li>Additional $75 toward device purchases</li>
+              <li>Enhanced data allowances available</li>
+              <li>Combinable with Lifeline benefits</li>
             </ul>
-            <a href="/state-programs" class="inline-block bg-white text-orange-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">
-              Learn More
-            </a>
           </div>
+          
+          <p class="text-gray-600">Both programs serve different aspects of communication needs, and many households qualify for both simultaneously, maximizing their savings on phone service.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Program History -->
-    <section class="py-10 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Program History & Evolution
-        </h2>
-        <div class="max-w-4xl mx-auto">
-          <div class="space-y-4">
-            <div class="bg-white rounded-lg p-6 shadow-lg">
-              <h3 class="text-gray-900 text-xl font-bold mb-3 ">1985 - Lifeline Program Established</h3>
-              <p class="text-gray-900">
-                The Lifeline Program was created by the Federal Communications Commission (FCC) to ensure 
-                that low-income Americans have access to essential telephone service. Initially focused on 
-                landline service, it has evolved to include wireless and broadband services.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-lg">
-              <h3 class="text-gray-900 text-xl font-bold mb-3 ">2005 - Wireless Service Added</h3>
-              <p class="text-gray-900">
-                The program expanded to include wireless phone service, recognizing the growing importance 
-                of mobile communication in modern society. This change made the program more accessible 
-                and relevant to contemporary needs.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-lg">
-              <h3 class="text-gray-900 text-xl font-bold mb-3 ">2016 - Broadband Service Included</h3>
-              <p class="text-gray-900">
-                The FCC modernized the Lifeline Program to include broadband internet service, 
-                acknowledging that internet access is essential for education, employment, and 
-                civic participation in the digital age.
-              </p>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-lg">
-              <h3 class="text-gray-900 text-xl font-bold mb-3 ">2021 - ACP Program Launched</h3>
-              <p class="text-gray-900">
-                The Affordable Connectivity Program was established as part of the Infrastructure 
-                Investment and Jobs Act, providing enhanced benefits and expanding eligibility to 
-                help bridge the digital divide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits of Programs -->
-    <section class="py-10">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Impact & Benefits
-        </h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="text-center">
-            <div style={`background: ${designDNA.colors.primary}25;`} class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-900">
-              <span class="text-gray-900 text-2xl">📱</span>
-            </div>
-            <h3 class="text-gray-900 text-xl font-bold mb-3 ">Government Phone Access</h3>
-            <p class="text-gray-900">
-              Ensures all Americans can stay connected with family, emergency services, and essential communications.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-900">
-              <span class="text-gray-900 text-2xl">💻</span>
-            </div>
-            <h3 class="text-gray-900 text-xl font-bold mb-3 ">Digital Inclusion</h3>
-            <p class="text-gray-900">
-              Provides internet access for education, job searching, healthcare, and civic participation.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-900">
-              <span class="text-gray-900 text-2xl">💰</span>
-            </div>
-            <h3 class="text-gray-900 text-xl font-bold mb-3 ">Economic Relief</h3>
-            <p class="text-gray-900">
-              Saves qualifying households hundreds of dollars annually on communication expenses.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-10 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Program Questions
-        </h2>
-        <div class="max-w-3xl mx-auto space-y-4">
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-gray-900 text-lg font-bold mb-3 ">Can I receive both Lifeline and ACP benefits?</h3>
-            <p class="text-gray-900">
-              Yes! You can combine both programs for maximum savings. Many providers offer bundled plans 
-              that maximize your government assistance benefits.
-            </p>
-          </div>
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-gray-900 text-lg font-bold mb-3 ">How long do these programs last?</h3>
-            <p class="text-gray-900">
-              Both programs are ongoing federal initiatives. However, you must recertify your eligibility 
-              annually to continue receiving benefits.
-            </p>
-          </div>
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-gray-900 text-lg font-bold mb-3 ">What's the difference between Lifeline and ACP?</h3>
-            <p class="text-gray-900">
-              Lifeline focuses on basic phone service with a $9.25 discount, while ACP provides a larger 
-              $30 discount for internet service and includes device benefits.
-            </p>
-          </div>
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-gray-900 text-lg font-bold mb-3 ">Are these programs available in all states?</h3>
-            <p class="text-gray-900">
-              Yes, both Lifeline and ACP are available nationwide. Some states also offer additional 
-              programs to supplement federal benefits.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section style={`background: ${designDNA.colors.primary};`} class="text-white py-10">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold mb-6 ">
-          Ready to Apply for Benefits?
-        </h2>
-        <p class="text-gray-900 text-xl mb-8 max-w-2xl mx-auto">
-          Check your eligibility for these government programs and start saving on your 
-          phone and internet service today. The application process is quick and easy.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/apply" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 inline-block text-center no-underline">
-            Apply Now
-          </a>
-          <a href="/eligibility" style={`border-color: white;`} class="bg-transparent border-2 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 inline-block text-center no-underline" onmouseover={`this.style.background='white'; this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.background='transparent'; this.style.color='white';">
-            Check Eligibility
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Related Resources with Internal Links -->
-    <section class="py-10 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-3xl md:text-4xl font-bold text-center mb-8 ">
-          Related Resources
-        </h2>
-        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <a href="/lifeline-program" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
-            <div class="text-3xl mb-4" style={`color: ${designDNA.colors.primary};`} aria-label="Phone icon">📱</div>
-            <h3 class="text-gray-900 text-lg font-bold mb-2 ">Lifeline Program Guide</h3>
-            <p class="text-gray-900 text-sm">
-              Learn about the federal Lifeline program, eligibility requirements, and how to apply for monthly phone service discounts.
-            </p>
-          </a>
-          <a href="/acp-program" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
-            <div class="text-green-600 text-3xl mb-4" aria-label="Computer icon">💻</div>
-            <h3 class="text-gray-900 text-lg font-bold mb-2 ">ACP Program Guide</h3>
-            <p class="text-gray-900 text-sm">
-              Discover how the Affordable Connectivity Program can help you access internet service and connected devices.
-            </p>
-          </a>
-          <a href="/eligibility" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
-            <div class="text-purple-600 text-3xl mb-4" aria-label="Checkmark icon">✅</div>
-            <h3 class="text-gray-900 text-lg font-bold mb-2 ">Check Your Eligibility</h3>
-            <p class="text-gray-900 text-sm">
-              Use our quick eligibility checker to see if you qualify for free government phone service in minutes.
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Related Content Section -->
-    <RelatedContent currentPage="home" />
-  </main>
-  
-  {/* GovernmentService Structured Data for Programs */}
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "GovernmentService",
-    "name": "Free Government Phone Programs",
-    "description": "Federal communication assistance programs including Lifeline and ACP providing free phone and internet service to eligible households",
-    "serviceOperator": {
-      "@type": "GovernmentOrganization",
-      "name": "Federal Communications Commission",
-      "url": "https://www.fcc.gov"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "United States"
-    },
-    "audience": {
-      "@type": "Audience",
-      "audienceType": "Low-income households"
-    },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": `${SITE_URL}/apply`,
-      "serviceType": "Online Application"
-    },
-    "serviceType": "Communication Assistance",
-    "category": "Government Benefits"
-  })} />
-</Layout> 
+        <!-- State Programs Section -->
+        <div class="mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">State-Level Phone Assistance Options</h2>
+          <p class="text-gray-700 mb-4">Beyond federal programs, individual states often provide additional phone assistance through partnerships with local organizations and telecommunications companies. These programs supplement federal benefits.</p>
+          
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="border rounded-lg p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">California LifeLine</h4>
+              <p class="text-sm text-gray-600">Additional state discounts on top of federal Lifeline benefits,

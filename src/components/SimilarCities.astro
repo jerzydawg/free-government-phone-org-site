@@ -1,5 +1,6 @@
 ---
 import { getDesignDNA, getDomain } from '../lib/site-config';
+import { getReadableTextColor, getReadableBackgroundColor } from '../lib/color-utils';
 
 export interface Props {
   currentCityName: string;
@@ -16,6 +17,10 @@ export interface Props {
 const { currentCityName, currentStateAbbr, currentPopulation, similarCities } = Astro.props;
 const designDNA = getDesignDNA();
 const domain = getDomain();
+
+// Ensure readable colors for text on light backgrounds
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readablePrimaryBg = getReadableBackgroundColor(designDNA.colors.primary, 0.15);
 
 // Import slug utility
 import { createCitySlug } from '../lib/slug-utils.js';
@@ -63,7 +68,7 @@ if (filteredCities.length === 0) {
                 </h3>
                 <p class="text-sm style={`color: ${designDNA.colors.text};`}" style={`color: ${designDNA.colors.text};`}>{city.state_name}</p>
               </div>
-              <span class="text-xs font-bold px-3 py-1 rounded-full" style={`background: ${designDNA.colors.primary}15; color: ${designDNA.colors.primary};`}>
+              <span class="text-xs font-bold px-3 py-1 rounded-full" style={`background: ${readablePrimaryBg}; color: ${readablePrimaryColor};`}>
                 {city.state_abbr}
               </span>
             </div>
@@ -78,17 +83,17 @@ if (filteredCities.length === 0) {
             )}
             
             <div class="flex items-center justify-between">
-              <p class="text-sm font-medium view-programs" style={`color: ${designDNA.colors.primary};`}>
+              <p class="text-sm font-medium view-programs" style={`color: ${readablePrimaryColor};`}>
                 {viewProgramsText}
               </p>
-              <svg class="w-5 h-5 group-hover:opacity-80 transition-colors arrow-icon" style={`color: ${designDNA.colors.text};`} fill="none" stroke="currentColor" viewBox="0 0 24 24" style={`color: ${designDNA.colors.primary};`}>
+              <svg class="w-5 h-5 group-hover:opacity-80 transition-colors arrow-icon" style={`color: ${readablePrimaryColor};`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </div>
           </a>
         ))}
       </div>
-      <style define:vars={{ primaryColor: designDNA.colors.primary }}>
+      <style define:vars={{ primaryColor: readablePrimaryColor }}>
         .similar-city-card:hover { border-color: var(--primaryColor); }
         .similar-city-card:hover .city-name { color: var(--primaryColor); }
       </style>

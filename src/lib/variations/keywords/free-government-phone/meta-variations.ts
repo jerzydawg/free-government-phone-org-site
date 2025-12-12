@@ -657,9 +657,35 @@ function ensureLengthOptimal(text: string, min: number, max: number, context?: s
   if (text.length < min) {
     const needed = min - text.length;
     
-    // Try to use context if provided
-    if (context && needed <= context.length) {
-      return text + ' ' + context.substring(0, needed - 1);
+    // Check if context would create duplication (e.g., "Free Government Phone" already in text)
+    if (context) {
+      const contextLower = context.toLowerCase();
+      const textLower = text.toLowerCase();
+      
+      // If context is already mentioned in text, don't add it again
+      if (textLower.includes(contextLower)) {
+        // Use generic padding instead
+        if (max === 60) {
+          const titlePaddings = [' | Apply Today', ' | Get Started', ' | Learn More', ' | Check Now'];
+          const padding = titlePaddings[text.length % titlePaddings.length];
+          if (text.length + padding.length <= max) {
+            return text + padding;
+          }
+        } else if (max === 160) {
+          const descPaddings = [' Learn more about eligibility and benefits.', ' Get started with your application today.', ' Apply now for free phone service.'];
+          const padding = descPaddings[text.length % descPaddings.length];
+          if (text.length + padding.length <= max) {
+            return text + padding;
+          }
+        }
+        // Fallback
+        return text + ' | 2025';
+      }
+      
+      // Safe to add context if it doesn't duplicate
+      if (needed <= context.length + 1) {
+        return text + ' ' + context.substring(0, needed - 1);
+      }
     }
     
     // Add generic padding based on type

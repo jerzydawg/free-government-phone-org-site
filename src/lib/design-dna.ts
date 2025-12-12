@@ -402,12 +402,67 @@ function generateLightColor(hex: string): string {
   return `rgba(${r}, ${g}, ${b}, 0.1)`;
 }
 
+// Helper to check if a color is light (for readability)
+function isLightColor(hex: string): boolean {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  // Calculate relative luminance
+  const [rs, gs, bs] = [r, g, b].map((val) => {
+    val = val / 255;
+    return val <= 0.03928 ? val / 12.92 : Math.pow((val + 0.055) / 1.055, 2.4);
+  });
+  const luminance = 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+  return luminance > 0.5;
+}
+
+// Helper to darken a color for readable text on light backgrounds
+// Uses 0.25 luminance for better readability (more aggressive darkening)
+function ensureReadableColor(hex: string, minLuminance: number = 0.25): string {
+  const rgb = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  if (!rgb) return hex;
+  
+  let r = parseInt(rgb[1], 16);
+  let g = parseInt(rgb[2], 16);
+  let b = parseInt(rgb[3], 16);
+  
+  // Calculate luminance
+  const [rs, gs, bs] = [r, g, b].map((val) => {
+    val = val / 255;
+    return val <= 0.03928 ? val / 12.92 : Math.pow((val + 0.055) / 1.055, 2.4);
+  });
+  let luminance = 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+  
+  // If already dark enough, return as-is
+  if (luminance <= minLuminance) {
+    return hex;
+  }
+  
+  // Darken the color
+  const ratio = minLuminance / luminance;
+  const darkenFactor = Math.pow(ratio, 1.5);
+  
+  r = Math.max(0, Math.floor(r * darkenFactor));
+  g = Math.max(0, Math.floor(g * darkenFactor));
+  b = Math.max(0, Math.floor(b * darkenFactor));
+  
+  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+}
+
 export function generateCSSVariables(dna: DesignDNA): string {
+  // Ensure primary color is readable for text use (aggressive darkening for readability)
+  const readablePrimary = ensureReadableColor(dna.colors.primary, 0.25);
+  const readableSecondary = ensureReadableColor(dna.colors.secondary, 0.25);
+  const readableAccent = ensureReadableColor(dna.colors.accent, 0.25);
+  
   let css = `
     --color-primary: ${dna.colors.primary};
-    --color-primary-light: ${generateLightColor(dna.colors.primary)};
+    --color-primary-readable: ${readablePrimary};
     --color-secondary: ${dna.colors.secondary};
+    --color-secondary-readable: ${readableSecondary};
     --color-accent: ${dna.colors.accent};
+    --color-accent-readable: ${readableAccent};
+    --color-primary-light: ${generateLightColor(dna.colors.primary)};
     --color-background: ${dna.colors.background};
     --color-text: ${dna.colors.text};
     --color-text-on-primary: ${dna.colors.textOnPrimary};

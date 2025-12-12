@@ -7,6 +7,7 @@ import { getDesignDNA, getSiteName, getKeyword, getDomain } from '../../lib/site
 import { supabase } from '../../lib/supabase';
 import { createCitySlug } from '../../lib/slug-utils.js';
 import { getMostPopularCitiesText, getExploreAllStatesText } from '../../lib/microcopy-variations';
+import { getReadableTextColor, getReadableBackgroundColor } from '../../lib/color-utils';
 
 const designDNA = getDesignDNA();
 const siteName = getSiteName();
@@ -14,6 +15,10 @@ const keyword = getKeyword();
 const domain = getDomain();
 const mostPopularCitiesText = getMostPopularCitiesText(domain);
 const exploreAllCitiesText = getExploreAllStatesText(domain);
+
+// Ensure readable colors - prevent light colors from being unreadable
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readablePrimaryBg = getReadableBackgroundColor(designDNA.colors.primary, 0.15);
 
 // Fetch top 20 cities by population
 let popularCities: Array<{name: string; population: number; state_abbr: string}> = [];
@@ -47,10 +52,10 @@ if (supabase) {
   <section class="py-12 md:py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-8 md:mb-12">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4" style={`color: ${designDNA.colors.text};`}>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900" style={`color: #111827 !important;`}>
           {mostPopularCitiesText}
         </h2>
-        <p class="text-sm md:text-base max-w-2xl mx-auto px-4" style={`color: ${designDNA.colors.text};`}>
+        <p class="text-sm md:text-base max-w-2xl mx-auto px-4 text-gray-700" style={`color: #374151 !important;`}>
           Residents in these cities are accessing {keyword.toLowerCase()} through {siteName}.
         </p>
       </div>
@@ -62,15 +67,15 @@ if (supabase) {
             class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200"
             style={`--hover-border-color: ${designDNA.colors.primary};`}
           >
-            <div class="flex items-center justify-between mb-2" style={`color: ${designDNA.colors.text};`}>
-              <h3 class="font-semibold group-hover:opacity-80 transition-colors truncate" style={`color: ${designDNA.colors.text};`}>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-semibold group-hover:opacity-80 transition-colors truncate text-gray-900" style={`color: #1F2937 !important;`}>
                 {city.name}
               </h3>
-              <span class="text-xs font-bold px-2 py-1 rounded" style={`background-color: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>
+              <span class="text-xs font-bold px-2 py-1 rounded" style={`background-color: ${readablePrimaryBg} !important; color: ${readablePrimaryColor} !important;`}>
                 {city.state_abbr}
               </span>
             </div>
-            <p class="text-sm" style={`color: ${designDNA.colors.text};`}>
+            <p class="text-sm text-gray-700" style={`color: #374151 !important;`}>
               {city.population?.toLocaleString()} residents
             </p>
           </a>
@@ -78,7 +83,7 @@ if (supabase) {
       </div>
       
       <div class="text-center mt-8">
-        <a href="/states/" class="font-semibold hover:opacity-80" style={`color: ${designDNA.colors.primary};`}>
+        <a href="/states/" class="font-semibold hover:opacity-80" style={`color: ${readablePrimaryColor} !important;`}>
           {exploreAllCitiesText}
         </a>
       </div>

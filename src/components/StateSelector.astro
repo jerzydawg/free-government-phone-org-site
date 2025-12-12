@@ -104,8 +104,8 @@ const displayStates = states || fallbackStates;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Mobile Header with Search -->
     <div class="md:hidden mb-8" style={`color: ${designDNA.colors.text};`}>
-      <h2 class="text-2xl font-bold mb-3 text-center" style={`color: ${designDNA.colors.text};`}>
-        Find Your <span style={`color: ${designDNA.colors.primary};`}>State</span>
+        <h2 class="text-2xl font-bold mb-3 text-center text-gray-900" style={`color: #111827 !important;`}>
+        Find Your <span style={`color: ${readablePrimaryColor} !important;`}>State</span>
       </h2>
       <p class="text-base mb-6 text-center" style={`color: ${designDNA.colors.text};`}>
         {stateSelectorSearch}
@@ -128,18 +128,18 @@ const displayStates = states || fallbackStates;
       <div class="mb-4" style={`color: ${designDNA.colors.text};`}>
         <p class="text-xs mb-2" style={`color: ${designDNA.colors.text};`}>{popularStates}</p>
         <div class="flex flex-wrap gap-2">
-          <a href="/ca" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>California</a>
-          <a href="/tx" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>Texas</a>
-          <a href="/fl" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>Florida</a>
-          <a href="/ny" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>New York</a>
+          <a href="/ca" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${readablePrimaryBg} !important; color: ${readablePrimaryColor} !important;`}>California</a>
+          <a href="/tx" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${readablePrimaryBg} !important; color: ${readablePrimaryColor} !important;`}>Texas</a>
+          <a href="/fl" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${readablePrimaryBg} !important; color: ${readablePrimaryColor} !important;`}>Florida</a>
+          <a href="/ny" class="px-3 py-1.5 rounded-full text-sm font-medium" style={`background-color: ${readablePrimaryBg} !important; color: ${readablePrimaryColor} !important;`}>New York</a>
         </div>
       </div>
     </div>
 
     <!-- Desktop Header -->
     <div class="hidden md:block text-center mb-16">
-      <h2 class="text-4xl lg:text-5xl font-bold mb-6" style={`color: ${designDNA.colors.text};`}>
-        Find Your <span style={`color: ${designDNA.colors.primary};`}>State</span> and <span style={`color: ${designDNA.colors.accent};`}>City</span>
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900" style={`color: #111827 !important;`}>
+        Find Your <span style={`color: ${readablePrimaryColor} !important;`}>State</span> and <span style={`color: ${readableAccentColor} !important;`}>City</span>
       </h2>
       <p class="text-xl max-w-3xl mx-auto" style={`color: ${designDNA.colors.text};`}>
         Select your state to see available cities and check your eligibility for free phone service.
@@ -182,7 +182,7 @@ const displayStates = states || fallbackStates;
               class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-[var(--color-primary)]"
             >
               <div class="text-center">
-                <div class="text-2xl font-bold group-hover:text-[var(--color-primary)] transition-colors" style={`color: ${designDNA.colors.text};`}>
+                <div class="text-2xl font-bold transition-colors text-gray-900" style={`color: #111827 !important;`} onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout={`this.style.color='#111827';`}>
                   {state.abbreviation}
                 </div>
                 <div class="text-sm mt-1" style={`color: ${designDNA.colors.text};`}>

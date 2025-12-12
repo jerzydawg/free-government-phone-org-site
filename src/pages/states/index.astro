@@ -1,286 +1,213 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import AboveFoldCTA from '../../components/AboveFoldCTA.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import RelatedContent from '../../components/RelatedContent.astro';
-import { getSiteURL, getDesignDNA } from '../../lib/site-config';
+import { getSiteName, getKeyword, getDomain, getSiteURL, getDesignDNA } from '../../lib/site-config';
+import { getReadableTextColor } from '../../lib/color-utils';
 
-export const prerender = true;
-
-const SITE_URL = getSiteURL();
+const siteName = getSiteName();
+const keyword = getKeyword();
+const domain = getDomain();
+const siteURL = getSiteURL();
 const designDNA = getDesignDNA();
-const canonicalURL = `${SITE_URL}/states/`;
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
-// All 50 states + DC + territories organized by region
-const regionalStates = {
-  'Northeast': [
-    { name: 'Connecticut', abbr: 'CT', cities: 169 },
-    { name: 'Delaware', abbr: 'DE', cities: 57 },
-    { name: 'Maine', abbr: 'ME', cities: 488 },
-    { name: 'Maryland', abbr: 'MD', cities: 157 },
-    { name: 'Massachusetts', abbr: 'MA', cities: 351 },
-    { name: 'New Hampshire', abbr: 'NH', cities: 234 },
-    { name: 'New Jersey', abbr: 'NJ', cities: 565 },
-    { name: 'New York', abbr: 'NY', cities: 1522 },
-    { name: 'Pennsylvania', abbr: 'PA', cities: 2561 },
-    { name: 'Rhode Island', abbr: 'RI', cities: 39 },
-    { name: 'Vermont', abbr: 'VT', cities: 255 }
-  ],
-  'Southeast': [
-    { name: 'Alabama', abbr: 'AL', cities: 461 },
-    { name: 'Arkansas', abbr: 'AR', cities: 501 },
-    { name: 'Florida', abbr: 'FL', cities: 411 },
-    { name: 'Georgia', abbr: 'GA', cities: 535 },
-    { name: 'Kentucky', abbr: 'KY', cities: 939 },
-    { name: 'Louisiana', abbr: 'LA', cities: 305 },
-    { name: 'Mississippi', abbr: 'MS', cities: 298 },
-    { name: 'North Carolina', abbr: 'NC', cities: 553 },
-    { name: 'South Carolina', abbr: 'SC', cities: 270 },
-    { name: 'Tennessee', abbr: 'TN', cities: 346 },
-    { name: 'Virginia', abbr: 'VA', cities: 229 },
-    { name: 'West Virginia', abbr: 'WV', cities: 232 },
-    { name: 'District of Columbia', abbr: 'DC', cities: 1 }
-  ],
-  'Midwest': [
-    { name: 'Illinois', abbr: 'IL', cities: 1299 },
-    { name: 'Indiana', abbr: 'IN', cities: 569 },
-    { name: 'Iowa', abbr: 'IA', cities: 948 },
-    { name: 'Kansas', abbr: 'KS', cities: 627 },
-    { name: 'Michigan', abbr: 'MI', cities: 680 },
-    { name: 'Minnesota', abbr: 'MN', cities: 854 },
-    { name: 'Missouri', abbr: 'MO', cities: 952 },
-    { name: 'Nebraska', abbr: 'NE', cities: 530 },
-    { name: 'North Dakota', abbr: 'ND', cities: 357 },
-    { name: 'Ohio', abbr: 'OH', cities: 938 },
-    { name: 'South Dakota', abbr: 'SD', cities: 311 },
-    { name: 'Wisconsin', abbr: 'WI', cities: 601 }
-  ],
-  'Southwest': [
-    { name: 'Arizona', abbr: 'AZ', cities: 91 },
-    { name: 'New Mexico', abbr: 'NM', cities: 106 },
-    { name: 'Oklahoma', abbr: 'OK', cities: 594 },
-    { name: 'Texas', abbr: 'TX', cities: 1216 }
-  ],
-  'West': [
-    { name: 'Alaska', abbr: 'AK', cities: 149 },
-    { name: 'California', abbr: 'CA', cities: 482 },
-    { name: 'Colorado', abbr: 'CO', cities: 272 },
-    { name: 'Hawaii', abbr: 'HI', cities: 151 },
-    { name: 'Idaho', abbr: 'ID', cities: 201 },
-    { name: 'Montana', abbr: 'MT', cities: 129 },
-    { name: 'Nevada', abbr: 'NV', cities: 19 },
-    { name: 'Oregon', abbr: 'OR', cities: 242 },
-    { name: 'Utah', abbr: 'UT', cities: 245 },
-    { name: 'Washington', abbr: 'WA', cities: 281 },
-    { name: 'Wyoming', abbr: 'WY', cities: 99 }
-  ]
-};
+const title = `${keyword} by State - Find Local Programs | ${siteName}`;
+const description = `Discover free government phone programs available in your state. Find local Lifeline providers, state-specific benefits, and application centers near you.`;
 
-const totalStates = Object.values(regionalStates).flat().length;
-const totalCities = Object.values(regionalStates).flat().reduce((sum, s) => sum + s.cities, 0);
+const states = [
+  { name: 'Alabama', code: 'AL', slug: 'alabama' },
+  { name: 'Alaska', code: 'AK', slug: 'alaska' },
+  { name: 'Arizona', code: 'AZ', slug: 'arizona' },
+  { name: 'Arkansas', code: 'AR', slug: 'arkansas' },
+  { name: 'California', code: 'CA', slug: 'california' },
+  { name: 'Colorado', code: 'CO', slug: 'colorado' },
+  { name: 'Connecticut', code: 'CT', slug: 'connecticut' },
+  { name: 'Delaware', code: 'DE', slug: 'delaware' },
+  { name: 'Florida', code: 'FL', slug: 'florida' },
+  { name: 'Georgia', code: 'GA', slug: 'georgia' },
+  { name: 'Hawaii', code: 'HI', slug: 'hawaii' },
+  { name: 'Idaho', code: 'ID', slug: 'idaho' },
+  { name: 'Illinois', code: 'IL', slug: 'illinois' },
+  { name: 'Indiana', code: 'IN', slug: 'indiana' },
+  { name: 'Iowa', code: 'IA', slug: 'iowa' },
+  { name: 'Kansas', code: 'KS', slug: 'kansas' },
+  { name: 'Kentucky', code: 'KY', slug: 'kentucky' },
+  { name: 'Louisiana', code: 'LA', slug: 'louisiana' },
+  { name: 'Maine', code: 'ME', slug: 'maine' },
+  { name: 'Maryland', code: 'MD', slug: 'maryland' },
+  { name: 'Massachusetts', code: 'MA', slug: 'massachusetts' },
+  { name: 'Michigan', code: 'MI', slug: 'michigan' },
+  { name: 'Minnesota', code: 'MN', slug: 'minnesota' },
+  { name: 'Mississippi', code: 'MS', slug: 'mississippi' },
+  { name: 'Missouri', code: 'MO', slug: 'missouri' },
+  { name: 'Montana', code: 'MT', slug: 'montana' },
+  { name: 'Nebraska', code: 'NE', slug: 'nebraska' },
+  { name: 'Nevada', code: 'NV', slug: 'nevada' },
+  { name: 'New Hampshire', code: 'NH', slug: 'new-hampshire' },
+  { name: 'New Jersey', code: 'NJ', slug: 'new-jersey' },
+  { name: 'New Mexico', code: 'NM', slug: 'new-mexico' },
+  { name: 'New York', code: 'NY', slug: 'new-york' },
+  { name: 'North Carolina', code: 'NC', slug: 'north-carolina' },
+  { name: 'North Dakota', code: 'ND', slug: 'north-dakota' },
+  { name: 'Ohio', code: 'OH', slug: 'ohio' },
+  { name: 'Oklahoma', code: 'OK', slug: 'oklahoma' },
+  { name: 'Oregon', code: 'OR', slug: 'oregon' },
+  { name: 'Pennsylvania', code: 'PA', slug: 'pennsylvania' },
+  { name: 'Rhode Island', code: 'RI', slug: 'rhode-island' },
+  { name: 'South Carolina', code: 'SC', slug: 'south-carolina' },
+  { name: 'South Dakota', code: 'SD', slug: 'south-dakota' },
+  { name: 'Tennessee', code: 'TN', slug: 'tennessee' },
+  { name: 'Texas', code: 'TX', slug: 'texas' },
+  { name: 'Utah', code: 'UT', slug: 'utah' },
+  { name: 'Vermont', code: 'VT', slug: 'vermont' },
+  { name: 'Virginia', code: 'VA', slug: 'virginia' },
+  { name: 'Washington', code: 'WA', slug: 'washington' },
+  { name: 'West Virginia', code: 'WV', slug: 'west-virginia' },
+  { name: 'Wisconsin', code: 'WI', slug: 'wisconsin' },
+  { name: 'Wyoming', code: 'WY', slug: 'wyoming' }
+];
 
-const title = "Free Government Phone by State | All 50 States + DC";
-const description = `Find free government phone programs in all ${totalStates} US states. Browse ${totalCities.toLocaleString()}+ cities with Lifeline and ACP coverage.`;
-
-const structuredData = {
+const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Free Government Phone Programs by State",
-  "description": description,
-  "url": `${SITE_URL}/states/`,
-  "numberOfItems": totalStates,
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": totalStates,
-    "itemListElement": Object.values(regionalStates).flat().map((state, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": state.name,
-      "url": `${SITE_URL}/${state.abbr.toLowerCase()}/`
-    }))
-  }
-};
-
-const breadcrumbData = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": `${SITE_URL}/`
+      "@type": "WebPage",
+      "@id": `${siteURL}/states/`,
+      "url": `${siteURL}/states/`,
+      "name": title,
+      "description": description,
+      "isPartOf": {
+        "@id": `${siteURL}/#website`
+      },
+      "breadcrumb": {
+        "@id": `${siteURL}/states/#breadcrumb`
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": [`${siteURL}/states/`]
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "All States",
-      "item": `${SITE_URL}/states/`
+      "@type": "BreadcrumbList",
+      "@id": `${siteURL}/states/#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": siteURL
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "By State"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Locate Free Phone Programs Across All 50 States",
+      "description": "Navigate our complete directory of state-specific free phone programs and find local providers offering Lifeline services in your area.",
+      "author": {
+        "@type": "Organization",
+        "name": siteName
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": siteName
+      },
+      "datePublished": "2025-12-12",
+      "dateModified": "2025-12-12",
+      "mainEntityOfPage": `${siteURL}/states/`
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do free government phone programs vary between different states?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While Lifeline is a national program with consistent core benefits, each state may have different participating providers and additional local assistance options. Some states offer enhanced programs or have specific application centers to help residents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find participating providers in my specific state?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select your state from our directory to view all participating Lifeline providers operating in your area. Each state page includes provider contact information, service areas, and available phone options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my free phone service if I move to another state?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, your Lifeline service can typically transfer with you when moving between states. Contact your provider before relocating to ensure continued service and verify they operate in your new state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there special state programs beyond federal Lifeline benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some states offer additional assistance programs or partner with local organizations to provide extra benefits. Check your state's specific page to learn about any enhanced programs or local resources available."
+          }
+        }
+      ]
     }
   ]
 };
-
-const regionColors: Record<string, string> = {
-  'Northeast': `linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary})`,
-  'Southeast': 'linear-gradient(135deg, #10B981, #059669)',
-  'Midwest': 'linear-gradient(135deg, #F59E0B, #D97706)',
-  'Southwest': 'linear-gradient(135deg, #F97316, #EA580C)',
-  'West': 'linear-gradient(135deg, #9333EA, #7E22CE)'
-};
-
-const regionIcons: Record<string, string> = {
-  'Northeast': '🏙️',
-  'Southeast': '🌴',
-  'Midwest': '🌾',
-  'Southwest': '🏜️',
-  'West': '🏔️'
-};
 ---
 
-<Layout title={title} description={description} canonicalURL={canonicalURL}>
-  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
-  
-  <main class="min-h-screen bg-gray-50">
-    <!-- Breadcrumbs -->
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'All States' }
-    ]} />
-    
+<Layout title={title} description={description} jsonLd={jsonLd}>
+  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+      <div class="container mx-auto px-4 py-3">
+        <nav class="text-sm">
+          <ol class="flex items-center space-x-2">
+            <li><a href="/" class="hover:underline" style={`color: ${readablePrimaryColor} !important;`}>Home</a></li>
+            <li class="text-gray-500">/</li>
+            <li class="text-gray-700">By State</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
     <!-- Hero Section -->
-    <section style={`background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});`} class="text-white py-10">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-gray-900 text-4xl md:text-5xl font-bold mb-6 ">
-            Free Government Phone Programs by State
-          </h1>
-          <p class="text-gray-900 text-xl md:text-2xl mb-8" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
-            Browse all {totalStates} states with {totalCities.toLocaleString()}+ cities covered
-          </p>
-
-          <!-- CTA Above Fold -->
-          <div class="mb-8 text-gray-900">
-            <AboveFoldCTA context="states-index" />
-          </div>
-
-          <div class="flex flex-wrap justify-center gap-4">
-            <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-              <div class="text-3xl font-bold">{totalStates}</div>
-              <div class="text-sm" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>States</div>
-            </div>
-            <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-              <div class="text-3xl font-bold">{totalCities.toLocaleString()}+</div>
-              <div class="text-sm" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>Cities Covered</div>
-            </div>
-            <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-              <div class="text-3xl font-bold">100%</div>
-              <div class="text-sm" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>Free Service</div>
-            </div>
-          </div>
-        </div>
+    <section class="py-12 md:py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Free Government Phone
+        </h1>
+        <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+          Find free phone programs available in your state. Browse our complete directory of local providers and discover state-specific benefits.
+        </p>
       </div>
     </section>
 
-    <!-- Quick Jump Navigation -->
-    <section class="bg-white border-b sticky top-16 z-30">
-      <div class="container mx-auto px-4 py-4">
-        <div class="flex flex-wrap justify-center gap-2">
-          {Object.keys(regionalStates).map((region) => (
+    <!-- States Grid -->
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">States Coverage</h2>
+        <p class="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+          Available in every state. Choose your location to get started.
+        </p>
+        
+        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-3 mb-8">
+          {states.map((state) => (
             <a 
-              href={`#${region.toLowerCase().replace(' ', '-')}`}
-              style={`background: #F3F4F6;`} class="px-4 py-2 rounded-full text-sm font-medium text-gray-900 transition-colors" onmouseover={`this.style.background='${designDNA.colors.primary}25'; this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.background='#F3F4F6'; this.style.color='inherit';"
+              href={`/${state.code.toLowerCase()}/`}
+              class="state-btn group flex flex-col items-center justify-center p-4 bg-white rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-[var(--color-primary)]"
+              title={`${keyword} in ${state.name}`}
             >
-              {regionIcons[region]} {region}
+              <span class="font-bold text-lg group-hover:scale-110 transition-transform text-gray-900" style={`color: #111827 !important;`}>{state.code}</span>
             </a>
           ))}
         </div>
       </div>
     </section>
-
-    <!-- States by Region -->
-    <div class="container mx-auto px-4 py-8">
-      {Object.entries(regionalStates).map(([region, states]) => (
-        <section id={region.toLowerCase().replace(' ', '-')} class="mb-16 scroll-mt-32">
-          <div class="flex items-center mb-8 text-gray-900">
-            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white text-2xl mr-4" style={region === 'Northeast' ? `background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});` : `background: linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to));`}>
-              {regionIcons[region]}
-            </div>
-            <div>
-              <h2 class="text-gray-900 text-3xl font-bold ">{region}</h2>
-              <p class="text-gray-900">{states.length} states • {states.reduce((sum, s) => sum + s.cities, 0).toLocaleString()} cities</p>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {states.map((state) => (
-              <a 
-                href={`/${state.abbr.toLowerCase()}/`}
-                style={`border-color: #E5E7EB;`} class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300 border" onmouseover={`this.style.borderColor='${designDNA.colors.primary}80';`} onmouseout="this.style.borderColor='#E5E7EB';"
-              >
-                <div class="flex items-start justify-between mb-3 text-gray-900">
-                  <div class={`w-12 h-12 rounded-lg bg-gradient-to-r ${regionColors[region]} flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform`}>
-                    {state.abbr}
-                  </div>
-                  <svg class="w-5 h-5 text-gray-900 transition-colors" style={`color: inherit;`} onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='inherit';" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-                <h3 class="text-gray-900 font-semibold transition-colors mb-1" style={`color: inherit;`} onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='inherit';">
-                  {state.name}
-                </h3>
-                <p class="text-gray-900 text-sm ">
-                  {state.cities.toLocaleString()} cities
-                </p>
-              </a>
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
-
-    <!-- CTA Section -->
-    <section style={`background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});`} class="text-white py-10">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-gray-900 text-3xl font-bold mb-6 ">Ready to Get Your Free Government Phone?</h2>
-        <p class="text-gray-900 text-xl mb-8 max-w-2xl mx-auto" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
-          Government phone programs are available in all 50 states. Check your eligibility today!
-        </p>
-        <div class="flex justify-center">
-          <a href="/apply" class="block md:inline-block w-full md:w-auto max-w-md md:max-w-none mx-auto py-4 px-10 text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition-all duration-300" style={`background: linear-gradient(135deg, ${designDNA.colors.accent} 0%, ${designDNA.colors.accentDark || designDNA.colors.accent} 100%); color: white;`}>
-            Apply Now
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Related Content Section -->
-    <RelatedContent currentPage="home" />
-    
-    <!-- Additional Internal Links -->
-    <section class="py-10 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-gray-900 text-2xl font-bold text-center mb-6">Quick Links</h2>
-        <div class="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-          <a href="/programs" class="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition text-center">
-            <h3 class="text-gray-900 font-semibold mb-2">All Programs</h3>
-            <p class="text-gray-900 text-sm">Lifeline & ACP</p>
-          </a>
-          <a href="/eligibility" class="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition text-center">
-            <h3 class="text-gray-900 font-semibold mb-2">Check Eligibility</h3>
-            <p class="text-gray-900 text-sm">See if you qualify</p>
-          </a>
-          <a href="/providers" class="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition text-center">
-            <h3 class="text-gray-900 font-semibold mb-2">Find Providers</h3>
-            <p class="text-gray-900 text-sm">Compare options</p>
-          </a>
-          <a href="/faq" class="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition text-center">
-            <h3 class="text-gray-900 font-semibold mb-2">FAQ</h3>
-            <p class="text-gray-900 text-sm">Common questions</p>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 </Layout>
-

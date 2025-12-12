@@ -5,12 +5,17 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import { getSiteURL, getSiteName, getDomain, getKeywordId, getDesignDNA } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations';
+import { getReadableTextColor, getReadableBackgroundColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const SITE_NAME = getSiteName();
 const domain = getDomain();
 const keywordId = getKeywordId(); // Already has fallback in getKeywordId() function
 const designDNA = getDesignDNA();
+
+// Ensure readable colors for text on light backgrounds
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readablePrimaryBg = getReadableBackgroundColor(designDNA.colors.primary, 0.15);
 
 // Load keyword-specific variations with comprehensive error handling
 let metaContent = { title: 'Eligibility Requirements', description: 'Check if you qualify' };
@@ -107,12 +112,12 @@ const canonical = `${SITE_URL}/eligibility`;
         <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <!-- Income-Based Qualification -->
           <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="text-4xl mb-4 text-gray-900" style={`color: ${designDNA.colors.primary};`}>💰</div>
+            <div class="text-4xl mb-4 text-gray-900" style={`color: ${readablePrimaryColor};`}>💰</div>
             <h3 class="text-gray-900 text-2xl font-bold mb-4 ">Income-Based Qualification</h3>
             <p class="text-gray-900 mb-6 ">
               Your household income must be at or below 135% of the Federal Poverty Guidelines.
             </p>
-            <div style={`background: ${designDNA.colors.primary}15;`} class="rounded-lg p-4 mb-6 text-gray-900">
+            <div style={`background: ${readablePrimaryBg};`} class="rounded-lg p-4 mb-6 text-gray-900">
               <h4 class="text-gray-900 font-semibold mb-2 ">2024 Income Limits:</h4>
               <ul class="text-sm space-y-1 text-gray-900">
                 <li>• 1 person: $19,683 per year</li>
@@ -281,7 +286,7 @@ const canonical = `${SITE_URL}/eligibility`;
           </div>
         </div>
         <div class="text-center mt-8">
-          <a href="/faq" style={`color: ${designDNA.colors.primary};`} class="font-semibold" onmouseover={`this.style.color='${designDNA.colors.secondary}';`} onmouseout={`this.style.color='${designDNA.colors.primary}';`}>
+          <a href="/faq" style={`color: ${readablePrimaryColor};`} class="font-semibold" onmouseover={`this.style.color='${getReadableTextColor(designDNA.colors.secondary)}';`} onmouseout={`this.style.color='${readablePrimaryColor}';`}>
             View All Frequently Asked Questions →
           </a>
         </div>
@@ -317,8 +322,8 @@ const canonical = `${SITE_URL}/eligibility`;
         </h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <a href="/programs" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
-            <div class="text-3xl mb-3" style={`color: ${designDNA.colors.primary};`} aria-label="Document icon">📋</div>
-            <h3 class="text-gray-900 font-bold mb-2" style={`color: ${designDNA.colors.primary};`}>All Programs</h3>
+            <div class="text-3xl mb-3" style={`color: ${readablePrimaryColor};`} aria-label="Document icon">📋</div>
+            <h3 class="text-gray-900 font-bold mb-2" style={`color: ${readablePrimaryColor};`}>All Programs</h3>
             <p class="text-gray-900 text-sm ">Compare Lifeline, ACP, and other government assistance programs.</p>
           </a>
           <a href="/lifeline-program" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
@@ -332,8 +337,8 @@ const canonical = `${SITE_URL}/eligibility`;
             <p class="text-gray-900 text-sm ">Discover the Affordable Connectivity Program benefits.</p>
           </a>
           <a href="/providers" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
-            <div class="text-orange-600 text-3xl mb-3" aria-label="Building icon">🏢</div>
-            <h3 class="text-gray-900 font-bold mb-2 text-orange-600">Providers</h3>
+            <div class="text-orange-800 text-3xl mb-3" aria-label="Building icon">🏢</div>
+            <h3 class="text-gray-900 font-bold mb-2 text-orange-800">Providers</h3>
             <p class="text-gray-900 text-sm ">Find approved providers offering free government phone service.</p>
           </a>
         </div>

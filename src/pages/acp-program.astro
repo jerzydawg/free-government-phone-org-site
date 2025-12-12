@@ -7,180 +7,174 @@ const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
 
-const title = `${keyword} - ACP Free Internet & Phone | ${siteName}`;
-const description = "Get free internet and phone service through the ACP program. Up to $30/month discount plus free device. Check eligibility and apply for your Free Government Phone today.";
----
+const title = `${keyword} - ACP Free Internet & Phone`;
+const description = "Get free high-speed internet and phone service through the ACP program. Apply now for government assistance with monthly internet bills and free smartphone access.";
+const currentURL = `${siteURL}/acp-program`;
 
-<Layout title={title} description={description}>
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Article",
+      "headline": "ACP Internet Program: Get Your Free Phone and Internet Access",
+      "description": "Learn how the ACP program provides free high-speed internet and phone services to qualifying households. Complete guide to benefits and application.",
+      "image": `${siteURL}/images/acp-program-benefits.jpg`,
+      "author": {
+        "@type": "Organization",
+        "name": siteName
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": siteName,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteURL}/logo.png`
+        }
+      },
+      "datePublished": "2025-12-12",
+      "dateModified": "2025-12-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": currentURL
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "Article",
-          "headline": "Complete ACP Program Coverage: Free Internet and Phone Service Available",
-          "description": "Discover how the Affordable Connectivity Program delivers free internet service and phones to eligible households nationwide.",
-          "author": {
-            "@type": "Organization",
-            "name": "Free Government Phone"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Free Government Phone"
-          },
-          "datePublished": "2025-12-12",
-          "dateModified": "2025-12-12",
-          "url": "https://free-government-phone.org/acp-program"
+          "@type": "Question",
+          "name": "How much internet speed does ACP provide for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ACP gives you high-speed internet with download speeds of at least 100 Mbps. This is fast enough for streaming, video calls, work from home, and online learning."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Does the ACP program provide both internet and phone service together?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, the ACP offers up to $30 monthly toward internet service plus a free or discounted device. Many providers bundle phone and internet services under this program."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What internet speeds can I get through ACP?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ACP internet plans typically offer speeds ranging from 25 Mbps to 100+ Mbps, depending on your provider and location. Many plans include unlimited data."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much does the ACP device cost?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The ACP provides up to $100 toward a connected device like a laptop, tablet, or smartphone. Many devices are completely free with no upfront cost."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I switch ACP providers if needed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, you can transfer your ACP benefit to a different participating provider at any time. Contact your new provider to initiate the transfer process."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Can low-income families combine ACP with other assistance programs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can use ACP benefits alongside other government assistance like SNAP, Medicaid, or housing assistance. These programs work together to reduce your monthly expenses."
+          }
         },
         {
-          "@type": "HowTo",
-          "name": "How to Apply for ACP Free Internet and Phone",
-          "description": "Step-by-step process to get your ACP benefit",
-          "step": [
-            {
-              "@type": "HowToStep",
-              "name": "Confirm Your Eligibility Status",
-              "text": "Review income requirements and qualifying assistance programs to ensure you meet ACP guidelines."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Gather Required Documentation",
-              "text": "Collect proof of income, government assistance enrollment, or other qualifying documents."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Submit Your Application",
-              "text": "Complete the ACP application online, by mail, or through a participating provider."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Select Your Provider and Plan",
-              "text": "Choose from participating internet and phone service providers in your area."
-            }
-          ]
+          "@type": "Question",
+          "name": "What happens to my ACP benefits if I move to a different state?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your ACP benefits stay with you when you move. Just update your address with your service provider within 30 days of moving to keep getting your monthly discount."
+          }
         },
         {
-          "@type": "GovernmentService",
-          "name": "Affordable Connectivity Program",
-          "description": "Federal program offering monthly internet discounts and device support for qualifying low-income households.",
-          "provider": {
-            "@type": "GovernmentOrganization",
-            "name": "Federal Communications Commission"
-          },
-          "areaServed": "United States",
-          "availableChannel": {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://free-government-phone.org/apply"
+          "@type": "Question",
+          "name": "How long does it take to start receiving ACP internet benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once approved, most people start getting their ACP discount within 1-2 weeks. Your service provider will contact you to set up installation and activate your benefits."
           }
         }
       ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Get ACP Free Internet and Phone",
+      "description": "Step-by-step process to apply for and receive ACP benefits for free internet and phone service.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Confirm Your Household Qualifies",
+          "text": "Check if your family income is at or below 200% of Federal Poverty Guidelines or if you receive qualifying benefits like SNAP, Medicaid, or SSI."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Gather Required Documents",
+          "text": "Collect your ID, proof of income, and benefit award letters. You'll need these to verify your eligibility for the program."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Submit Your ACP Application",
+          "text": "Apply online at acpbenefit.org or mail a paper application. The process typically takes 7-10 business days for approval."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Choose Your Internet Provider",
+          "text": "Pick from participating providers in your area. Many offer additional discounts beyond the standard ACP benefit amount."
+        }
+      ]
+    },
+    {
+      "@type": "GovernmentService",
+      "name": "ACP Internet Assistance Program",
+      "description": "Federal program providing monthly internet discounts and device support to help bridge the digital divide for low-income households.",
+      "provider": {
+        "@type": "GovernmentOrganization",
+        "name": "Federal Communications Commission"
+      },
+      "audience": {
+        "@type": "Audience",
+        "name": "Low-income households and families receiving federal assistance"
+      },
+      "serviceOutput": "Monthly internet discount up to $30 and free or discounted devices",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://acpbenefit.org",
+        "servicePhone": "877-384-2575"
+      }
     }
-  </script>
+  ]
+};
+---
 
-  <!-- Breadcrumb Navigation -->
-  <nav class="bg-gray-50 border-b">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center space-x-2 py-3 text-sm">
-        <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
-        <span class="text-gray-500">/</span>
-        <span class="text-gray-700 font-medium">ACP Program</span>
+<Layout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  
+  <div class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-white shadow-sm border-b" aria-label="Breadcrumb">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ol class="flex items-center space-x-2 py-4 text-sm">
+          <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
+          <li><span class="text-gray-400">/</span></li>
+          <li><span class="text-gray-600">ACP Program</span></li>
+        </ol>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <main class="max-w-4xl mx-auto px-4 py-8">
-    <header class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
-      <p class="text-xl text-gray-600 mb-6">Get free internet service plus a free phone through the ACP program</p>
-      <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-lg inline-block">
-        Check ACP Eligibility Now
-      </a>
-      <p class="text-sm text-gray-600 mt-2">See if you qualify for up to $30/month off internet + free device</p>
-    </header>
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{keyword}</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get up to $30 off your monthly internet bill plus a free smartphone through the ACP program. No credit checks, no hidden fees.</p>
+      </div>
+    </section>
 
-    <article class="prose max-w-none">
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-6 text-gray-900">Transform Your Digital Access with ACP Benefits</h2>
-        <p class="text-gray-700 mb-4">Need reliable internet and a Free Government Phone? The Affordable Connectivity Program delivers both essentials to eligible households nationwide. This federal initiative provides monthly internet discounts up to $30 plus device support, ensuring families stay connected without breaking their budget.</p>
-        
-        <p class="text-gray-700 mb-4">Over 21 million households have already discovered how ACP transforms their digital experience. Whether you're working from home, attending virtual classes, or keeping in touch with loved ones, this program removes financial barriers to essential connectivity services.</p>
-        
-        <p class="text-gray-700">Your Free Government Phone works seamlessly with ACP internet plans, creating a complete communication solution. Many providers offer bundled services that maximize your savings while delivering the speed and reliability you need for daily activities.</p>
-      </section>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Main Content Column -->
+        <div class="lg:col-span-2">
+          <!-- Intro Section -->
+          <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <p class="text-lg text-gray-700 mb-4">The Affordable Connectivity Program transforms how families access essential internet and phone services. This federal program cuts your monthly internet costs while providing access to devices that keep you connected to work, school, and family.</p>
+            <p class="text-gray-700 mb-4">Over 23 million households have already discovered how <span style="color: var(--color-primary)">Free Government Phone</span> programs through ACP make high-speed internet affordable. The program works with major providers nationwide to deliver reliable service without long-term contracts or credit requirements.</p>
+            <p class="text-gray-700">Your household could qualify today based on income levels or participation in existing benefit programs. The application takes minutes to complete, and approval typically happens within days.</p>
+          </section>
 
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-6 text-gray-900">What ACP Delivers to Your Household</h2>
-        
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-          <div class="bg-blue-50 p-6 rounded-lg">
-            <h3 class="text-lg font-semibold mb-3" style="color: var(--color-primary)">Monthly Internet Discount</h3>
-            <ul class="space-y-2 text-gray-700">
-              <li>• Up to $30 off monthly internet bills</li>
-              <li>• $75 discount on Tribal lands</li>
-              <li>• Works with hundreds of providers</li>
-              <li>• No contract requirements</li>
-            </ul>
-          </div>
-          
-          <div class="bg-green-50 p-6 rounded-lg">
-            <h3 class="text-lg font-semibold mb-3" style="color: var(--color-primary)">Connected Device Support</h3>
-            <ul class="space-y-2 text-gray-700">
-              <li>• Up to $100 toward device purchase</li>
-              <li>• Smartphones, tablets, laptops eligible</li>
-              <li>• Many devices completely free</li>
-              <li>• One-time benefit per household</li>
-            </ul>
-          </div>
-        </div>
-        
-        <p class="text-gray-700">ACP internet plans typically offer speeds from 25 Mbps to 100+ Mbps, perfect for streaming, video calls, online work, and educational activities. Combined with your Free Government Phone service, you'll have comprehensive connectivity coverage for all household needs.</p>
-      </section>
+          <!-- What is ACP Section -->
+          <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Understanding the ACP Internet Program</h2>
+            <p class="text-gray-700 mb-4">ACP stands for Affordable Connectivity Program, a government initiative that makes internet and phone access possible for families who couldn't afford it otherwise. Unlike temporary assistance, this program provides ongoing monthly support to keep your family connected.</p>
+            <p class="text-gray-700 mb-4">The program emerged from years of research showing that internet access directly impacts job opportunities, educational success, and healthcare access. By removing financial barriers, ACP helps bridge the digital divide affecting millions of American families.</p>
+            <p class="text-gray-700">Participants receive their benefits through existing internet service providers, making the transition seamless. Your <span style="color: var(--color-primary)">Free Government Phone</span> services integrate with the same network infrastructure that serves all customers, ensuring reliable performance.</p>
+          </section>
 
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-6 text-gray-900">Who Can Access ACP Benefits</h2>
-        
-        <p class="text-gray-700 mb-4">ACP eligibility extends to households meeting income guidelines or participating in qualifying assistance programs. If you already receive a Free Government Phone through Lifeline, you likely qualify for ACP internet discounts too.</p>
-        
-        <h3 class="text-lg font-semibold mb-3">Income Qualification</h3>
-        <p class="text-gray-700 mb-4">Households earning at or below 200% of Federal Poverty Guidelines qualify for ACP benefits. This income threshold is significantly higher than many assistance programs, making ACP accessible to working families facing connectivity challenges.</p>
-        
-        <h3 class="text-lg font-semibold mb-3">Program Participation Routes</h3>
-        <div class="bg-gray-50 p-4 rounded-lg mb-4
+          <!-- What You Get Section -->
+          <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Complete ACP Benefits Package</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="border-l-4 border-[var(--color-primary)] pl-4">
+                <h3 class="font-semibold text-gray-900 mb-2">Monthly Internet Savings</h3>
+                <p class="text-gray-700">Save up to $30 each month on high-speed internet service. Many providers offer plans that become completely free with your ACP benefit.</p>
+              </div>
+              <div class="border-l-4 border-[var(--color-primary)] pl-4">
+                <h3

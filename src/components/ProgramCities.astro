@@ -1,6 +1,7 @@
 ---
 import { getDomain, getDesignDNA } from '../lib/site-config';
 import { getBrowseCitiesText } from '../lib/microcopy-variations';
+import { getReadableTextColor, getReadableBackgroundColor } from '../lib/color-utils';
 
 export interface Props {
   program: 'lifeline' | 'acp' | 'both';
@@ -12,6 +13,10 @@ const { program, currentState, currentCity } = Astro.props;
 const domain = getDomain();
 const designDNA = getDesignDNA();
 const browseCitiesText = getBrowseCitiesText(domain);
+
+// Ensure readable colors
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readablePrimaryBg = getReadableBackgroundColor(designDNA.colors.primary, 0.1);
 
 // Define major cities with program availability
 const programCities = {
@@ -89,7 +94,7 @@ const filteredCities = currentCity ?
             <div class="font-semibold mb-1">{city.name}</div>
             <div class="text-sm mb-1">{city.state}</div>
             <div class="text-xs mb-2 text-gray-900">{city.population}</div>
-            <div class="text-xs text-[var(--color-primary)] font-medium">
+            <div class="text-xs font-medium" style={`color: ${readablePrimaryColor} !important;`}>
               {city.programs.join(' + ')}
             </div>
           </a>

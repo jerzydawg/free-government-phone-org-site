@@ -7,182 +7,112 @@ const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
 
-const pageTitle = `${keyword} - Tribal Lands Free Phone | ${siteName}`;
-const pageDescription = `Enhanced Free Government Phone benefits for Native Americans on tribal lands. Get free phones, unlimited service, and priority support through expanded Lifeline programs.`;
-const pageUrl = `${siteURL}/tribal-programs`;
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "headline": "Enhanced Phone Benefits Available for Tribal Communities",
-      "description": "Native Americans living on tribal lands can access expanded free phone services with enhanced benefits including unlimited data and priority network access.",
-      "author": {
-        "@type": "Organization",
-        "name": siteName
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": siteName,
-        "url": siteURL
-      },
-      "datePublished": "2025-12-12",
-      "dateModified": "2025-12-12",
-      "url": pageUrl
-    },
-    {
-      "@type": "GovernmentService",
-      "name": "Enhanced Lifeline for Tribal Lands",
-      "description": "Expanded federal program providing free wireless service to eligible Native Americans on tribal territories with enhanced benefits including unlimited data and priority network support.",
-      "provider": {
-        "@type": "GovernmentOrganization",
-        "name": "Federal Communications Commission"
-      },
-      "areaServed": "Tribal Lands",
-      "audience": "Native Americans on Tribal Territories"
-    },
-    {
-      "@type": "HowTo",
-      "name": "Get Your Enhanced Tribal Free Phone Service",
-      "description": "Step-by-step process to obtain enhanced free phone benefits for Native Americans on tribal lands",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Confirm Tribal Status",
-          "text": "Verify your enrollment status with your federally recognized tribe and gather required documentation proving tribal membership."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Review Enhanced Benefits",
-          "text": "Understand the expanded benefits available to tribal members including unlimited data allowances and priority network access."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Submit Application",
-          "text": "Complete the application process with tribal documentation and select from available enhanced service plans designed for tribal communities."
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What enhanced benefits do tribal members receive beyond standard Lifeline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Native Americans on tribal lands receive unlimited data, priority network access during emergencies, enhanced customer support, and access to additional devices including tablets and mobile hotspots."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can non-tribal members living on reservations access these enhanced benefits?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Enhanced tribal benefits are exclusively for enrolled members of federally recognized tribes. Non-tribal residents on reservations can still access standard Lifeline benefits if they meet income requirements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does tribal documentation work for program enrollment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Applicants must provide tribal enrollment verification directly from their tribe's enrollment office, CDIB card, or other official tribal membership documentation recognized by federal agencies."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are there special provisions for tribal elders or veterans?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, tribal elders over 60 and Native American veterans receive priority processing, additional tech support, and may qualify for multiple devices including emergency backup phones."
-          }
-        }
-      ]
-    }
-  ]
-};
+const title = `${keyword} - Tribal Lands Enhanced Benefits | ${siteName}`;
+const description = "Native American communities get enhanced free phone benefits through tribal Lifeline programs. Discover increased data, better coverage, and special tribal member advantages.";
 ---
 
-<Layout title={pageTitle} description={pageDescription} url={pageUrl} jsonLd={jsonLd}>
-  <!-- Breadcrumb -->
+<Layout title={title} description={description}>
   <nav class="bg-gray-50 py-3">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center space-x-2 text-sm">
         <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
         <span class="text-gray-500">/</span>
-        <span class="text-gray-600">Tribal Programs</span>
+        <span class="text-gray-700">Tribal Programs</span>
       </div>
     </div>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <!-- Header Section -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
-      <p class="text-xl text-gray-700 max-w-3xl mx-auto">Enhanced benefits and priority support for Native Americans living on tribal lands through expanded federal programs</p>
-    </div>
-
-    <!-- Enhanced Benefits for Tribal Communities -->
-    <section class="mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">Enhanced Benefits for Tribal Communities</h2>
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-8">
-        <p class="text-lg text-gray-700 mb-4">Native Americans living on federally recognized tribal lands receive significantly expanded benefits through the Enhanced Lifeline program. These enhanced services address the unique communication challenges faced by tribal communities, including remote locations and limited infrastructure access.</p>
-        
-        <p class="text-lg text-gray-700">Unlike standard Lifeline benefits, tribal members gain access to unlimited high-speed data, priority network access during emergencies, and specialized customer support trained in tribal community needs. The <span class="font-semibold" style="color: var(--color-primary)">Free Government Phone</span> program recognizes that reliable communication is essential for accessing healthcare, education, and employment opportunities in remote tribal areas.</p>
+  <main>
+    <section class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{keyword}</h1>
+        <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Native Americans living on tribal lands receive enhanced benefits through the Federal Lifeline program, including extra data allowances and improved service coverage designed specifically for reservation communities.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg">
+            CHECK TRIBAL BENEFITS
+          </a>
+          <a href="/providers" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white font-semibold py-3 px-6 rounded-xl">
+            View Tribal Providers
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- What Enhanced Services Include -->
-    <section class="mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">What Enhanced Services Include</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="space-y-6">
-          <div class="flex items-start space-x-4">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
-              <span class="text-white font-bold">✓</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Unlimited High-Speed Data</h3>
-              <p class="text-gray-700">Tribal members receive unlimited 4G LTE data with no throttling, ensuring consistent connectivity for education, telehealth, and remote work opportunities.</p>
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Enhanced Tribal Lifeline Benefits</h2>
+            <p class="text-gray-700 mb-6">Tribal members receive significantly better benefits than standard Lifeline participants. The government recognizes the unique challenges facing Native American communities and provides enhanced support through increased monthly allowances and specialized service options.</p>
+            
+            <p class="text-gray-700 mb-6">These enhanced tribal benefits address connectivity gaps on reservations where traditional cellular coverage may be limited. Your Free Government Phone comes with extra data specifically allocated for tribal communities, ensuring you stay connected with family, access healthcare services, and maintain employment opportunities.</p>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+              <p class="text-green-800 font-semibold">Tribal Advantage: Native Americans get up to 4.25GB of data monthly compared to standard 3GB allowances!</p>
             </div>
           </div>
-
-          <div class="flex items-start space-x-4">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
-              <span class="text-white font-bold">✓</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Priority Emergency Access</h3>
-              <p class="text-gray-700">During natural disasters or emergencies, tribal members receive priority network access to ensure critical communications remain available.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
-              <span class="text-white font-bold">✓</span>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Multiple Device Options</h3>
-              <p class="text-gray-700">Access to smartphones, tablets, and mobile hotspots to support household connectivity needs and remote learning requirements.</p>
+          <div class="bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Tribal vs Standard Benefits</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Monthly Data</span>
+                <span class="font-bold text-green-600">4.25GB vs 3GB</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Voice Minutes</span>
+                <span class="font-bold text-green-600">Unlimited</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Text Messages</span>
+                <span class="font-bold text-green-600">Unlimited</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Additional Support</span>
+                <span class="font-bold text-green-600">Tribal-Specific</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="space-y-6">
-          <div class="flex items-start space-x-4">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
-              <span class="text-white font-bold">✓</span>
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">What Your Tribal Free Phone Includes</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg mb-4 flex items-center justify-center" style="background-color: var(--color-primary)">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Specialized Tribal Support</h3>
-              <p class="text-gray-700">Dedicated customer service representatives trained in tribal community needs and cultural considerations provide personalized assistance.</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Enhanced Data Package</h3>
+            <p class="text-gray-600">Receive 4.25GB of monthly high-speed data, specifically designed for tribal communities with additional allowances for essential services and emergency communications.</p>
           </div>
-
-          <div class="flex items-start space-x-4">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--color-primary)">
-              <span class="text-white font-bold">✓</span>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg mb-4 flex items-center justify-center" style="background-color: var(--color-primary)">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
             </div>
-            <div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Unlimited Communications</h3>
+            <p class="text-gray-600">Make unlimited calls and send unlimited texts anywhere in the United States, keeping you connected with family members both on and off the reservation.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg mb-4 flex items-center justify-center" style="background-color: var(--color-primary)">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Priority Network Access</h3>
+            <p class="text-gray-600">Access to prioritized network coverage designed for tribal lands, ensuring better signal strength and connectivity in traditionally underserved areas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Tribal Member Qualification Requirements</h2>
+        <div class="bg-blue-50 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-4

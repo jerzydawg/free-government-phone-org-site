@@ -1,143 +1,53 @@
 import type { APIRoute } from 'astro';
+import { getSiteURL } from '../lib/site-config';
 import { supabase } from '../lib/supabase';
-import { getSiteURL, useSubdomains, getCitySubdomainURL } from '../lib/site-config';
-import { createCitySlug } from '../lib/slug-utils.js';
 
+// Sitemap index - references multiple sitemap files
 export const GET: APIRoute = async () => {
   const SITE_URL = getSiteURL();
-  
-  // Static pages
-  const staticPages = [
-    '',
-    '/eligibility',
-    '/programs',
-    '/providers',
-    '/faq',
-    '/contact',
-    '/apply',
-    '/lifeline-program',
-    '/acp-program',
-    '/tribal-programs',
-    '/state-programs',
-    '/emergency-broadband',
-    '/free-government-phone-near-me',
-    '/states',
-  ];
-
-  // Fetch all states
-  let states: Array<{ name: string; abbreviation: string }> = [];
-  if (supabase) {
-    try {
-      const { data } = await supabase
-        .from('states')
-        .select('name, abbreviation')
-        .order('name');
-      if (data) states = data;
-    } catch (e) {
-      console.error('Error fetching states for sitemap:', e);
-    }
-  }
-
-  // Fetch all cities for sitemap (with pagination to get all 40k+ cities)
-  let cities: Array<{ name: string; state_abbr: string }> = [];
-  if (supabase) {
-    try {
-      // Fetch all cities using pagination (Supabase default limit is 1000)
-      const pageSize = 1000;
-      let hasMore = true;
-      let page = 0;
-      
-      while (hasMore) {
-        const { data, error } = await supabase
-          .from('cities')
-          .select('name, states(abbreviation)')
-          .order('population', { ascending: false })
-          .range(page * pageSize, (page + 1) * pageSize - 1);
-        
-        if (error) {
-          console.error('Error fetching cities page:', page, error);
-          break;
-        }
-        
-        if (data && data.length > 0) {
-          const pageCities = data.map((city: any) => ({
-            name: city.name,
-            state_abbr: city.states?.abbreviation || ''
-          })).filter((c: any) => c.state_abbr);
-          
-          cities.push(...pageCities);
-          
-          // If we got fewer than pageSize, we've reached the end
-          if (data.length < pageSize) {
-            hasMore = false;
-          } else {
-            page++;
-          }
-        } else {
-          hasMore = false;
-        }
-      }
-    } catch (e) {
-      console.error('Error fetching cities for sitemap:', e);
-    }
-  }
-
   const today = new Date().toISOString().split('T')[0];
 
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-
-  // Add static pages
-  for (const page of staticPages) {
-    xml += `  <url>
-    <loc>${SITE_URL}${page}/</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${page === '' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
-  </url>
-`;
-  }
-
-  // Add state pages
-  for (const state of states) {
-    xml += `  <url>
-    <loc>${SITE_URL}/${state.abbreviation.toLowerCase()}/</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-`;
-  }
-
-  // Add city pages (deduplicate by URL)
-  const cityUrls = new Set<string>();
-  const useSubdomainMode = useSubdomains();
+  // Calculate how many city sitemap files we need
+  // Each sitemap file contains max 10,000 URLs
+  const URLS_PER_SITEMAP = 10000;
+  let citySitemapCount = 5; // Default to 5 files (covers 40k cities)
   
-  for (const city of cities) {
-    const citySlug = createCitySlug(city.name);
-    
-    // Use subdomain URL if subdomain mode is enabled, otherwise use path-based URL
-    const cityUrl = useSubdomainMode 
-      ? getCitySubdomainURL(citySlug, city.state_abbr.toLowerCase())
-      : `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
-    
-    // Skip if URL already exists (prevent duplicates)
-    if (cityUrls.has(cityUrl)) {
-      continue;
+  // Try to get actual city count to calculate needed sitemap files
+  if (supabase) {
+    try {
+      const { count } = await supabase
+        .from('cities')
+        .select('*', { count: 'exact', head: true });
+      
+      if (count !== null) {
+        // Calculate: (city count / URLs_PER_SITEMAP) rounded up
+        citySitemapCount = Math.ceil(count / URLS_PER_SITEMAP);
+        // Ensure minimum of 1 and maximum reasonable limit
+        citySitemapCount = Math.max(1, Math.min(citySitemapCount, 10));
+      }
+    } catch (e) {
+      console.error('[Sitemap Index] Error getting city count, using default:', e);
     }
-    cityUrls.add(cityUrl);
-    
-    xml += `  <url>
-    <loc>${cityUrl}</loc>
+  }
+
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${SITE_URL}/sitemap-main.xml</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  </sitemap>
+`;
+
+  // Add city sitemap files (sitemap-2.xml through sitemap-N.xml)
+  for (let i = 2; i <= citySitemapCount + 1; i++) {
+    xml += `  <sitemap>
+    <loc>${SITE_URL}/sitemap-${i}.xml</loc>
+    <lastmod>${today}</lastmod>
+  </sitemap>
 `;
   }
 
-  xml += `</urlset>`;
+  xml += `</sitemapindex>`;
 
   return new Response(xml, {
     headers: {
@@ -146,7 +56,3 @@ export const GET: APIRoute = async () => {
     },
   });
 };
-
-
-
-

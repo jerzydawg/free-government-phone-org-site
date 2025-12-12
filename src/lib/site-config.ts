@@ -30,14 +30,15 @@ export interface SiteConfig {
 // ===== SITE CONFIG - REPLACED AT BUILD TIME =====
 // DO NOT MODIFY THIS SECTION MANUALLY - IT IS AUTO-GENERATED
 const SITE_CONFIG_DATA = {
-  domain: "example.com",
-  siteName: "Free Phone Service",
+  domain: "free-government-phone.org",
+  siteName: "Free Government Phone",
   keyword: "Free Government Phone",
   keywordId: "free-government-phone",
   keywordLabel: "Free Government Phone",
-  ownerEmail: "admin@example.com",
-  designStyle: "basic" as DesignStyle,
-  environment: "staging" as const,
+  ownerEmail: "pixellead8000@gmail.com",
+  designStyle: "advanced" as DesignStyle,
+  useSubdomains: true,
+  environment: "production" as const,
   createdAt: new Date().toISOString(),
   version: "1.0.0"
 };

@@ -1,158 +1,145 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getSiteName, getKeyword, getDomain, getSiteURL, getDesignDNA } from '../../lib/site-config';
-import { getReadableTextColor } from '../../lib/color-utils';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../../lib/site-config';
 
 const siteName = getSiteName();
 const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
-const designDNA = getDesignDNA();
-const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
-const title = `${keyword} by State - Find Local Programs | ${siteName}`;
-const description = `Discover free government phone programs available in your state. Find local Lifeline providers, state-specific benefits, and application centers near you.`;
+const title = `${keyword} by State - Find Your Local Program | ${siteName}`;
+const description = `Find Free Government Phone programs in your state. Complete directory of local Lifeline and ACP assistance programs with state-specific application guides and provider options.`;
+const canonicalURL = `${siteURL}/states/`;
 
 const states = [
-  { name: 'Alabama', code: 'AL', slug: 'alabama' },
-  { name: 'Alaska', code: 'AK', slug: 'alaska' },
-  { name: 'Arizona', code: 'AZ', slug: 'arizona' },
-  { name: 'Arkansas', code: 'AR', slug: 'arkansas' },
-  { name: 'California', code: 'CA', slug: 'california' },
-  { name: 'Colorado', code: 'CO', slug: 'colorado' },
-  { name: 'Connecticut', code: 'CT', slug: 'connecticut' },
-  { name: 'Delaware', code: 'DE', slug: 'delaware' },
-  { name: 'Florida', code: 'FL', slug: 'florida' },
-  { name: 'Georgia', code: 'GA', slug: 'georgia' },
-  { name: 'Hawaii', code: 'HI', slug: 'hawaii' },
-  { name: 'Idaho', code: 'ID', slug: 'idaho' },
-  { name: 'Illinois', code: 'IL', slug: 'illinois' },
-  { name: 'Indiana', code: 'IN', slug: 'indiana' },
-  { name: 'Iowa', code: 'IA', slug: 'iowa' },
-  { name: 'Kansas', code: 'KS', slug: 'kansas' },
-  { name: 'Kentucky', code: 'KY', slug: 'kentucky' },
-  { name: 'Louisiana', code: 'LA', slug: 'louisiana' },
-  { name: 'Maine', code: 'ME', slug: 'maine' },
-  { name: 'Maryland', code: 'MD', slug: 'maryland' },
-  { name: 'Massachusetts', code: 'MA', slug: 'massachusetts' },
-  { name: 'Michigan', code: 'MI', slug: 'michigan' },
-  { name: 'Minnesota', code: 'MN', slug: 'minnesota' },
-  { name: 'Mississippi', code: 'MS', slug: 'mississippi' },
-  { name: 'Missouri', code: 'MO', slug: 'missouri' },
-  { name: 'Montana', code: 'MT', slug: 'montana' },
-  { name: 'Nebraska', code: 'NE', slug: 'nebraska' },
-  { name: 'Nevada', code: 'NV', slug: 'nevada' },
-  { name: 'New Hampshire', code: 'NH', slug: 'new-hampshire' },
-  { name: 'New Jersey', code: 'NJ', slug: 'new-jersey' },
-  { name: 'New Mexico', code: 'NM', slug: 'new-mexico' },
-  { name: 'New York', code: 'NY', slug: 'new-york' },
-  { name: 'North Carolina', code: 'NC', slug: 'north-carolina' },
-  { name: 'North Dakota', code: 'ND', slug: 'north-dakota' },
-  { name: 'Ohio', code: 'OH', slug: 'ohio' },
-  { name: 'Oklahoma', code: 'OK', slug: 'oklahoma' },
-  { name: 'Oregon', code: 'OR', slug: 'oregon' },
-  { name: 'Pennsylvania', code: 'PA', slug: 'pennsylvania' },
-  { name: 'Rhode Island', code: 'RI', slug: 'rhode-island' },
-  { name: 'South Carolina', code: 'SC', slug: 'south-carolina' },
-  { name: 'South Dakota', code: 'SD', slug: 'south-dakota' },
-  { name: 'Tennessee', code: 'TN', slug: 'tennessee' },
-  { name: 'Texas', code: 'TX', slug: 'texas' },
-  { name: 'Utah', code: 'UT', slug: 'utah' },
-  { name: 'Vermont', code: 'VT', slug: 'vermont' },
-  { name: 'Virginia', code: 'VA', slug: 'virginia' },
-  { name: 'Washington', code: 'WA', slug: 'washington' },
-  { name: 'West Virginia', code: 'WV', slug: 'west-virginia' },
-  { name: 'Wisconsin', code: 'WI', slug: 'wisconsin' },
-  { name: 'Wyoming', code: 'WY', slug: 'wyoming' }
+  { name: 'Alabama', abbr: 'AL' },
+  { name: 'Alaska', abbr: 'AK' },
+  { name: 'Arizona', abbr: 'AZ' },
+  { name: 'Arkansas', abbr: 'AR' },
+  { name: 'California', abbr: 'CA' },
+  { name: 'Colorado', abbr: 'CO' },
+  { name: 'Connecticut', abbr: 'CT' },
+  { name: 'Delaware', abbr: 'DE' },
+  { name: 'Florida', abbr: 'FL' },
+  { name: 'Georgia', abbr: 'GA' },
+  { name: 'Hawaii', abbr: 'HI' },
+  { name: 'Idaho', abbr: 'ID' },
+  { name: 'Illinois', abbr: 'IL' },
+  { name: 'Indiana', abbr: 'IN' },
+  { name: 'Iowa', abbr: 'IA' },
+  { name: 'Kansas', abbr: 'KS' },
+  { name: 'Kentucky', abbr: 'KY' },
+  { name: 'Louisiana', abbr: 'LA' },
+  { name: 'Maine', abbr: 'ME' },
+  { name: 'Maryland', abbr: 'MD' },
+  { name: 'Massachusetts', abbr: 'MA' },
+  { name: 'Michigan', abbr: 'MI' },
+  { name: 'Minnesota', abbr: 'MN' },
+  { name: 'Mississippi', abbr: 'MS' },
+  { name: 'Missouri', abbr: 'MO' },
+  { name: 'Montana', abbr: 'MT' },
+  { name: 'Nebraska', abbr: 'NE' },
+  { name: 'Nevada', abbr: 'NV' },
+  { name: 'New Hampshire', abbr: 'NH' },
+  { name: 'New Jersey', abbr: 'NJ' },
+  { name: 'New Mexico', abbr: 'NM' },
+  { name: 'New York', abbr: 'NY' },
+  { name: 'North Carolina', abbr: 'NC' },
+  { name: 'North Dakota', abbr: 'ND' },
+  { name: 'Ohio', abbr: 'OH' },
+  { name: 'Oklahoma', abbr: 'OK' },
+  { name: 'Oregon', abbr: 'OR' },
+  { name: 'Pennsylvania', abbr: 'PA' },
+  { name: 'Rhode Island', abbr: 'RI' },
+  { name: 'South Carolina', abbr: 'SC' },
+  { name: 'South Dakota', abbr: 'SD' },
+  { name: 'Tennessee', abbr: 'TN' },
+  { name: 'Texas', abbr: 'TX' },
+  { name: 'Utah', abbr: 'UT' },
+  { name: 'Vermont', abbr: 'VT' },
+  { name: 'Virginia', abbr: 'VA' },
+  { name: 'Washington', abbr: 'WA' },
+  { name: 'West Virginia', abbr: 'WV' },
+  { name: 'Wisconsin', abbr: 'WI' },
+  { name: 'Wyoming', abbr: 'WY' }
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": `${siteURL}/states/`,
-      "url": `${siteURL}/states/`,
-      "name": title,
-      "description": description,
-      "isPartOf": {
-        "@id": `${siteURL}/#website`
-      },
-      "breadcrumb": {
-        "@id": `${siteURL}/states/#breadcrumb`
-      },
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "ReadAction",
-        "target": [`${siteURL}/states/`]
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": `${siteURL}/states/#breadcrumb`,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": siteURL
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "By State"
-        }
-      ]
-    },
-    {
       "@type": "Article",
-      "headline": "Locate Free Phone Programs Across All 50 States",
-      "description": "Navigate our complete directory of state-specific free phone programs and find local providers offering Lifeline services in your area.",
+      "headline": "State-by-State Free Phone Programs and Local Assistance",
+      "description": "Complete directory of Free Government Phone programs available in each state, including local provider options and application processes.",
       "author": {
         "@type": "Organization",
-        "name": siteName
+        "name": siteName,
+        "url": siteURL
       },
       "publisher": {
         "@type": "Organization",
-        "name": siteName
+        "name": siteName,
+        "url": siteURL
       },
       "datePublished": "2025-12-12",
       "dateModified": "2025-12-12",
-      "mainEntityOfPage": `${siteURL}/states/`
+      "url": canonicalURL
+    },
+    {
+      "@type": "HowTo",
+      "name": "Find Your State's Free Government Phone Program",
+      "description": "Step-by-step guide to locate and apply for free phone programs in your specific state.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Locate Your State Program",
+          "text": "Select your state from the complete directory to view available free phone services and participating providers in your area."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review State-Specific Options",
+          "text": "Compare local providers and services offered in your state, including phone models and data allowances available."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Apply Through State Resources",
+          "text": "Use your state's specific application process or local assistance centers to complete your free phone enrollment."
+        }
+      ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do free government phone programs vary between different states?",
+          "name": "Which states participate in Free Government Phone programs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "While Lifeline is a national program with consistent core benefits, each state may have different participating providers and additional local assistance options. Some states offer enhanced programs or have specific application centers to help residents."
+            "text": "All 50 states participate in federal free phone programs like Lifeline and ACP. Each state has approved providers offering free smartphones and service to eligible residents."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I find participating providers in my specific state?",
+          "name": "Do different states offer different phone models or benefits?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Select your state from our directory to view all participating Lifeline providers operating in your area. Each state page includes provider contact information, service areas, and available phone options."
+            "text": "Yes, available phone models and additional benefits can vary by state based on participating providers. Some states have more provider options, leading to better phone selections and higher data allowances."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I use my free phone service if I move to another state?",
+          "name": "Can I keep my free phone if I move to another state?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, your Lifeline service can typically transfer with you when moving between states. Contact your provider before relocating to ensure continued service and verify they operate in your new state."
+            "text": "You can typically keep your phone when moving, but you may need to transfer your service to a provider that operates in your new state. Contact your current provider about transfer options."
           }
         },
         {
           "@type": "Question",
-          "name": "Are there special state programs beyond federal Lifeline benefits?",
+          "name": "Are eligibility requirements the same in every state?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Some states offer additional assistance programs or partner with local organizations to provide extra benefits. Check your state's specific page to learn about any enhanced programs or local resources available."
+            "text": "Basic eligibility requirements are federally mandated and consistent nationwide. However, some states may have additional qualification programs or streamlined application processes for residents."
           }
         }
       ]
@@ -161,53 +148,38 @@ const jsonLd = {
 };
 ---
 
-<Layout title={title} description={description} jsonLd={jsonLd}>
-  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-    <!-- Breadcrumb -->
-    <div class="bg-white border-b">
-      <div class="container mx-auto px-4 py-3">
-        <nav class="text-sm">
-          <ol class="flex items-center space-x-2">
-            <li><a href="/" class="hover:underline" style={`color: ${readablePrimaryColor} !important;`}>Home</a></li>
-            <li class="text-gray-500">/</li>
-            <li class="text-gray-700">By State</li>
-          </ol>
-        </nav>
-      </div>
+<Layout title={title} description={description} canonicalURL={canonicalURL} jsonLd={jsonLd}>
+  <!-- Breadcrumb -->
+  <nav class="bg-gray-50 py-3 mb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-600">States</li>
+      </ol>
+    </div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">{keyword}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find free phone programs available in your state. Each location offers unique provider options and local assistance to help you get connected quickly.</p>
     </div>
 
-    <!-- Hero Section -->
-    <section class="py-12 md:py-16">
-      <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Free Government Phone
-        </h1>
-        <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          Find free phone programs available in your state. Browse our complete directory of local providers and discover state-specific benefits.
-        </p>
-      </div>
-    </section>
-
-    <!-- States Grid -->
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">States Coverage</h2>
-        <p class="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-          Available in every state. Choose your location to get started.
-        </p>
-        
-        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-3 mb-8">
-          {states.map((state) => (
-            <a 
-              href={`/${state.code.toLowerCase()}/`}
-              class="state-btn group flex flex-col items-center justify-center p-4 bg-white rounded-lg transition-all duration-200 shadow-sm hover:shadow-md border border-gray-200 hover:border-[var(--color-primary)]"
-              title={`${keyword} in ${state.name}`}
-            >
-              <span class="font-bold text-lg group-hover:scale-110 transition-transform text-gray-900" style={`color: #111827 !important;`}>{state.code}</span>
-            </a>
-          ))}
+    <!-- Intro Section -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-gray-900">Discover State-Specific Phone Programs</h2>
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Looking for a <strong>Free Government Phone</strong> in your area? Every state offers federally-funded programs that provide smartphones and monthly service at zero cost. Your location determines which providers serve your area and what phone models you can choose from.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            State programs work differently across the country. Some locations have multiple competing providers, giving you better phone options and higher data allowances. Others focus on rural coverage or offer special assistance centers for easy enrollment.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Browse your state below to see exactly what's available where you live. You'll find local provider information, application processes, and contact details for getting your <strong>Free Government Phone</strong> as quickly as possible.
+          </p>
         </div>
-      </div>
-    </section>
-  </main>
-</Layout>
+        <div class="bg-gradient-to-br from-blue-50 to

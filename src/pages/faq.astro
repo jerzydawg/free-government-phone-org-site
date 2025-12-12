@@ -1,194 +1,195 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getSiteName, getKeyword, getDomain, getSiteURL, getKeywordId } from '../lib/site-config';
-import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
 
 const siteName = getSiteName();
 const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
-const keywordId = getKeywordId();
 
-// Load keyword-specific variations with comprehensive error handling
-let h1Content = { h1: 'Frequently Asked Questions' };
-let metaContent = { 
-  title: `${keyword} - Common Questions Answered`,
-  description: "Get answers to frequently asked questions about free government phone programs. Learn about eligibility, application process, and available services."
-};
-
-try {
-  const keywordModule = await loadKeywordVariations(keywordId);
-  
-  if (keywordModule && typeof keywordModule.getH1Variation === 'function' && typeof keywordModule.getMetaVariations === 'function') {
-    try {
-      h1Content = keywordModule.getH1Variation(domain, 'faq');
-      metaContent = keywordModule.getMetaVariations(siteName, domain, 'faq');
-      
-      // Validate results - ensure it's not null/undefined/empty
-      if (!h1Content || !h1Content.h1 || typeof h1Content.h1 !== 'string' || 
-          h1Content.h1.trim() === '' || h1Content.h1 === 'null' || h1Content.h1 === 'undefined') {
-        h1Content = { h1: 'Frequently Asked Questions' };
-      }
-      if (!metaContent || !metaContent.title || !metaContent.description) {
-        metaContent = { 
-          title: `${keyword} - Common Questions Answered`,
-          description: "Get answers to frequently asked questions about free government phone programs. Learn about eligibility, application process, and available services."
-        };
-      }
-    } catch (variationError: any) {
-      console.error('Error calling variation functions:', variationError?.message || variationError);
-    }
-  }
-} catch (e: any) {
-  console.error('Failed to load keyword variations for FAQ page:', e?.message || e);
-}
-
-const title = metaContent.title;
-const description = metaContent.description;
-const canonicalURL = new URL('/faq', siteURL);
+const title = `${keyword} - Common Questions Answered | ${siteName}`;
+const description = "Get answers to your most pressing questions about free government phone programs. Learn about eligibility, applications, service features, and provider options.";
 ---
 
-<Layout title={title} description={description} canonical={canonicalURL.toString()}>
+<Layout title={title} description={description}>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Everything You Need to Know About Government Phone Assistance",
-      "description": "Comprehensive answers to common questions about federal phone assistance programs, eligibility requirements, and application procedures.",
-      "author": {
-        "@type": "Organization",
-        "name": "Free Government Phone"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Free Government Phone",
-        "logo": {
-          "@type": "ImageObject",
-          "url": `${siteURL}/logo.png`
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Free Government Phone Questions: Your Complete FAQ Resource",
+        "description": "Comprehensive answers to the most frequently asked questions about getting free phones through government assistance programs.",
+        "author": {
+          "@type": "Organization",
+          "name": "Free Government Phone"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Free Government Phone",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://free-government-phone.org/logo.png"
+          }
+        },
+        "datePublished": "2025-12-12",
+        "dateModified": "2025-12-12",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://free-government-phone.org/faq"
         }
       },
-      "datePublished": "2025-12-12",
-      "dateModified": "2025-12-12",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": `${siteURL}/faq`
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What documents do I need to show I qualify for a free government phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You'll need proof of income (pay stubs, benefits statements) or documentation showing you receive qualifying government assistance like SNAP, Medicaid, or housing assistance. A government-issued ID is also required for verification."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can I receive my phone after my application gets approved?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most approved applicants receive their free phone within 7-14 business days. Some providers offer expedited shipping for faster delivery, while others may have phones available for immediate pickup at local distribution centers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I switch providers or move to a different state?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can transfer your free phone service to a new provider if you move or want to switch. Contact your current provider first to start the transfer process, and ensure there's no gap in your service coverage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can households with multiple people each get their own free phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only one free phone per household is allowed through the Lifeline program. However, if household members qualify for different programs or live at separate addresses, they may each be eligible for their own free phone service."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to Get Answers About Free Government Phone Programs",
+        "description": "Step-by-step process to find answers to your free phone program questions",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Review Qualification Requirements",
+            "text": "Start by checking income limits and accepted assistance programs to see if you meet the basic eligibility criteria for free phone service."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Compare Available Providers",
+            "text": "Research different carriers in your area to find the best phone and data plan options that match your specific needs and location."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Prepare Required Documentation",
+            "text": "Gather necessary paperwork including income proof, benefit statements, and identification before starting your application."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Submit Your Application",
+            "text": "Complete the application process online or by phone, ensuring all information is accurate and all required documents are included."
+          }
+        ]
+      },
+      {
+        "@type": "GovernmentService",
+        "name": "Lifeline Free Phone Program",
+        "description": "Federal program providing free cell phones and monthly service to qualifying low-income households across the United States.",
+        "serviceType": "Telecommunications Assistance",
+        "areaServed": "United States",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://free-government-phone.org/apply",
+          "serviceName": "Online Application"
+        }
       }
-    }
+    ]
+  }
   </script>
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What income limits apply to qualify for a government phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Households must earn 135% or less of federal poverty guidelines. For a single person in 2025, this means $20,385 annually. Families of four qualify with income up to $42,255 yearly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does the application approval process take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most applications receive approval within 7-10 business days. Emergency applications may process faster. You'll receive email or text notification once your application status changes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can family members each get their own government phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Only one Lifeline benefit per household is allowed. However, different family members can apply for ACP internet assistance separately if they meet individual requirements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if I move to another state with my phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Your phone service continues when you relocate. Contact your provider within 30 days to update your address. Some carriers may need to switch you to a local network partner."
-          }
-        }
-      ]
-    }
-  </script>
+  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center space-x-2 text-sm text-gray-600 mb-8">
+        <a href="/" class="text-[var(--color-primary)] hover:underline">Home</a>
+        <span>›</span>
+        <span class="text-gray-900 font-medium">FAQ</span>
+      </nav>
 
-  <nav class="bg-white border-b border-gray-200 py-3 mb-8">
-    <div class="max-w-6xl mx-auto px-4">
-      <ol class="flex items-center space-x-2 text-sm text-gray-600">
-        <li><a href="/" class="text-[var(--color-primary)] hover:underline">Home</a></li>
-        <li class="before:content-['/'] before:mx-2">FAQ</li>
-      </ol>
-    </div>
-  </nav>
+      <!-- Header Section -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Free Government Phone
+        </h1>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Find clear answers to your most important questions about getting free phones through government programs. We've compiled the information you need to understand eligibility, applications, and services.
+        </p>
+      </div>
 
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <header class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{h1Content.h1}</h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find answers to your most important questions about getting a free phone through federal assistance programs.</p>
-    </header>
+      <!-- Main Content -->
+      <div class="max-w-4xl mx-auto">
+        
+        <!-- Eligibility Questions -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[var(--color-primary)] pb-3">
+            Who Can Get a Free Phone?
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-[var(--color-primary)] pl-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Income Requirements Made Simple</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Your household income needs to be at or below 135% of the Federal Poverty Guidelines. For a single person, that means earning $19,683 or less per year. A family of four qualifies with income up to $40,563 annually.
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                Don't worry about complex calculations - most people receiving SNAP, Medicaid, or housing assistance automatically qualify for a <strong>Free Government Phone</strong> regardless of their exact income numbers.
+              </p>
+            </div>
 
-    <div class="prose prose-lg max-w-none">
-      <section class="mb-12">
-        <p class="text-lg leading-relaxed mb-6">Getting help with phone service can feel overwhelming when you're unsure about the process. Many people wonder if they qualify, how to apply, or what services they'll receive with their <strong>Free Government Phone</strong>. These programs exist specifically to help families stay connected without worrying about monthly bills.</p>
-
-        <p class="mb-6">Federal assistance programs have helped millions of Americans access essential communication services. Whether you're dealing with job searches, medical appointments, or staying in touch with family, having reliable phone service makes a real difference. The application process is simpler than many people expect, and most questions have straightforward answers.</p>
-
-        <div class="bg-blue-50 p-6 rounded-lg mb-8">
-          <div class="text-center">
-            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Ready to Get Your Phone?</h3>
-            <p class="text-gray-700 mb-4">Most people qualify and can start the process in just minutes</p>
-            <a href="/apply" class="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-3 px-6 rounded-xl shadow-lg inline-block">Check Your Eligibility Now</a>
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Qualifying Programs That Guarantee Approval</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Participation in these federal programs makes you automatically eligible: Supplemental Nutrition Assistance Program (SNAP), Medicaid, Supplemental Security Income (SSI), Federal Public Housing Assistance, and Veterans Pension programs.
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                State-specific programs also count. Each state has additional assistance programs that qualify residents for <strong>Free Government Phone</strong> service, so check with local providers about your specific situation.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Understanding Program Requirements</h2>
-        
-        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">What income limits apply to qualify for a government phone?</h3>
-          <p class="text-gray-700 mb-4">Households must earn 135% or less of federal poverty guidelines. For a single person in 2025, this means $20,385 annually. Families of four qualify with income up to $42,255 yearly.</p>
-          <p class="text-gray-700">These limits adjust each year and vary by household size. Even if your income slightly exceeds these amounts, you might still qualify through other assistance programs like SNAP, Medicaid, or housing assistance.</p>
-        </div>
+        <!-- Application Questions -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[var(--color-primary)] pb-3">
+            How Do I Apply Successfully?
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-[var(--color-primary)] pl-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Required Documentation Checklist</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Gather these essential documents before applying: government-issued photo ID, proof of income (recent pay stubs or benefit letters), and documentation showing participation in qualifying assistance programs.
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                Applications move faster when you have everything ready. Missing paperwork is the most common reason for delays in getting your <strong>Free Government Phone</strong> approved and shipped.
+              </p>
+            </div>
 
-        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Which government benefits automatically make me eligible?</h3>
-          <p class="text-gray-700">Participation in SNAP (food stamps), Medicaid, SSI, Federal Public Housing Assistance, or Veterans Pension automatically qualifies you. Tribal-specific programs also count for Native American households.</p>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Can college students apply for phone assistance?</h3>
-          <p class="text-gray-700 mb-4">Students can qualify if they meet income requirements or receive qualifying benefits. Age alone doesn't disqualify applicants - financial need determines eligibility.</p>
-          <p class="text-gray-700">Many students qualify through Pell Grants or by meeting income guidelines based on their own earnings, not their parents' income.</p>
-        </div>
-      </section>
-
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Application Process Questions</h2>
-        
-        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">How long does the application approval process take?</h3>
-          <p class="text-gray-700 mb-4">Most applications receive approval within 7-10 business days. Emergency applications may process faster. You'll receive email or text notification once your application status changes.</p>
-          <p class="text-gray-700">During busy periods, processing may take slightly longer. Having all required documents ready when you apply helps speed up the review process significantly.</p>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">What documents do I need to prove eligibility?</h3>
-          <p class="text-gray-700">You'll need identification (driver's license or state ID), proof of income (pay stubs or tax returns), and benefit letters if you receive government assistance. Photos or scans work for online applications.</p>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg p-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Can I apply online or do I need to visit an office?</h3>
-          <p class="text-gray-700">Online applications are fastest and most convenient. You can also apply by phone or mail. Very few situations require in-person visits, making the <strong>Free Government Phone</strong> application accessible from anywhere.</p>
-        </div>
-      </section>
-
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Service Details and Usage</h2>
-        
-        <div class="
+            <div class="bg-blue-50 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">Application Timeline Expectations</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Most applications get processed within 2-5 business days if all required documents are included. You'll receive confirmation emails at each step: application received, under review, approved, and phone shipped.
+              </p>
+              <p class="text-gray-700 leading-

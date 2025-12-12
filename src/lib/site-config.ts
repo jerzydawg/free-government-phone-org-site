@@ -30,15 +30,14 @@ export interface SiteConfig {
 // ===== SITE CONFIG - REPLACED AT BUILD TIME =====
 // DO NOT MODIFY THIS SECTION MANUALLY - IT IS AUTO-GENERATED
 const SITE_CONFIG_DATA = {
-  domain: "free-government-phone.org",
-  siteName: "Free Government Phone",
+  domain: "example.com",
+  siteName: "Free Phone Service",
   keyword: "Free Government Phone",
   keywordId: "free-government-phone",
   keywordLabel: "Free Government Phone",
-  ownerEmail: "pixellead8000@gmail.com",
-  designStyle: "advanced" as DesignStyle,
-  useSubdomains: true,
-  environment: "production" as const,
+  ownerEmail: "admin@example.com",
+  designStyle: "basic" as DesignStyle,
+  environment: "staging" as const,
   createdAt: new Date().toISOString(),
   version: "1.0.0"
 };
@@ -243,11 +242,14 @@ export function useSubdomains(): boolean {
 }
 
 /**
- * Parse subdomain to extract city and state
- * Format: {city-slug}-{state-abbr}.free-government-phone.org
+ * Parse subdomain to extract city and state, or state only
+ * Formats:
+ * - {city-slug}-{state-abbr}.free-government-phone.org -> { city: 'wayne', state: 'mi' }
+ * - {state-abbr}.free-government-phone.org -> { city: null, state: 'wv' }
  * Example: wayne-mi.free-government-phone.org -> { city: 'wayne', state: 'mi' }
+ * Example: wv.free-government-phone.org -> { city: null, state: 'wv' }
  */
-export function parseSubdomain(hostname: string): { city: string; state: string } | null {
+export function parseSubdomain(hostname: string): { city: string | null; state: string } | null {
   const domain = getDomain()
   if (!useSubdomains()) return null
   
@@ -260,8 +262,16 @@ export function parseSubdomain(hostname: string): { city: string; state: string 
   // Extract subdomain part
   const subdomain = host.replace(`.${domain}`, '')
   
-  // Skip www and other non-city subdomains
+  // Skip www and other non-city/state subdomains
   if (subdomain === 'www' || subdomain === '') return null
+  
+  // Check if it's a state-only subdomain (2 letters, no hyphens)
+  if (subdomain.length === 2 && /^[a-z]{2}$/.test(subdomain)) {
+    return {
+      city: null,
+      state: subdomain.toLowerCase()
+    }
+  }
   
   // Parse format: {city-slug}-{state-abbr}
   // Find the last hyphen which should separate city from state

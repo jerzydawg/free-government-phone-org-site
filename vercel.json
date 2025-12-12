@@ -1,18 +1,25 @@
 {
-  "redirects": [
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<state>[a-z]{2})\\.(?<domain>.*)"
+        }
+      ],
+      "destination": "/:state/"
+    },
     {
       "source": "/:path*",
       "has": [
         {
           "type": "host",
-          "value": "www.free-government-phone.org"
+          "value": "(?<state>[a-z]{2})\\.(?<domain>.*)"
         }
       ],
-      "destination": "https://free-government-phone.org/:path*",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
+      "destination": "/:state/:path*"
+    },
     {
       "source": "/",
       "has": [
@@ -35,4 +42,3 @@
     }
   ]
 }
-

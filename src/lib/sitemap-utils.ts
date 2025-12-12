@@ -12,13 +12,22 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
   }
 
   try {
-    // Fetch all cities first (we need to paginate through Supabase's 1000 limit)
-    const pageSize = 1000;
-    let hasMore = true;
-    let page = 0;
-    let allCities: Array<{ name: string; state_abbr: string }> = [];
+    const pageSize = 1000; // Supabase limit
+    const useSubdomainMode = useSubdomains();
+    const SITE_URL = getSiteURL();
     
-    while (hasMore) {
+    // Track unique URLs to deduplicate
+    const cityUrls = new Set<string>();
+    const deduplicatedCities: Array<{ name: string; state_abbr: string }> = [];
+    
+    // Calculate how many unique cities we need total (offset + limit)
+    const totalNeeded = offset + limit;
+    
+    // Fetch cities incrementally until we have enough unique ones
+    let page = 0;
+    let hasMore = true;
+    
+    while (hasMore && deduplicatedCities.length < totalNeeded) {
       const { data, error } = await supabase
         .from('cities')
         .select('name, states(abbreviation)')
@@ -31,13 +40,34 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
       }
       
       if (data && data.length > 0) {
-        const pageCities = data.map((city: any) => ({
-          name: city.name,
-          state_abbr: city.states?.abbreviation || ''
-        })).filter((c: any) => c.state_abbr && c.name);
+        // Process this batch and deduplicate
+        for (const city of data) {
+          const cityName = city.name;
+          const stateAbbr = city.states?.abbreviation || '';
+          
+          if (!cityName || !stateAbbr) continue;
+          
+          const citySlug = createCitySlug(cityName);
+          const cityUrl = useSubdomainMode 
+            ? getCitySubdomainURL(citySlug, stateAbbr.toLowerCase())
+            : `${SITE_URL}/${stateAbbr.toLowerCase()}/${citySlug}/`;
+          
+          // Only add if URL is unique
+          if (!cityUrls.has(cityUrl)) {
+            cityUrls.add(cityUrl);
+            deduplicatedCities.push({
+              name: cityName,
+              state_abbr: stateAbbr
+            });
+            
+            // Stop if we have enough
+            if (deduplicatedCities.length >= totalNeeded) {
+              break;
+            }
+          }
+        }
         
-        allCities.push(...pageCities);
-        
+        // Check if we need to fetch more
         if (data.length < pageSize) {
           hasMore = false;
         } else {
@@ -48,28 +78,10 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
       }
     }
 
-    // Deduplicate cities by URL
-    const cityUrls = new Set<string>();
-    const useSubdomainMode = useSubdomains();
-    const SITE_URL = getSiteURL();
-    const deduplicatedCities: Array<{ name: string; state_abbr: string }> = [];
-    
-    for (const city of allCities) {
-      const citySlug = createCitySlug(city.name);
-      const cityUrl = useSubdomainMode 
-        ? getCitySubdomainURL(citySlug, city.state_abbr.toLowerCase())
-        : `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
-      
-      if (!cityUrls.has(cityUrl)) {
-        cityUrls.add(cityUrl);
-        deduplicatedCities.push(city);
-      }
-    }
-
-    // Get the slice for this sitemap
+    // Return the slice for this sitemap chunk
     cities = deduplicatedCities.slice(offset, offset + limit);
     
-    console.log(`[Sitemap] Generated chunk with ${cities.length} cities (offset: ${offset}, total: ${deduplicatedCities.length})`);
+    console.log(`[Sitemap] Generated chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, fetched pages: ${page + 1})`);
   } catch (e) {
     console.error('[Sitemap] Error fetching cities:', e);
   }
@@ -86,7 +98,7 @@ export function generateCitySitemapXML(cities: Array<{ name: string; state_abbr:
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-  // Add city pages
+  // Add city pages - match reference site: changefreq=weekly, priority=0.8
   const cityUrls = new Set<string>();
   for (const city of cities) {
     const citySlug = createCitySlug(city.name);
@@ -103,8 +115,8 @@ export function generateCitySitemapXML(cities: Array<{ name: string; state_abbr:
     xml += `  <url>
     <loc>${cityUrl}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 `;
   }
@@ -112,4 +124,3 @@ export function generateCitySitemapXML(cities: Array<{ name: string; state_abbr:
   xml += `</urlset>`;
   return xml;
 }
-

@@ -44,12 +44,12 @@ export const GET: APIRoute = async () => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-  // Add static pages
+  // Add static pages - match reference site: changefreq=monthly for static pages, weekly for homepage
   for (const page of staticPages) {
     xml += `  <url>
     <loc>${SITE_URL}${page}/</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${page === '' ? 'daily' : 'weekly'}</changefreq>
+    <changefreq>${page === '' ? 'weekly' : 'monthly'}</changefreq>
     <priority>${page === '' ? '1.0' : '0.8'}</priority>
   </url>
 `;

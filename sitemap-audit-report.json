@@ -1,0 +1,6617 @@
+{
+  "timestamp": "2025-12-12T12:03:57.548Z",
+  "sitemapUrl": "https://free-government-phone.org/sitemap.xml",
+  "totalUrls": 1066,
+  "validUrls": 29,
+  "invalidUrls": 0,
+  "errors": [],
+  "warnings": [],
+  "urlDetails": [
+    {
+      "url": "https://free-government-phone.org/",
+      "status": 200,
+      "responseTime": 299,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/eligibility/",
+      "status": 200,
+      "responseTime": 187,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/programs/",
+      "status": 200,
+      "responseTime": 180,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/providers/",
+      "status": 200,
+      "responseTime": 196,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/faq/",
+      "status": 200,
+      "responseTime": 185,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/contact/",
+      "status": 200,
+      "responseTime": 181,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/apply/",
+      "status": 200,
+      "responseTime": 290,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/lifeline-program/",
+      "status": 200,
+      "responseTime": 207,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/acp-program/",
+      "status": 200,
+      "responseTime": 190,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/tribal-programs/",
+      "status": 200,
+      "responseTime": 198,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/state-programs/",
+      "status": 200,
+      "responseTime": 278,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/emergency-broadband/",
+      "status": 200,
+      "responseTime": 182,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/free-government-phone-near-me/",
+      "status": 302,
+      "responseTime": 246,
+      "valid": true,
+      "redirect": true,
+      "redirectLocation": "/404"
+    },
+    {
+      "url": "https://free-government-phone.org/states/",
+      "status": 200,
+      "responseTime": 217,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/al/",
+      "status": 200,
+      "responseTime": 267,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ak/",
+      "status": 200,
+      "responseTime": 271,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/az/",
+      "status": 200,
+      "responseTime": 277,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ar/",
+      "status": 200,
+      "responseTime": 290,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ca/",
+      "status": 200,
+      "responseTime": 338,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ca/los-angeles/",
+      "status": 200,
+      "responseTime": 640,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/il/chicago/",
+      "status": 200,
+      "responseTime": 508,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ny/new-york-city/",
+      "status": 200,
+      "responseTime": 738,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/fl/miami/",
+      "status": 200,
+      "responseTime": 390,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/tx/dallas/",
+      "status": 200,
+      "responseTime": 608,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/pa/philadelphia/",
+      "status": 200,
+      "responseTime": 389,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ga/atlanta/",
+      "status": 200,
+      "responseTime": 408,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/dc/washington/",
+      "status": 200,
+      "responseTime": 470,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/ma/boston/",
+      "status": 200,
+      "responseTime": 496,
+      "valid": true,
+      "redirect": false
+    },
+    {
+      "url": "https://free-government-phone.org/az/phoenix/",
+      "status": 200,
+      "responseTime": 488,
+      "valid": true,
+      "redirect": false
+    }
+  ],
+  "cityPages": [
+    {
+      "loc": "https://free-government-phone.org/ca/los-angeles/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/chicago/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/new-york-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/miami/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/dallas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/philadelphia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/atlanta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/dc/washington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/boston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/phoenix/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/detroit/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/seattle/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-francisco/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-diego/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/minneapolis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/tampa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/brooklyn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/denver/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/queens/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/houston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/riverside/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/las-vegas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/baltimore/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/st-louis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/portland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/san-antonio/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/sacramento/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/austin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/orlando/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-jose/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/indianapolis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/pittsburgh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/cincinnati/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/manhattan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/kansas-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/cleveland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/columbus/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/the-bronx/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/charlotte/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/virginia-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/jacksonville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/milwaukee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ri/providence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/nashville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/salt-lake-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/raleigh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/richmond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/memphis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/oklahoma-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/hartford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/louisville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/buffalo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/fort-worth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/bridgeport/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/new-orleans/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/tucson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/el-paso/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ne/omaha/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/mcallen/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/hempstead-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/birmingham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nm/albuquerque/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/tulsa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/charleston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fresno/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/rochester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/dayton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/cape-coral/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/provo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/colorado-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/mission-viejo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/allentown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/baton-rouge/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/ogden/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/knoxville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/grand-rapids/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/columbia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/albany/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/bakersfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/new-haven/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/des-moines/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/palm-bay/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/akron/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/concord/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/mesa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/wichita/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/harrisburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/staten-island/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/toledo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/worcester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/little-rock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/madison/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/spokane/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/long-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/denton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/reno/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/bonita-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/kissimmee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/augusta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/springfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/oakland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/winston-salem/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/stockton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/durham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/chattanooga/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/greenville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/lancaster/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/syracuse/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/fayetteville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/pensacola/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/arlington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/aurora/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/scranton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/oxnard/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/indio/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/victorville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/trenton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/huntsville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/modesto/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/hi/honolulu/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/greensboro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/fort-wayne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/anaheim/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/corpus-christi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/fort-collins/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/antioch/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ms/jackson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/fayetteville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/myrtle-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/henderson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/mobile/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/lexington-fayette/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/lansing/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/savannah/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/youngstown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/ann-arbor/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-ana/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/irvine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/st-paul/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/poughkeepsie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/newark/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-rosa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/concord/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/winter-haven/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/asheville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/canton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ne/lincoln/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/flint/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/lakeland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/jersey-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ak/anchorage/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/springfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/plano/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/lubbock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/davenport/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/reading/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/shreveport/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/chandler/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/south-bend/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/wilmington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/chula-vista/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/rockford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/eugene/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/salem/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/gilbert/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/north-las-vegas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-clarita/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/peoria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/tallahassee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/killeen/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/st-petersburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/kennewick/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/columbus/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/laredo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/irving/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/round-lake-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/montgomery/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/chesapeake/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/glendale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nh/nashua/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/york/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/garland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/rock-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/scottsdale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/north-hempstead/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/arlington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/norfolk/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/appleton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/boise-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/enterprise/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ms/gulfport/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/lafayette/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/bremerton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fremont/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/green-bay/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nd/fargo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/deltona/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/brownsville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/hialeah/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-bernardino/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/tacoma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/gainesville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/spring-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/clarksville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/port-st-lucie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/college-station/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/olympia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/roanoke/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/me/portland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fontana/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/spartanburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/moreno-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/frisco/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/yonkers/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/thousand-oaks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sd/sioux-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/hagerstown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/evansville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/amarillo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/kalamazoo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/lorain/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/galveston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/mckinney/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wv/huntington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/nampa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/hickory/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/waterbury/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/sunrise-manor/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/grand-prairie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/ocala/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/waco/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/overland-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/frederick/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/huntington-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-barbara/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/peoria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/cedar-rapids/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/vancouver/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/glendale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/gastonia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/spring-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/murfreesboro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/tempe/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/paradise/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/newport-news/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/erie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/fort-lauderdale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/gainesville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/aurora/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/mauldin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/ontario/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/elk-grove/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/panama-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/cary/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hemet/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/danbury/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/rancho-cucamonga/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/salinas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/oceanside/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/vallejo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/high-point/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/garden-grove/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/pembroke-pines/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lancaster/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/rockford-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/marysville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/fredericksburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/visalia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/tuscaloosa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/palmdale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-cruz/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/medford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/norwich/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/merced/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nh/manchester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/odessa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/muskegon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/leesburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/lafayette/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hayward/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/corona/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/paterson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/alexandria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/macon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/lakewood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/springfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/kansas-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/burlington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/warner-robins/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/thornton-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/wheeling-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/sunnyvale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/hollywood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/roseville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/new-bedford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/south-lyon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/bellevue/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fairfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/ramapo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/binghamton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/topeka/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/escondido/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/joliet/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/worth-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/surprise/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/naperville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/pasadena/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/mesquite/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/downers-grove-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/champaign/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/pomona/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/proviso/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/houma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/athens/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/st-george/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/beaumont/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/elkhart/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/lake-charles/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-maria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/yuma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/olathe/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/midland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/greeley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/torrance/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/thornton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nm/las-cruces/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/columbia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fullerton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/grand-junction/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/metairie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/orange/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/lakewood-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/warren/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/west-valley-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/maine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/hampton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/pasadena/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/miramar/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/elizabeth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/stamford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/racine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/kent/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/yakima/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/coral-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/sterling-heights/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mt/billings/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/bloomington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wv/charleston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/carrollton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/schaumburg-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/tyler/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/iowa-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/johnson-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-clara/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/bellingham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/norman/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/coeur-dalene/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/fort-smith/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/lewisville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/de/dover/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/yuba-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/lehigh-acres/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/abilene/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/simi-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/pearland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/kenosha/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/meridian/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/round-rock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/waldorf/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/temple/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/lynchburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/rochester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/logan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/arvada/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/clovis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/independence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/redding/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/greenville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/duluth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/berkeley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/boulder/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/pueblo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/west-palm-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/vt/burlington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/seaside/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/lisle-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/richardson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/cambridge/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/monroe/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/north-charleston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/saginaw/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/clearwater/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/the-woodlands/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/brandon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/st-cloud/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/west-jordan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/broken-arrow/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/harlingen/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/hi/kailua/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/westminster/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/gilroy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/richmond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/mandeville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/utica/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/league-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/port-arthur/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/lowell/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/east-los-angeles/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/carlsbad/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/elgin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/waterloo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/leominster/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/bend/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/sioux-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/gresham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/lyons-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/longview/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/pompano-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/palatine-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/capital/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/downey/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/murrieta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/idaho-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/miami-gardens/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/everett/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/holland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/costa-mesa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/temecula/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-buenaventura-ventura/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/niles-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/jacksonville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/sugar-land/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/chico/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/south-fulton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/sparks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/eau-claire/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/auburn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/dearborn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/riverview/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/allen/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/edison/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/west-covina/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/centennial/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/bloomington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/sandy-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/el-monte/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/hillsboro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/menifee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nm/rio-rancho/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/davie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/jurupa-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/columbia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/inglewood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/spokane-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/renton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/san-tan-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/burbank/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/brockton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/el-cajon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/elgin-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/naperville-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/rialto/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-mateo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/woodbridge-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/goodyear/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/lees-summit/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/charlottesville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/lafayette/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/edinburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/daly-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/wichita-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/bowling-green/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/longmont/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/vacaville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/highlands-ranch/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/quincy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/fishers/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/lynn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/norwalk/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/carmel/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hesperia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/st-augustine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/buckeye/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/san-angelo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/federal-way/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nd/bismarck/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/boca-raton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/new-braunfels/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/vista/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/canton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/beaverton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/toms-river-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/portsmouth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/orem/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/conroe/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/peoria-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/suffolk/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/sunrise/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/orland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/lawrence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/arden-arcade/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/prescott-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/middletown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/edmond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/tracy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/manteca/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/kingsport/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nh/portsmouth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/sandy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/palm-coast/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/slidell/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/greenburgh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-marcos/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/livonia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nm/santa-fe/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/plantation/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/atascocita/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/fall-river/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/ofallon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/elk-grove/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/compton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/carson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/la-crosse/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mt/missoula/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/toms-river/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/mount-pleasant/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/roswell/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/hoover/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/florence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/macomb/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/williamsburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/south-gate/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/chino/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/fort-myers/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/kirkland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santa-monica/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/leyden/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/vineland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/norwalk/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/alafaya/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/lawton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/avondale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/germantown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sd/rapid-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/westminster/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/waukegan-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/northfield-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/town-n-country/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/cheektowaga/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/champaign-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/clifton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/waukegan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/bloomington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-leandro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/newton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/joplin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/lawrence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/springdale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/du-page/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/troy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/citrus-heights/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/clarkstown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/deerfield-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/winchester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/mission/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/bryan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hawthorne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/whittier/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/livermore/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lake-forest/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-ramon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/melbourne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/franklin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/auburn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/colonie-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/upper-darby/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/joliet-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/port-huron/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/decatur/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/baytown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/brooklyn-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/springfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/newport-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/westland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/newark/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/muncie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/farmington-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/cicero/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/cicero-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/buena-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ri/warwick/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ms/hattiesburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/plainfield-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ri/cranston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/albany/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/layton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/madera/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/largo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/redwood-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/mountain-view/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/pine-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/folsom/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/silver-spring/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/johns-creek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/the-villages/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/owensboro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/napa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/new-rochelle/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/alhambra/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wy/cheyenne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/miami-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/wenatchee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/jackson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/lehi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/anderson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/homestead/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/florence/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/rancho-cordova/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wv/morgantown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/boynton-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/somerville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/north-port/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lakewood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/salisbury/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/south-jordan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/parma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/pharr/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/state-college/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/plymouth/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/turlock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/davis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/perris/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/jonesboro/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/tustin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/upland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/terre-haute/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/georgetown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/texarkana/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/kendall/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/pasco/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/milpitas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/carmichael/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/chino-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/flower-mound/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/flagstaff/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/alton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/pleasanton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/cedar-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/bellflower/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/loveland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/mansfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/hammond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/bethlehem/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/woodbury/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/alameda/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/wyoming/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/schaumburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/castle-rock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/evanston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/doral/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/st-joseph/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/cheektowaga-cdp/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/valdosta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/wausau/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/pocatello/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/elizabethtown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/anniston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/arlington-heights/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/rochester-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/southfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/daytona-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/pittsburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/oshkosh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/redmond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/saratoga-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/cherry-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/apple-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/mansfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ri/pawtucket/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/missouri-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/broomfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/janesville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/rich/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/san-marcos/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/camarillo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/jackson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/dothan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/sherman/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/lauderhill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/harrisonburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/bolingbrook/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/ellicott-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/alexandria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/battle-creek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/new-britain/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/sheboygan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/brunswick/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/altoona/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lodi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/redlands/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/dale-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/glen-burnie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/mount-vernon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/lakeville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nh/dover/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/lebanon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/rocklin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/tonawanda-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/framingham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/wesley-chapel/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/noblesville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/tamarac/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/centreville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/poinciana/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ak/fairbanks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lake-elsinore/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/camden/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/rogers/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/blaine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/de/wilmington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/st-charles/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/blacksburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/waukesha/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/casas-adobes/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/baldwin-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/cleveland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/dublin/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/ankeny/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/maple-grove/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/bayonne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/north-richland-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/eastvale/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/waterford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/glens-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/longview/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/tulare/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/conway/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/west-des-moines/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/redondo-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/walnut-creek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/passaic/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/porterville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/maricopa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/southampton-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/spring-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/gaithersburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/east-orange/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/sumter/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nd/grand-forks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/bristol/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/michigan-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/gary/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/dubuque/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/lakewood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/schenectady/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wy/casper/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hanford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/shawnee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/south-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/eagan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/union-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/weston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/kankakee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/leander/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/hammond/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/corvallis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/apex/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/old-bridge-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/yorba-linda/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/bethesda/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/haverhill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/palo-alto/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/rockville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/middletown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/spring/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/delray-beach/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/watsonville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/mount-vernon/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/palatine/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/victoria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/skokie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/morristown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/sammamish/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/union-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/queen-creek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/alpharetta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/lima/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/novi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mt/great-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/ames/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/gloucester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/west-bloomfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/malden/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/dundalk/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/albany/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/castro-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/dalton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lynwood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/pflugerville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/sebring/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/kenner/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/brentwood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/west-chester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/port-charlotte/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/waltham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/commerce-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/brentwood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/dundee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/north-little-rock/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/south-san-francisco/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ne/bellevue/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/lower-merion/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/burnsville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/greenwood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/rowlett/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/west-hartford-cdp/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/laguna-niguel/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mt/bozeman/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/port-orange/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/wayne-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/reston/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-clemente/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/caldwell/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/coon-rapids/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/millcreek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/eden-prairie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wv/parkersburg/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/hamilton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/moore/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/lakewood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/bay-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/bossier-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/brookline-cdp/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/council-bluffs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/huntersville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/taylor/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/hendersonville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/sanford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/la-habra/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/horizon-west/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/dearborn-heights/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/st-cloud/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/pontiac/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/richland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/marietta/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/florence-graham/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/springfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/encinitas/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/wellington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/palm-harbor/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/montebello/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/woodland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/bristol/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/jupiter/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/la-mesa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/pico-rivera/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/north-bergen/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-rafael/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/piscataway/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/meriden/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/euless/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/irvington/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/clay/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/hamburg-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/parker/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/lockport-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/revere/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/stonecrest/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/frankfort-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/chapel-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/white-plains/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/gardena/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/palm-beach-gardens/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/taunton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/union-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/jackson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/monterey-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/west-allis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/santee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/north-miami/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/blue-springs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/des-plaines/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/kokomo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/petaluma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/shoreline/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/medford/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/taylorsville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/wylie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/cupertino/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/hempstead/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/the-hammocks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/margate/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/carson-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/hoboken/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/madison/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/st-clair-shores/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/st-peters/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/midwest-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/severn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/lake-havasu-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/lenexa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/orland-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/royal-oak/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/bowie/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/al/decatur/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/bel-air-south/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/towson/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/weymouth-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/casa-grande/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/coconut-creek/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/kettering/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/herriman/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/brookhaven/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/tonawanda-town/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/oak-lawn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/lacey/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/bartlett/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/oswego-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/highland/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/four-corners/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/kannapolis/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/fountainebleau/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/fountain-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/bentonville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/bradenton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/new-trier/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/smyrna/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/sarasota/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/parsippany-troy-hills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/apopka/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/national-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/desoto/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/berwyn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/new-brunswick/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/palos/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/apple-valley/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/mount-prospect/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/union/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/arcadia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ms/southaven/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/tigard/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/perth-amboy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/chicopee/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/south-whittier/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/west-haven/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/smyrna/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/tinley-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/hacienda-heights/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/beaumont/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/san-jacinto/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/plainfield/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/west-sacramento/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/marana/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/yucaipa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/georgetown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/lower-paxton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/peabody/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/rocky-mount/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/texas-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/kentwood/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/libertyville-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/manhattan/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/howell/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/colton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/aspen-hill/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/diamond-bar/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/huntington-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/wheaton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/pinellas-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/wayne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/aloha/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/oak-park/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/oak-park-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/minnetonka/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/twin-falls/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/edina/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/westchester/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/normal/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/elyria/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ne/grand-island/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/novato/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/paramount/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/kyle/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/placentia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/wheaton/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/kendale-lakes/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/normal-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/cathedral-city/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/florissant/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/st-charles-township/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/catalina-foothills/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/west-new-york/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/lincoln/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/dunwoody/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/levittown/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/palm-desert/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/mooresville/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/little-elm/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/glendora/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/burien/",
+      "lastmod": "2025-12-12",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    }
+  ],
+  "statePages": [
+    {
+      "loc": "https://free-government-phone.org/al/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ak/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/az/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ar/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ca/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/co/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ct/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/de/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/dc/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/fl/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ga/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/hi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/id/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/il/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/in/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ia/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ks/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ky/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/la/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/me/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/md/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ma/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/mi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/mn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ms/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/mo/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/mt/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ne/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nv/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nj/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nm/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ny/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nc/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/nd/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/oh/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ok/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/or/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/pa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/pr/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ri/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/sc/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/sd/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/tn/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/tx/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/ut/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/vt/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/va/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/wa/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/wv/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/wi/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://free-government-phone.org/wy/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.7"
+    }
+  ],
+  "staticPages": [
+    {
+      "loc": "https://free-government-phone.org/",
+      "lastmod": "2025-12-12",
+      "changefreq": "daily",
+      "priority": "1.0"
+    },
+    {
+      "loc": "https://free-government-phone.org/eligibility/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/programs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/providers/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/faq/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/contact/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/apply/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/lifeline-program/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/acp-program/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/tribal-programs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/state-programs/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/emergency-broadband/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/free-government-phone-near-me/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://free-government-phone.org/states/",
+      "lastmod": "2025-12-12",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    }
+  ]
+}

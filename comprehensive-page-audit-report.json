@@ -1,0 +1,3297 @@
+{
+  "timestamp": "2025-12-12T12:07:05.871Z",
+  "sites": {
+    "free-government-phone.org": {
+      "name": "free-government-phone.org",
+      "url": "https://free-government-phone.org",
+      "pages": [
+        {
+          "url": "https://free-government-phone.org/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "8d020638b79e1cd95b1091c2e318d56d",
+          "contentLength": 3116,
+          "wordCount": 483,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Eligibility | Get Started",
+            "metaDescription": "Get free government phone through federal programs. Easy eligibility check and quick enrollment. Apply for free phone benefits today. Learn more about",
+            "h1": "Government Free Phone Program Online"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/eligibility/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5d70740cc9de8abb4f28c97f8ec6429a",
+          "contentLength": 4045,
+          "wordCount": 602,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Check Free Government Phone Eligibility | Qualify Today",
+            "metaDescription": "Verify eligibility for free government phone benefits online. Income-based or program-based qualification options available. Check now. Learn more abo",
+            "h1": "Free Government Phone: Who Is Eligible?"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 266
+        },
+        {
+          "url": "https://free-government-phone.org/programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "44b27503b4d4435599ce1af844cad76b",
+          "contentLength": 1909,
+          "wordCount": 251,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Programs | Federal Program Guide",
+            "metaDescription": "Explore comprehensive guide to free government phone programs. Learn about federal assistance benefits, eligibility requirements, and application procedures...",
+            "h1": "Free Government Phone Programs Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 187
+        },
+        {
+          "url": "https://free-government-phone.org/providers/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5a2351b91ba7e2c4416314bf03a4b4eb",
+          "contentLength": 21,
+          "wordCount": 3,
+          "isThinContent": true,
+          "seoData": {
+            "title": null,
+            "metaDescription": null,
+            "h1": null
+          },
+          "hasTitle": false,
+          "hasMetaDesc": false,
+          "hasH1": false,
+          "responseTime": 195
+        },
+        {
+          "url": "https://free-government-phone.org/faq/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "7acd7050ecc5dd570c758f2773017fc0",
+          "contentLength": 3004,
+          "wordCount": 439,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone FAQ | Get Answers to Common Questions",
+            "metaDescription": "Find free government phone FAQ answers to common questions. Questions about eligibility, application process, and service benefits explained here. Lea",
+            "h1": "Free Government Phone FAQ Guide"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 165
+        },
+        {
+          "url": "https://free-government-phone.org/contact/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4cdb65d48ed6634aa6fc7d478e0a7413",
+          "contentLength": 2103,
+          "wordCount": 311,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Contact Free Government Phone | Support Center | Learn More",
+            "metaDescription": "Reach out to free government phone support center for assistance. Get help with applications, eligibility requirements, and answers to your program questions.",
+            "h1": "Free Government Phone Support"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 178
+        },
+        {
+          "url": "https://free-government-phone.org/apply/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "7ce2c140cd04875e3f6dd3f52ebb552c",
+          "contentLength": 1579,
+          "wordCount": 249,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Apply for Free Government Phone - Get Approved in 2 Minutes",
+            "metaDescription": "Apply now for your free government phone. Quick 2-minute application process. Get approved instantly and receive your phone within days. No credit check required.",
+            "h1": "Free Government Phone"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 177
+        },
+        {
+          "url": "https://free-government-phone.org/lifeline-program/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "274d7d9de2b3a4332d605182ab53213e",
+          "contentLength": 5177,
+          "wordCount": 804,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Programs | Complete Program List",
+            "metaDescription": "Discover federal communication assistance programs available to qualifying households. Compare Lifeline, ACP, and other programs to find the best benefits...",
+            "h1": "Free Government Phone via Lifeline Program"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 191
+        },
+        {
+          "url": "https://free-government-phone.org/acp-program/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "0640106efc844e6a7a85dfd4856f0921",
+          "contentLength": 4948,
+          "wordCount": 781,
+          "isThinContent": false,
+          "seoData": {
+            "title": "ACP Program Free Government Phone | Get Started Now",
+            "metaDescription": "Access ACP free government phone benefits. Federal Affordable Connectivity Program helps eligible households stay connected. Quick application process with...",
+            "h1": "ACP Program Free Government Phone Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 179
+        },
+        {
+          "url": "https://free-government-phone.org/tribal-programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "af7b71401455240941f92bf8fac896c9",
+          "contentLength": 5288,
+          "wordCount": 748,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Programs | Compare Lifeline &amp; ACP",
+            "metaDescription": "Find comprehensive information about free government phone programs. Compare program benefits, eligibility requirements, and application processes for...",
+            "h1": "Enroll in Tribal Free Government Phone"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 175
+        },
+        {
+          "url": "https://free-government-phone.org/state-programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ab4cf46605f225d42a2435ddadcadb9c",
+          "contentLength": 5598,
+          "wordCount": 793,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Programs Overview | Federal Benefits",
+            "metaDescription": "Explore comprehensive guide to free government phone programs. Learn about federal assistance benefits, eligibility requirements, and application procedures...",
+            "h1": "Free Government Phone Programs State by State"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 290
+        },
+        {
+          "url": "https://free-government-phone.org/emergency-broadband/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "c6e56dea199e46630aabb929e3bdeaff",
+          "contentLength": 3029,
+          "wordCount": 448,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Programs | Compare All Programs",
+            "metaDescription": "Learn about free government phone programs offering federal communication assistance. Understand eligibility criteria, benefits, and application processes...",
+            "h1": "Emergency Broadband Free Government Phone Assistance"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 172
+        },
+        {
+          "url": "https://free-government-phone.org/free-government-phone-near-me/",
+          "status": 302,
+          "error": "HTTP 302",
+          "valid": false
+        },
+        {
+          "url": "https://free-government-phone.org/states/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "1e87bb171a832ff720fff507d9359422",
+          "contentLength": 403,
+          "wordCount": 88,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone by State - Find Local Programs | Free Government Phone",
+            "metaDescription": "Discover free government phone programs available in your state. Find local Lifeline providers, state-specific benefits, and application centers near you.",
+            "h1": "Free Government Phone"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 230
+        },
+        {
+          "url": "https://free-government-phone.org/al/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "268451d045112987a55b1b9cfea3a5c5",
+          "contentLength": 2163,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Alabama Free Phone Application | Start Today Free",
+            "metaDescription": "Access free government phone programs in Alabama. Eligible residents can apply for Lifeline and ACP benefits. Simple online application process available now.",
+            "h1": "Free Government Phones for Alabama Families"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 369
+        },
+        {
+          "url": "https://free-government-phone.org/ak/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ec1575e056ead6b9088051888ac980c6",
+          "contentLength": 2148,
+          "wordCount": 306,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Alaska | Start Application | 2025",
+            "metaDescription": "Access free government phone programs in Alaska. Eligible residents can apply for Lifeline and ACP benefits. Simple online application process available now.",
+            "h1": "Free Phone Service Available in Alaska"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 285
+        },
+        {
+          "url": "https://free-government-phone.org/az/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "138da8018e0c95be270cc393794afb73",
+          "contentLength": 2088,
+          "wordCount": 291,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Arizona Free Phone Application | Start Today Free",
+            "metaDescription": "Free government phone benefits in Arizona for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Arizona Free Government Phone Services"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 258
+        },
+        {
+          "url": "https://free-government-phone.org/ar/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6d2a2867a719b0eca292417957ed63fe",
+          "contentLength": 2297,
+          "wordCount": 317,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Arkansas Free Government Phone | Get Started | Apply Today",
+            "metaDescription": "Free government phone programs available in Arkansas. Eligible households can apply for Lifeline and ACP benefits. Simple application process with quick...",
+            "h1": "Free Phones Available in Arkansas"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 328
+        },
+        {
+          "url": "https://free-government-phone.org/ca/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "e13e594d5f2fa4f03823e502afeeb4c4",
+          "contentLength": 2174,
+          "wordCount": 304,
+          "isThinContent": false,
+          "seoData": {
+            "title": "California Free Phone Program | Get Started Free G",
+            "metaDescription": "Free government phone programs available in California. Eligible households can apply for Lifeline and ACP benefits. Simple application process with quick...",
+            "h1": "California Free Phone Programs and Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 258
+        },
+        {
+          "url": "https://free-government-phone.org/co/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "70fcb028af8bc6473d45d2bb7779b52a",
+          "contentLength": 2138,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Benefits in Colorado | Learn More",
+            "metaDescription": "Access free government phone programs in Colorado. Eligible residents can apply for Lifeline and ACP benefits. Simple online application process available now.",
+            "h1": "Free Government Phones in Colorado"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 260
+        },
+        {
+          "url": "https://free-government-phone.org/ct/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "91ce4cef4a7baa8e77aa33deca9fb42b",
+          "contentLength": 2165,
+          "wordCount": 302,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Connecticut | Get Benefits | 2025",
+            "metaDescription": "Free government phone benefits available in Connecticut. Eligible residents can apply for Lifeline and ACP programs. Simple application process with quick...",
+            "h1": "Connecticut Free Phone Application"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/de/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "46e36f248096c653774977226fbc9d13",
+          "contentLength": 1931,
+          "wordCount": 270,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Available in Delaware Free Gove",
+            "metaDescription": "Free government phone benefits available in Delaware. Eligible residents can apply for Lifeline and ACP programs. Simple application process with quick...",
+            "h1": "Delaware Free Phone Programs and Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 237
+        },
+        {
+          "url": "https://free-government-phone.org/dc/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5a38f248d2983197985d540cfb64091f",
+          "contentLength": 1501,
+          "wordCount": 225,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone District of Columbia | Benefits 2025",
+            "metaDescription": "Apply for free government phone in District of Columbia. Federal programs provide phone service to qualifying residents. Check eligibility and start...",
+            "h1": "District of Columbia Free Government Phone Service"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 250
+        },
+        {
+          "url": "https://free-government-phone.org/fl/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "bf35582e6be14761271b63a367554bd9",
+          "contentLength": 2187,
+          "wordCount": 305,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Florida Free Government Phone | Apply Now | Get Started",
+            "metaDescription": "Access free government phone programs in Florida. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with fast...",
+            "h1": "Florida Free Phone Application"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 276
+        },
+        {
+          "url": "https://free-government-phone.org/ga/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "b30d4c93b4646a6be0bb250570489cf3",
+          "contentLength": 2133,
+          "wordCount": 298,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Georgia Free Phone Benefits | Enroll Today Free Go",
+            "metaDescription": "Apply for free government phone in Georgia. Federal assistance programs provide phone service to qualifying households. Check eligibility and apply online...",
+            "h1": "Georgia Free Phone Programs"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/hi/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "89cdf56abc83084e4c7c600fc0bcb411",
+          "contentLength": 2099,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Hawaii Free Government Phone | Apply Online | Check Now",
+            "metaDescription": "Free government phone benefits available in Hawaii. Eligible residents can apply for Lifeline and ACP programs. Simple application process with quick approval.",
+            "h1": "Free Phone Service for Hawaii Households"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 270
+        },
+        {
+          "url": "https://free-government-phone.org/id/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "dee88a49e7035e194d19ebec394d383a",
+          "contentLength": 2277,
+          "wordCount": 331,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Idaho Free Government Phone Service 2025 | Apply Today",
+            "metaDescription": "Apply for free government phone in Idaho. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Free Government Phone Benefits in Idaho"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 279
+        },
+        {
+          "url": "https://free-government-phone.org/il/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "fcaa76142e61cb2d33c8a9c42a56ac06",
+          "contentLength": 2249,
+          "wordCount": 312,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Illinois | Enroll Today | Get Started",
+            "metaDescription": "Apply for free government phone in Illinois. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Free Phone Service Programs in Illinois"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 286
+        },
+        {
+          "url": "https://free-government-phone.org/in/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "a792c6605cc474c0bda1acead3f944ea",
+          "contentLength": 2138,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Indiana | Apply Online Free Gov",
+            "metaDescription": "Free government phone benefits in Indiana for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Free Phones for Indiana Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 259
+        },
+        {
+          "url": "https://free-government-phone.org/ia/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4fdebbdea9d0731a85bca6228b20b9f1",
+          "contentLength": 2295,
+          "wordCount": 329,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Iowa Residents: Free Phone Benefits Free Governmen",
+            "metaDescription": "Get free government phone service benefits in Iowa. Federal communication assistance available to qualifying households. Quick application with fast approval.",
+            "h1": "Iowa Free Phone Service and Eligibility"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 259
+        },
+        {
+          "url": "https://free-government-phone.org/ks/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "bfc11bf404d89f19c4d60bedfb709626",
+          "contentLength": 2194,
+          "wordCount": 313,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Kansas Free Phone Enrollment | Apply Now Free Gove",
+            "metaDescription": "Apply for free government phone in Kansas. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Kansas Free Government Phone Benefits Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 280
+        },
+        {
+          "url": "https://free-government-phone.org/ky/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "3d60907e6c844220510cff0346c9403e",
+          "contentLength": 2224,
+          "wordCount": 301,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Kentucky Free Phone Program | Apply Online Now Fre",
+            "metaDescription": "Free government phone benefits in Kentucky for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Free Government Phone Service Available in Kentucky"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 287
+        },
+        {
+          "url": "https://free-government-phone.org/la/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "558eb64e146ab7df8ef633a2f6bc657a",
+          "contentLength": 2203,
+          "wordCount": 304,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Louisiana Free Phone Benefits | Start Now Free Gov",
+            "metaDescription": "Access free government phone programs in Louisiana. Eligible residents can apply for Lifeline and ACP benefits. Simple online application process available now.",
+            "h1": "Louisiana Free Government Phone Options"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 271
+        },
+        {
+          "url": "https://free-government-phone.org/me/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "b30515e8793390c2d84a6c44219a4f04",
+          "contentLength": 2086,
+          "wordCount": 298,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Maine Free Government Phone | Get Started | Get Started",
+            "metaDescription": "Free government phone benefits in Maine for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Maine Free Phone Options"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 287
+        },
+        {
+          "url": "https://free-government-phone.org/md/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "0c2a0e3734e5b3bb94a1f3668bd8acff",
+          "contentLength": 1979,
+          "wordCount": 274,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Benefits for Maryland Residents Free Go",
+            "metaDescription": "Free government phone benefits in Maryland for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Maryland Free Phone Options"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 259
+        },
+        {
+          "url": "https://free-government-phone.org/ma/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "1cd8e97e8881664d4ffe19e26634e0d2",
+          "contentLength": 2204,
+          "wordCount": 308,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Massachusetts | Start Application",
+            "metaDescription": "Free government phone benefits in Massachusetts for eligible households. Apply for federal communication assistance programs. Quick application with rapid...",
+            "h1": "Get Your Free Phone in Massachusetts"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 308
+        },
+        {
+          "url": "https://free-government-phone.org/mi/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "f42f3f892abf7d484368eda9f9224a34",
+          "contentLength": 2120,
+          "wordCount": 300,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Get Free Phone in Michigan | Government Benefits F",
+            "metaDescription": "Get free government phone service in Michigan. Federal communication assistance programs help eligible households stay connected. Apply online today for...",
+            "h1": "Michigan Free Government Phone Services"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 278
+        },
+        {
+          "url": "https://free-government-phone.org/mn/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ceafc112472f7bb03564b740c8e6f10f",
+          "contentLength": 2248,
+          "wordCount": 321,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Available in Minnesota Free Gov",
+            "metaDescription": "Get free government phone service benefits in Minnesota. Federal communication assistance available to qualifying households. Quick application with fast...",
+            "h1": "Free Phone Service in Minnesota"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/ms/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "c5a18fa21a40cc802c1c7abbed17c418",
+          "contentLength": 2309,
+          "wordCount": 320,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Mississippi | Enroll Today | 2025",
+            "metaDescription": "Apply for free government phone in Mississippi. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Free Phone Service in Mississippi - Apply Today"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 278
+        },
+        {
+          "url": "https://free-government-phone.org/mo/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "06b8d7e18568f1c21dd8447c7f84c43b",
+          "contentLength": 2172,
+          "wordCount": 302,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Missouri Free Government Phone Service 2025 | Check Now",
+            "metaDescription": "Free government phone programs in Missouri help eligible residents stay connected. Apply for Lifeline and ACP benefits through simple online application...",
+            "h1": "Missouri Free Phone Service Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 280
+        },
+        {
+          "url": "https://free-government-phone.org/mt/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "a76cc0b71c3fdec028ff3cb740ae532a",
+          "contentLength": 2115,
+          "wordCount": 307,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Montana | Program Info | Apply Today",
+            "metaDescription": "Apply for free government phone in Montana. Federal assistance programs provide phone service to qualifying households. Check eligibility and apply online...",
+            "h1": "Free Phone Service for Montana Households"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 298
+        },
+        {
+          "url": "https://free-government-phone.org/ne/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "284ec5e7648d7a64c5cd547ecb41fe53",
+          "contentLength": 2270,
+          "wordCount": 320,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Nebraska Free Phone Service | Get Benefits Free Go",
+            "metaDescription": "Access free government phone programs in Nebraska. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with fast...",
+            "h1": "Free Government Phone Programs in Nebraska"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 288
+        },
+        {
+          "url": "https://free-government-phone.org/nv/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "89dcaced95e7dae746615c9794c90759",
+          "contentLength": 2131,
+          "wordCount": 304,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Nevada Free Government Phone | Enroll Today | Check Now",
+            "metaDescription": "Free government phone programs in Nevada help eligible residents stay connected. Apply for Lifeline and ACP benefits through simple online application process.",
+            "h1": "Free Phone Service for Nevada Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 247
+        },
+        {
+          "url": "https://free-government-phone.org/nh/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5455edd5c1ac5b0f7a8acc581339a074",
+          "contentLength": 2142,
+          "wordCount": 307,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone New Hampshire | Check Eligibility",
+            "metaDescription": "Access free government phone programs in New Hampshire. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "Free Phones Available in New Hampshire"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 280
+        },
+        {
+          "url": "https://free-government-phone.org/nj/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "191c75064bf43af00b9959a7514a986f",
+          "contentLength": 2255,
+          "wordCount": 321,
+          "isThinContent": false,
+          "seoData": {
+            "title": "New Jersey Free Government Phone | Benefits Guide | 2025",
+            "metaDescription": "Get free government phone service in New Jersey. Federal communication assistance programs help eligible households stay connected. Apply online today for...",
+            "h1": "Free Government Phone Options in New Jersey"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 277
+        },
+        {
+          "url": "https://free-government-phone.org/nm/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "55e53c993f55c77455d5971d32ee7847",
+          "contentLength": 2141,
+          "wordCount": 304,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone New Mexico | Get Started | Learn More",
+            "metaDescription": "Apply for free government phone in New Mexico. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Free Government Phone Programs in New Mexico"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 247
+        },
+        {
+          "url": "https://free-government-phone.org/ny/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "d2aa9b84acd3bd6631dd47772b580e8d",
+          "contentLength": 2163,
+          "wordCount": 306,
+          "isThinContent": false,
+          "seoData": {
+            "title": "New York Free Phone Enrollment | Apply Now Free Go",
+            "metaDescription": "Apply for free government phone in New York. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "New York Free Government Phone Plans"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 258
+        },
+        {
+          "url": "https://free-government-phone.org/nc/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "b33470dbbf2d3addbb69d7b1ea5f5f26",
+          "contentLength": 2197,
+          "wordCount": 302,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Benefits in North Carolina | 2025",
+            "metaDescription": "Get free government phone service in North Carolina. Federal communication assistance programs help eligible households stay connected. Apply online today...",
+            "h1": "North Carolina Free Government Phone Options"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/nd/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "f39ee5288a09d590dce745cf25e3c822",
+          "contentLength": 2200,
+          "wordCount": 322,
+          "isThinContent": false,
+          "seoData": {
+            "title": "North Dakota Free Phone Application | Start Today",
+            "metaDescription": "Access free government phone programs in North Dakota. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "North Dakota Free Government Phone Services"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 270
+        },
+        {
+          "url": "https://free-government-phone.org/oh/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "491a7771c8252863423af0011603c254",
+          "contentLength": 2218,
+          "wordCount": 310,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Ohio | Benefits 2025 | Learn More",
+            "metaDescription": "Apply for free government phone in Ohio. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Ohio Lifeline &amp; ACP Programs"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 257
+        },
+        {
+          "url": "https://free-government-phone.org/ok/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "2d01013ed89edd9c6aa865f0e4da4f9d",
+          "contentLength": 2085,
+          "wordCount": 291,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Oklahoma Free Phone Program | Apply Online Now Fre",
+            "metaDescription": "Get free government phone service in Oklahoma. Federal communication assistance programs help eligible households stay connected. Apply online today for...",
+            "h1": "Oklahoma Free Government Phone Service Plans"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 276
+        },
+        {
+          "url": "https://free-government-phone.org/or/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "2e689ab1de47ddebd216e91dfe9509a2",
+          "contentLength": 2098,
+          "wordCount": 300,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Benefits Available in Oregon Free Gover",
+            "metaDescription": "Get free government phone service benefits in Oregon. Federal communication assistance available to qualifying households. Quick application with fast approval.",
+            "h1": "Free Phone Benefits Available in Oregon"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 449
+        },
+        {
+          "url": "https://free-government-phone.org/pa/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "0a688b8153d668623fc6218903c0073c",
+          "contentLength": 2188,
+          "wordCount": 300,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Pennsylvania Residents: Free Phone Benefits Free G",
+            "metaDescription": "Get free government phone service benefits in Pennsylvania. Federal communication assistance available to qualifying households. Quick application with fast...",
+            "h1": "Free Phone Benefits Available in Pennsylvania"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 289
+        },
+        {
+          "url": "https://free-government-phone.org/pr/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6c9c43194d5f2ae456ec9fc13c831128",
+          "contentLength": 1449,
+          "wordCount": 213,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Puerto Rico Free Government Phone | Quick Apply | Check Now",
+            "metaDescription": "Free government phone benefits in Puerto Rico for eligible households. Apply for federal communication assistance programs. Quick application with rapid...",
+            "h1": "Free Government Phone Programs in Puerto Rico"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 258
+        },
+        {
+          "url": "https://free-government-phone.org/ri/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ba90c9a6fdbdaacc5ac9b2acf81f6947",
+          "contentLength": 2336,
+          "wordCount": 326,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Rhode Island | Apply Online Fre",
+            "metaDescription": "Access free government phone programs in Rhode Island. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "Free Phones Available for Rhode Island Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 247
+        },
+        {
+          "url": "https://free-government-phone.org/sc/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "cd30861b1734091819b14b0fcef9b387",
+          "contentLength": 2342,
+          "wordCount": 326,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone South Carolina | Enroll Today",
+            "metaDescription": "Free government phone benefits in South Carolina for eligible households. Apply for federal communication assistance programs. Quick application with rapid...",
+            "h1": "South Carolina Free Phone Program Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 288
+        },
+        {
+          "url": "https://free-government-phone.org/sd/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "80a9f827d8a61f7e8411ab7b202545a6",
+          "contentLength": 2140,
+          "wordCount": 305,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone South Dakota | Qualify Now | 2025",
+            "metaDescription": "Access free government phone programs in South Dakota. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "South Dakota Free Phone Service Programs Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 269
+        },
+        {
+          "url": "https://free-government-phone.org/tn/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "810ac11c7ea0bc586098bb21a6d22751",
+          "contentLength": 2177,
+          "wordCount": 297,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Tennessee Residents: Get Free Government Phone | Learn More",
+            "metaDescription": "Free government phone benefits in Tennessee for eligible households. Apply for federal communication assistance programs. Quick application with rapid approval.",
+            "h1": "Free Phone Service for Tennessee Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 267
+        },
+        {
+          "url": "https://free-government-phone.org/tx/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "704c46217fc7b4441ff9db8bb44bc5a1",
+          "contentLength": 2143,
+          "wordCount": 301,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Texas Free Phone Service | Get Benefits Free Gover",
+            "metaDescription": "Free government phone benefits available in Texas. Eligible residents can apply for Lifeline and ACP programs. Simple application process with quick approval.",
+            "h1": "Texas Free Phone Service Programs Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/ut/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "e3068da666be12fe6f0a298580838e79",
+          "contentLength": 2117,
+          "wordCount": 309,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Utah Free Government Phone | Quick Apply | Apply Today",
+            "metaDescription": "Get free government phone service in Utah. Federal communication assistance programs help eligible households stay connected. Apply online today for benefits.",
+            "h1": "Free Phone Service in Utah"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 243
+        },
+        {
+          "url": "https://free-government-phone.org/vt/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4b99e4699c3d1a30ad5b97f3e8284963",
+          "contentLength": 2132,
+          "wordCount": 301,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Vermont Free Government Phone | Apply Online | Apply Today",
+            "metaDescription": "Apply for free government phone in Vermont. Federal programs provide phone service to qualifying residents. Check eligibility and start application today.",
+            "h1": "Vermont Free Phone Service Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 252
+        },
+        {
+          "url": "https://free-government-phone.org/va/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "e95b9ef00a6fd81081208c1477210dc4",
+          "contentLength": 2223,
+          "wordCount": 305,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Virginia | Apply Fast | Check Now",
+            "metaDescription": "Free government phone programs in Virginia help eligible residents stay connected. Apply for Lifeline and ACP benefits through simple online application...",
+            "h1": "Get Free Phones in Virginia Today"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 257
+        },
+        {
+          "url": "https://free-government-phone.org/wa/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "1c26e6ba22e0bf65febf20774abef7b9",
+          "contentLength": 2157,
+          "wordCount": 304,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service in Washington | Apply Fast Free",
+            "metaDescription": "Get free government phone service benefits in Washington. Federal communication assistance available to qualifying households. Quick application with fast...",
+            "h1": "Washington Free Government Phone Service"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/wv/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "0fadfd75ce4a5c613e6aa65c26a5dd62",
+          "contentLength": 2236,
+          "wordCount": 314,
+          "isThinContent": false,
+          "seoData": {
+            "title": "West Virginia Free Phone Program | Apply Online Now",
+            "metaDescription": "Apply for free government phone in West Virginia. Federal assistance programs provide phone service to qualifying households. Check eligibility and apply...",
+            "h1": "Free Phone Programs Available in West Virginia"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 268
+        },
+        {
+          "url": "https://free-government-phone.org/wi/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "aa6bd839c8ebeebaa973afdb8a41a2a8",
+          "contentLength": 2106,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Wisconsin Free Government Phone | Start Today | Get Started",
+            "metaDescription": "Free government phone benefits available in Wisconsin. Eligible residents can apply for Lifeline and ACP programs. Simple application process with quick...",
+            "h1": "Wisconsin Free Government Phone Services"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 267
+        },
+        {
+          "url": "https://free-government-phone.org/wy/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "24ceba7ef3fe8ef324875c1e09723581",
+          "contentLength": 2099,
+          "wordCount": 299,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Wyoming | Qualify Now | Check Now",
+            "metaDescription": "Get free government phone service benefits in Wyoming. Federal communication assistance available to qualifying households. Quick application with fast...",
+            "h1": "Wyoming Free Phone Service Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 307
+        },
+        {
+          "url": "https://free-government-phone.org/ca/los-angeles/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "bc79d940a99daf1f3ce4efdabe8c6c6f",
+          "contentLength": 13459,
+          "wordCount": 1939,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Benefits for Los Angeles, California Residents",
+            "metaDescription": "Get free government phone service benefits in Los Angeles, California. Federal communication assistance available to qualifying households. Quick application.",
+            "h1": "Los Angeles, CA Free Government Phone Eligibility"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 589
+        },
+        {
+          "url": "https://free-government-phone.org/il/chicago/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "c9d3df397aea8c6b789a37b9a85088f9",
+          "contentLength": 13683,
+          "wordCount": 1952,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Chicago, Illinois | Government Program",
+            "metaDescription": "Free government phone programs available in Chicago, Illinois. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Chicago Free Phone Service Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 426
+        },
+        {
+          "url": "https://free-government-phone.org/ny/new-york-city/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "95db36fdeb308cf7dbc5bbab6596b069",
+          "contentLength": 13982,
+          "wordCount": 2057,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Get Free Phone in New York City, New York | Benefits",
+            "metaDescription": "Free government phone service in New York City, New York. Federal communication assistance programs help eligible households stay connected. Apply online today.",
+            "h1": "New York City Free Phone Benefits Program"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 612
+        },
+        {
+          "url": "https://free-government-phone.org/fl/miami/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4de9042dbb479fe669ed4e6c5cbae36c",
+          "contentLength": 13563,
+          "wordCount": 1941,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Get Free Phone Miami Florida | Apply Now Free Gove",
+            "metaDescription": "Access free government phone programs in Miami, Florida. Eligible residents can apply for Lifeline and ACP benefits. Simple online application available.",
+            "h1": "Miami, FL Free Phone Programs"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 590
+        },
+        {
+          "url": "https://free-government-phone.org/tx/dallas/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6a96b3577498dc3fa57620c9575b661e",
+          "contentLength": 13597,
+          "wordCount": 1942,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Dallas Texas | Qualify | Apply Today",
+            "metaDescription": "Apply for free government phone in Dallas, Texas. Federal programs provide phone service to qualifying residents. Check eligibility and start today. L",
+            "h1": "Dallas, TX Free Phone Programs"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 625
+        },
+        {
+          "url": "https://free-government-phone.org/pa/philadelphia/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "84a6b090286b168cf141e2c29df198ba",
+          "contentLength": 13891,
+          "wordCount": 1946,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Philadelphia, Pennsylvania | Government Program",
+            "metaDescription": "Apply for free government phone in Philadelphia, Pennsylvania. Federal assistance programs provide phone service to qualifying households. Check eligibility...",
+            "h1": "Free Phone Benefits in Philadelphia, PA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 366
+        },
+        {
+          "url": "https://free-government-phone.org/ga/atlanta/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "51917811fd6366a153414ceb19143c7d",
+          "contentLength": 13654,
+          "wordCount": 1941,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Atlanta Georgia | Guide | Get Started",
+            "metaDescription": "Apply for free government phone in Atlanta, Georgia. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "Atlanta Free Phone Application"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 470
+        },
+        {
+          "url": "https://free-government-phone.org/dc/washington/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "baa487ae21936a0e33e1b59cc80f6f01",
+          "contentLength": 13430,
+          "wordCount": 1883,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Washington, District of Columbia |...",
+            "metaDescription": "Get free government phone service benefits in Washington, District of Columbia. Federal communication assistance available to qualifying households. Quick...",
+            "h1": "Washington, DC Free Phone Service Application"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 431
+        },
+        {
+          "url": "https://free-government-phone.org/ma/boston/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "130a68ac202ff5d89d0fe0c3e1f2a607",
+          "contentLength": 13674,
+          "wordCount": 1941,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Boston, Massachusetts Free Phone Service | Apply F",
+            "metaDescription": "Apply for free government phone in Boston, Massachusetts. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "Boston, MA Free Phone Service Eligibility"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 645
+        },
+        {
+          "url": "https://free-government-phone.org/az/phoenix/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "bd042bb94f2b2f0da214abdc15edae42",
+          "contentLength": 13705,
+          "wordCount": 1949,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Phoenix, Arizona Free Government Phone | Start Today",
+            "metaDescription": "Free government phone benefits in Phoenix, Arizona for eligible households. Apply for federal communication assistance programs. Quick application process.",
+            "h1": "Free Phone Service for Phoenix, AZ Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 425
+        },
+        {
+          "url": "https://free-government-phone.org/mi/detroit/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "752b7bc852f657649dc0653d3ed0659c",
+          "contentLength": 13245,
+          "wordCount": 1896,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Apply for Free Phone Detroit, Michigan | Today Fre",
+            "metaDescription": "Free government phone service in Detroit, Michigan. Federal communication assistance programs help eligible households stay connected. Apply online today.",
+            "h1": "Detroit, MI Free Phone Programs and Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 601
+        },
+        {
+          "url": "https://free-government-phone.org/wa/seattle/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5d0b68398a868350ca618b5bc9032829",
+          "contentLength": 13222,
+          "wordCount": 1873,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Benefits Seattle, Washington | Quick Apply",
+            "metaDescription": "Free government phone benefits available in Seattle, Washington. Eligible residents can apply for Lifeline and ACP programs. Simple application process.",
+            "h1": "Free Government Phone Benefits in Seattle, WA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 464
+        },
+        {
+          "url": "https://free-government-phone.org/ca/san-francisco/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "acb692ca93a7d05ca0085f34992dd5f2",
+          "contentLength": 14090,
+          "wordCount": 2008,
+          "isThinContent": false,
+          "seoData": {
+            "title": "San Francisco, California Free Phone Benefits | Enroll",
+            "metaDescription": "Get free government phone in San Francisco, California. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "Free Government Phone Options in San Francisco, CA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 548
+        },
+        {
+          "url": "https://free-government-phone.org/ca/san-diego/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ca1e739fe0bc812b36ff411b4e2d84fb",
+          "contentLength": 13786,
+          "wordCount": 1995,
+          "isThinContent": false,
+          "seoData": {
+            "title": "San Diego, California Free Phone | No Cost Apply F",
+            "metaDescription": "Access free government phone programs in San Diego, California. Eligible residents can apply for Lifeline and ACP benefits. Simple online application available.",
+            "h1": "Get Free Phones in San Diego, CA Today"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 727
+        },
+        {
+          "url": "https://free-government-phone.org/mn/minneapolis/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "376532e0fba032fedb9ec7958084a59d",
+          "contentLength": 13285,
+          "wordCount": 1865,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Minneapolis, Minnesota Free Government Phone | Apply Now",
+            "metaDescription": "Apply for free government phone in Minneapolis, Minnesota. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "Free Phone Benefits for Minneapolis, MN Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 377
+        },
+        {
+          "url": "https://free-government-phone.org/fl/tampa/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "10ad36fb9d1678c7fca27742d836809c",
+          "contentLength": 13064,
+          "wordCount": 1873,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Tampa, Florida | Get Started",
+            "metaDescription": "Get free government phone in Tampa, Florida. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with fast approval.",
+            "h1": "Tampa, FL Free Government Phone Benefits Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 357
+        },
+        {
+          "url": "https://free-government-phone.org/ny/brooklyn/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "93329ef5b157c686dd8a833fb53569de",
+          "contentLength": 13653,
+          "wordCount": 1938,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Brooklyn, New York | 2025 | Check Now",
+            "metaDescription": "Free government phone programs available in Brooklyn, New York. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Brooklyn, NY Lifeline &amp; ACP Programs"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 398
+        },
+        {
+          "url": "https://free-government-phone.org/co/denver/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "f76470c16f4c68055350b3e99732beed",
+          "contentLength": 13030,
+          "wordCount": 1856,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Apply Free Phone Denver, Colorado | Quick Start Fr",
+            "metaDescription": "Free government phone programs available in Denver, Colorado. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Apply for Free Phones in Denver, CO"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 597
+        },
+        {
+          "url": "https://free-government-phone.org/ny/queens/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "45a08a3e1d67ee411a429c80323dee7b",
+          "contentLength": 13671,
+          "wordCount": 1951,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Get Free Phone Queens New York | Apply Now Free Go",
+            "metaDescription": "Get free government phone in Queens, New York. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with fast...",
+            "h1": "Free Phone Service in Queens, NY - Apply Today"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 366
+        },
+        {
+          "url": "https://free-government-phone.org/tx/houston/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "aada55e296bc1155156cc99a316c2e5d",
+          "contentLength": 13633,
+          "wordCount": 1949,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Houston, Texas Free Phone Application | Now Free G",
+            "metaDescription": "Get free government phone service benefits in Houston, Texas. Federal communication assistance available to qualifying households. Quick application.",
+            "h1": "Free Phone Programs Available in Houston, TX"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 386
+        },
+        {
+          "url": "https://free-government-phone.org/ca/riverside/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "033ceeaba38ed3a580127ec7752a3ce5",
+          "contentLength": 13706,
+          "wordCount": 1938,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Riverside, California | Government Benefits",
+            "metaDescription": "Free government phone programs available in Riverside, California. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Riverside, CA Free Phone Program Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 466
+        },
+        {
+          "url": "https://free-government-phone.org/nv/las-vegas/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "d46a3ba7e654fc6b96bb09b46e44c672",
+          "contentLength": 13278,
+          "wordCount": 1932,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Las Vegas, Nevada | Federal Program Fre",
+            "metaDescription": "Apply for free government phone in Las Vegas, Nevada. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "Free Phone Service in Las Vegas, NV"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 588
+        },
+        {
+          "url": "https://free-government-phone.org/md/baltimore/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5e0ff2bbd5d8fac5b8e24e0c907ee2eb",
+          "contentLength": 13291,
+          "wordCount": 1879,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Service Baltimore, Maryland | Apply Now",
+            "metaDescription": "Free government phone programs available in Baltimore, Maryland. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Free Phone Programs for Baltimore, MD Residents"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 439
+        },
+        {
+          "url": "https://free-government-phone.org/mo/st-louis/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "8f5542b028b591024358679f72be2ff8",
+          "contentLength": 13138,
+          "wordCount": 1916,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone St. Louis, Missouri | Enroll Today",
+            "metaDescription": "Get free government phone in St. Louis, Missouri. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with fast...",
+            "h1": "St. Louis, MO Free Phone Program Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 609
+        },
+        {
+          "url": "https://free-government-phone.org/or/portland/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "23a6eca19fd4074cbc977bbe21e9a93c",
+          "contentLength": 13235,
+          "wordCount": 1880,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Portland Oregon | Enroll | Learn More",
+            "metaDescription": "Apply for free government phone in Portland, Oregon. Federal programs provide phone service to qualifying residents. Check eligibility and start today.",
+            "h1": "Portland Free Phone Programs and Service"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 436
+        },
+        {
+          "url": "https://free-government-phone.org/tx/san-antonio/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "90c61cce26f955e9f3d2730ce1f2e488",
+          "contentLength": 13386,
+          "wordCount": 1934,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone San Antonio, Texas | Federal Program Fr",
+            "metaDescription": "Apply for free government phone in San Antonio, Texas. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "Free Phone Service Programs in San Antonio, TX"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 479
+        },
+        {
+          "url": "https://free-government-phone.org/ca/sacramento/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5d8c235dcd4887f83ab2b1b1155a9cc3",
+          "contentLength": 13771,
+          "wordCount": 1929,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Sacramento Free Phone California | Apply Online Fr",
+            "metaDescription": "Get free government phone service benefits in Sacramento, California. Federal communication assistance available to qualifying households. Quick application.",
+            "h1": "Sacramento Free Government Phone Programs Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 472
+        },
+        {
+          "url": "https://free-government-phone.org/tx/austin/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "7f0fbe6b45c8dfd4a5993b6ef695503a",
+          "contentLength": 13009,
+          "wordCount": 1869,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Apply Free Phone Austin, Texas | Quick Start Free",
+            "metaDescription": "Free government phone service in Austin, Texas. Federal communication assistance programs help eligible households stay connected. Apply online today.",
+            "h1": "Free Phones in Austin, TX - Apply Now"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 367
+        },
+        {
+          "url": "https://free-government-phone.org/fl/orlando/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "82fff3c29c81853c982453fc56ecbf5d",
+          "contentLength": 13114,
+          "wordCount": 1867,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Orlando Florida | Enroll | Learn More",
+            "metaDescription": "Free government phone programs in Orlando, Florida help eligible residents stay connected. Apply for Lifeline and ACP benefits through simple online process.",
+            "h1": "Orlando Free Government Phone Programs Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 528
+        },
+        {
+          "url": "https://free-government-phone.org/ca/san-jose/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "c73b408272b80813a571f27c4e0bf38c",
+          "contentLength": 13251,
+          "wordCount": 1915,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Get Free Phone in San Jose, California | Benefits",
+            "metaDescription": "Apply for free government phone in San Jose, California. Federal assistance programs provide phone service to qualifying households. Check eligibility today.",
+            "h1": "San Jose, CA Free Government Phone Benefits Available"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 496
+        },
+        {
+          "url": "https://free-government-phone.org/in/indianapolis/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "805eb4d67738c1303e1c3146effc9709",
+          "contentLength": 13847,
+          "wordCount": 1936,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Indianapolis, Indiana Free Government Phone | Start Today",
+            "metaDescription": "Free government phone programs available in Indianapolis, Indiana. Eligible households can apply for Lifeline and ACP benefits. Simple application process.",
+            "h1": "Free Phone Service in Indianapolis, IN"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 448
+        },
+        {
+          "url": "https://free-government-phone.org/pa/pittsburgh/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "75bea13248f707d026f25389650ecfc3",
+          "contentLength": 13835,
+          "wordCount": 1938,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Pittsburgh, Pennsylvania | Enroll...",
+            "metaDescription": "Get free government phone in Pittsburgh, Pennsylvania. Apply for Lifeline and ACP benefits available to eligible residents. Quick application process with...",
+            "h1": "Pittsburgh, PA Free Phone Programs Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 437
+        },
+        {
+          "url": "https://free-government-phone.org/oh/cincinnati/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "31c2a63ab1f312ae526e98534eed0c93",
+          "contentLength": 13798,
+          "wordCount": 1941,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Cincinnati Residents: Free Government Phone Ohio | 2025",
+            "metaDescription": "Free government phone benefits in Cincinnati, Ohio for eligible households. Apply for federal communication assistance programs. Quick application process.",
+            "h1": "Cincinnati, OH Free Phone Programs Information"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 467
+        },
+        {
+          "url": "https://free-government-phone.org/ny/manhattan/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "10598f5885a88262bd56a7083b34ae43",
+          "contentLength": 13319,
+          "wordCount": 1887,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Phone Manhattan, New York | Federal Program F",
+            "metaDescription": "Free government phone service in Manhattan, New York. Federal communication assistance programs help eligible households stay connected. Apply online today.",
+            "h1": "Manhattan, NY Free Phone Programs and Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 425
+        }
+      ],
+      "contentHashes": {},
+      "stats": {
+        "total": 1066,
+        "valid": 99,
+        "invalid": 1,
+        "thinContent": 1,
+        "missingTitle": 1,
+        "missingMetaDesc": 1,
+        "missingH1": 1
+      }
+    },
+    "government-phone.co": {
+      "name": "government-phone.co",
+      "url": "https://government-phone.co",
+      "pages": [
+        {
+          "url": "https://government-phone.co/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "455db3b49a6d663e0a1eaef50da1883b",
+          "contentLength": 4046,
+          "wordCount": 639,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone | Apply Online Today 2025",
+            "metaDescription": "Get free smartphones and internet through Lifeline and ACP programs. Check eligibility, compare providers, and apply online.",
+            "h1": "Free Government Phone Government Pays Your Bill"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 579
+        },
+        {
+          "url": "https://government-phone.co/faq/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "b33458cb806a3937d427e9cdf51547fd",
+          "contentLength": 13743,
+          "wordCount": 2104,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone FAQ | Common Questions &amp; Answers 2025",
+            "metaDescription": "Find answers to frequently asked questions about federal communication assistance programs, qualification requirements, and application procedures.",
+            "h1": "Free Government Phone FAQ"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 196
+        },
+        {
+          "url": "https://government-phone.co/programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "05d7585302b1ee94b46805cbf75b56e2",
+          "contentLength": 5196,
+          "wordCount": 758,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Government Phone Programs Guide | Lifeline &amp; ACP 2025",
+            "metaDescription": "Complete guide to Lifeline and ACP programs. Learn about benefits, eligibility requirements, and how to apply for free phone service.",
+            "h1": "Government Phone Programs Guide | Lifeline & ACP 2025"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 276
+        },
+        {
+          "url": "https://government-phone.co/eligibility/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4df4d90d847c058ca513b1d76749d2bb",
+          "contentLength": 3985,
+          "wordCount": 604,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Eligibility | Check Requirements 2025",
+            "metaDescription": "Verify your eligibility for federal communication assistance programs. Check qualification criteria for Lifeline and ACP benefits.",
+            "h1": "Verify Your Eligibility"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 199
+        },
+        {
+          "url": "https://government-phone.co/contact/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "c790a5d36713c8b94205a0ea4924c981",
+          "contentLength": 2349,
+          "wordCount": 351,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Contact Free Government Phone Support | Help &amp; Assistance",
+            "metaDescription": "Get expert assistance with federal communication assistance programs. Contact our support team for help with Lifeline and ACP programs.",
+            "h1": "Contact government-phone.co"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 79
+        },
+        {
+          "url": "https://government-phone.co/providers/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "79a495b2f30c21b24a8cdab478cd4189",
+          "contentLength": 4180,
+          "wordCount": 625,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Providers | Lifeline &amp; ACP Carriers",
+            "metaDescription": "Discover approved federal communication service providers offering Lifeline and ACP benefits. Compare carriers with nationwide coverage.",
+            "h1": "Top Free Government Phone Providers"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 286
+        },
+        {
+          "url": "https://government-phone.co/lifeline-program/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "87b19bcbbfed7aad4ed0ac6b86aea472",
+          "contentLength": 4928,
+          "wordCount": 766,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Lifeline Program | Free Government Phone &amp; Internet 2025",
+            "metaDescription": "Access the federal Lifeline program for discounted phone and internet service. Save up to $9.25 monthly. Check eligibility and apply online today.",
+            "h1": "Lifeline Assistance Program | Monthly Phone Discounts 2025"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 287
+        },
+        {
+          "url": "https://government-phone.co/acp-program/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5625b15ddd8424ba3f8ef54366c9b472",
+          "contentLength": 5279,
+          "wordCount": 832,
+          "isThinContent": false,
+          "seoData": {
+            "title": "ACP Program 2025 | Free Internet &amp; Phone Service",
+            "metaDescription": "Access Affordable Connectivity Program benefits for discounted internet and phone service. Save up to $30 monthly. Verify eligibility online.",
+            "h1": "Affordable Connectivity Program (ACP) | Broadband Service Benefits 2025"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 278
+        },
+        {
+          "url": "https://government-phone.co/tribal-programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "fa8149ff89ee8b238aeb4391e411be87",
+          "contentLength": 5332,
+          "wordCount": 755,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Tribal Government Phone Programs 2025 | Enhanced Benefits",
+            "metaDescription": "Access enhanced federal communication assistance benefits for tribal communities. Receive higher monthly discounts and expanded eligibility criteria.",
+            "h1": "Tribal Free Government Phone Programs 2025: Enhanced Free Government Phone Benefits for Tribal Lands"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 197
+        },
+        {
+          "url": "https://government-phone.co/state-programs/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "8eb242a6ea6d53f8589a5acbace36bab",
+          "contentLength": 5609,
+          "wordCount": 796,
+          "isThinContent": false,
+          "seoData": {
+            "title": "State Government Phone Programs 2025 | Find Your State",
+            "metaDescription": "Explore state-specific federal communication assistance programs. Find local benefits, approved providers, and qualification requirements.",
+            "h1": "State Free Government Phone Programs 2025: Find Your Local Benefits"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 200
+        },
+        {
+          "url": "https://government-phone.co/emergency-broadband/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ead8675b245b7feb7e82fdc07d3d3474",
+          "contentLength": 4522,
+          "wordCount": 678,
+          "isThinContent": false,
+          "seoData": {
+            "title": "EBB to ACP Transition 2025 | Emergency Broadband Benefit",
+            "metaDescription": "Learn about the Emergency Broadband Benefit transition to ACP. Former EBB users can check eligibility and continue receiving discounts.",
+            "h1": "Emergency Broadband Benefit (EBB) 2025: Transition to ACP Program"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 275
+        },
+        {
+          "url": "https://government-phone.co/free-government-phone-near-me/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "3a810f9098af9588c64f86534ffdbb6a",
+          "contentLength": 7422,
+          "wordCount": 1143,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone Near Me | Find Local Providers 2025",
+            "metaDescription": "Find free government phone service near you. Locate local providers, check eligibility, and apply for Lifeline &#38; ACP programs. Get your free phone today.",
+            "h1": "Free Government Phone Near Me"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 298
+        },
+        {
+          "url": "https://government-phone.co/apply/",
+          "status": 302,
+          "error": "HTTP 302",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/al/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ak/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/az/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ar/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ca/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/co/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ct/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/de/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/dc/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/fl/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ga/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/hi/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/id/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/il/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/in/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ia/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ks/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ky/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/la/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/me/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/md/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ma/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/mi/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/mn/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ms/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/mo/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/mt/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ne/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nv/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nh/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nj/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nm/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ny/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nc/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/nd/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/oh/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ok/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/or/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/pa/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/pr/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ri/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/sc/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/sd/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/tn/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/tx/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/ut/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/vt/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/va/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/wa/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/wv/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/wi/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/wy/",
+          "status": 500,
+          "error": "HTTP 500",
+          "valid": false
+        },
+        {
+          "url": "https://government-phone.co/pa/aaronsburg/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "2643b6aa712a1fae9eb9ddcf7fa7db2b",
+          "contentLength": 7257,
+          "wordCount": 1092,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aaronsburg, PA (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Aaronsburg? Federal Lifeline program provides free smartphones to eligible PA residents. Apply now.",
+            "h1": "Free Government Phone in Aaronsburg, PA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 378
+        },
+        {
+          "url": "https://government-phone.co/mn/aastad/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5caac745f4a1e98b11ff77e41649f063",
+          "contentLength": 6585,
+          "wordCount": 1014,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aastad, MN (2025 Guide)",
+            "metaDescription": "Aastad, MN free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Aastad, MN"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 348
+        },
+        {
+          "url": "https://government-phone.co/al/abanda/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "1d33b1dddb8dcba427a41aff0b24721f",
+          "contentLength": 6472,
+          "wordCount": 992,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abanda, AL (2025 Guide)",
+            "metaDescription": "Abanda, AL free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Abanda, AL"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 430
+        },
+        {
+          "url": "https://government-phone.co/al/abbeville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "ce4ec9b0da3dd852d91e9b5fe55b9f0c",
+          "contentLength": 7195,
+          "wordCount": 1089,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbeville, AL (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abbeville? Federal Lifeline program provides free smartphones to eligible AL residents. Apply now.",
+            "h1": "Free Government Phone in Abbeville, AL"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 384
+        },
+        {
+          "url": "https://government-phone.co/ga/abbeville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "28bd383b345be2cb798dd23f845ba00c",
+          "contentLength": 7113,
+          "wordCount": 1070,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbeville, GA (2025 Guide)",
+            "metaDescription": "Abbeville, GA residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Abbeville, GA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 497
+        },
+        {
+          "url": "https://government-phone.co/la/abbeville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "cdf29550326363900c6828a8e1f49c05",
+          "contentLength": 7349,
+          "wordCount": 1111,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbeville, LA (2025 Guide)",
+            "metaDescription": "Get a FREE government phone in Abbeville, LA (pop. 11K). Learn about Lifeline &#38; ACP programs, eligibility requirements, and how to apply. Updated 2025 guide.",
+            "h1": "Free Government Phone in Abbeville, LA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 468
+        },
+        {
+          "url": "https://government-phone.co/ms/abbeville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "331eecf0ed1da25f49e357d888551062",
+          "contentLength": 6880,
+          "wordCount": 1037,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbeville, MS (2025 Guide)",
+            "metaDescription": "Get a FREE government phone in Abbeville, MS (pop. 0K). Learn about Lifeline &#38; ACP programs, eligibility requirements, and how to apply. Updated 2025 guide.",
+            "h1": "Free Government Phone in Abbeville, MS"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 348
+        },
+        {
+          "url": "https://government-phone.co/sc/abbeville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "a4e7f96de47f4c312cdd2e42248975ef",
+          "contentLength": 6791,
+          "wordCount": 1028,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbeville, SC (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abbeville? Federal Lifeline program provides free smartphones to eligible SC residents. Apply now.",
+            "h1": "Free Government Phone in Abbeville, SC"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 366
+        },
+        {
+          "url": "https://government-phone.co/me/abbot/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "f328218d8eac80aeb26f933552160887",
+          "contentLength": 6702,
+          "wordCount": 1043,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbot, ME (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abbot? Federal Lifeline program provides free smartphones to eligible ME residents. Apply now.",
+            "h1": "Free Government Phone in Abbot, ME"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 436
+        },
+        {
+          "url": "https://government-phone.co/wi/abbotsford/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "a5f593f72d5f6263c486f49193d48aec",
+          "contentLength": 7139,
+          "wordCount": 1074,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbotsford, WI (2025 Guide)",
+            "metaDescription": "Abbotsford, WI residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Abbotsford, WI"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 397
+        },
+        {
+          "url": "https://government-phone.co/pa/abbott/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "2302441f47c1c98a54169e7deb3fc369",
+          "contentLength": 6677,
+          "wordCount": 1020,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbott, PA (2025 Guide)",
+            "metaDescription": "Abbott, PA residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Abbott, PA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 358
+        },
+        {
+          "url": "https://government-phone.co/tx/abbott/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6827df2f3bf07e8838f5e8f3d1f46404",
+          "contentLength": 6470,
+          "wordCount": 995,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbott, TX (2025 Guide)",
+            "metaDescription": "Abbott, TX free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Abbott, TX"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 465
+        },
+        {
+          "url": "https://government-phone.co/pa/abbottstown/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "8312c761b96f177794166d6cb4e97565",
+          "contentLength": 7290,
+          "wordCount": 1090,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbottstown, PA (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abbottstown? Federal Lifeline program provides free smartphones to eligible PA residents. Apply now.",
+            "h1": "Free Government Phone in Abbottstown, PA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 351
+        },
+        {
+          "url": "https://government-phone.co/va/abbs-valley/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "daccfabffbacbcfde745657c6095af0e",
+          "contentLength": 6511,
+          "wordCount": 996,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbs Valley, VA (2025 Guide)",
+            "metaDescription": "Free cell phone service available in Abbs Valley, VA (pop. 0K). Lifeline program offers free phones to qualifying households. See if you qualify.",
+            "h1": "Free Government Phone in Abbs Valley, VA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 433
+        },
+        {
+          "url": "https://government-phone.co/ks/abbyville/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "3569bf145346b265846388f998682347",
+          "contentLength": 6427,
+          "wordCount": 965,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abbyville, KS (2025 Guide)",
+            "metaDescription": "Free cell phone service available in Abbyville, KS (pop. 0K). Lifeline program offers free phones to qualifying households. See if you qualify.",
+            "h1": "Free Government Phone in Abbyville, KS"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 427
+        },
+        {
+          "url": "https://government-phone.co/nd/abercrombie/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "63927ab07dba0d57a8a91709b2dd8696",
+          "contentLength": 6727,
+          "wordCount": 1006,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abercrombie, ND (2025 Guide)",
+            "metaDescription": "Abercrombie, ND residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Abercrombie, ND"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 337
+        },
+        {
+          "url": "https://government-phone.co/nd/abercrombie-township/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "07c67941834541af8c81c8519adc9b86",
+          "contentLength": 6892,
+          "wordCount": 1015,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abercrombie (Township), ND (2025 Guide)",
+            "metaDescription": "Free cell phone service available in Abercrombie (Township), ND. Lifeline program offers free phones to qualifying households. See if you qualify.",
+            "h1": "Free Government Phone in Abercrombie (Township), ND"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 437
+        },
+        {
+          "url": "https://government-phone.co/id/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "42e32864d6739824032985c99faca151",
+          "contentLength": 7182,
+          "wordCount": 1097,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, ID (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Aberdeen? Federal Lifeline program provides free smartphones to eligible ID residents. Apply now.",
+            "h1": "Free Government Phone in Aberdeen, ID"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 489
+        },
+        {
+          "url": "https://government-phone.co/in/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "57f0d51af94526adcbe4f7410494c368",
+          "contentLength": 7094,
+          "wordCount": 1074,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, IN (2025 Guide)",
+            "metaDescription": "Aberdeen, IN residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Aberdeen, IN"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 365
+        },
+        {
+          "url": "https://government-phone.co/md/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "e9d2bac77ba4d0471b3368e12fd5b7d9",
+          "contentLength": 6419,
+          "wordCount": 963,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, MD (2025 Guide)",
+            "metaDescription": "Free cell phone service available in Aberdeen, MD (pop. 17K). Lifeline program offers free phones to qualifying households. See if you qualify.",
+            "h1": "Free Government Phone in Aberdeen, MD"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 357
+        },
+        {
+          "url": "https://government-phone.co/ms/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "7b80050ddec5fd1967ecadabec13db8c",
+          "contentLength": 6851,
+          "wordCount": 1037,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, MS (2025 Guide)",
+            "metaDescription": "Get a FREE government phone in Aberdeen, MS (pop. 5K). Learn about Lifeline &#38; ACP programs, eligibility requirements, and how to apply. Updated 2025 guide.",
+            "h1": "Free Government Phone in Aberdeen, MS"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 328
+        },
+        {
+          "url": "https://government-phone.co/nj/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "3fd53bf09078dcf8916856bf3f4757bc",
+          "contentLength": 6824,
+          "wordCount": 1047,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, NJ (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Aberdeen? Federal Lifeline program provides free smartphones to eligible NJ residents. Apply now.",
+            "h1": "Free Government Phone in Aberdeen, NJ"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 388
+        },
+        {
+          "url": "https://government-phone.co/nc/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "62f2445f41e319db2838b1de1f1097de",
+          "contentLength": 6757,
+          "wordCount": 1026,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, NC (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Aberdeen? Federal Lifeline program provides free smartphones to eligible NC residents. Apply now.",
+            "h1": "Free Government Phone in Aberdeen, NC"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 337
+        },
+        {
+          "url": "https://government-phone.co/oh/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "503e4aed7574cb5a122d6ceb74b3b061",
+          "contentLength": 7081,
+          "wordCount": 1071,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, OH (2025 Guide)",
+            "metaDescription": "Aberdeen, OH residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Aberdeen, OH"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 479
+        },
+        {
+          "url": "https://government-phone.co/sd/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "0855aa0f3c1aa3325afe05f7d243bb34",
+          "contentLength": 6740,
+          "wordCount": 1028,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, SD (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Aberdeen? Federal Lifeline program provides free smartphones to eligible SD residents. Apply now.",
+            "h1": "Free Government Phone in Aberdeen, SD"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 416
+        },
+        {
+          "url": "https://government-phone.co/wa/aberdeen/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "393e1824c60f95a7c00d52bb71a41532",
+          "contentLength": 7003,
+          "wordCount": 1062,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen, WA (2025 Guide)",
+            "metaDescription": "Aberdeen, WA free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Aberdeen, WA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 467
+        },
+        {
+          "url": "https://government-phone.co/sd/aberdeen-township/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "885c72a807af3d5760982186d269953f",
+          "contentLength": 7278,
+          "wordCount": 1091,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen (Township), SD (2025 Guide)",
+            "metaDescription": "Get a FREE government phone in Aberdeen (Township), SD. Learn about Lifeline &#38; ACP programs, eligibility requirements, and how to apply. Updated 2025 guide.",
+            "h1": "Free Government Phone in Aberdeen (Township), SD"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 430
+        },
+        {
+          "url": "https://government-phone.co/wa/aberdeen-gardens/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "b56e7fe57de1cdbf4cf7eb98f13233ec",
+          "contentLength": 6888,
+          "wordCount": 1033,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen Gardens, WA (2025 Guide)",
+            "metaDescription": "Aberdeen Gardens, WA residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Aberdeen Gardens, WA"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 535
+        },
+        {
+          "url": "https://government-phone.co/md/aberdeen-proving-ground/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "722ccacc7000e96716b4d864384c3e77",
+          "contentLength": 6896,
+          "wordCount": 1027,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Aberdeen Proving Ground, MD (2025 Guide)",
+            "metaDescription": "Free cell phone service available in Aberdeen Proving Ground, MD (pop. 2K). Lifeline program offers free phones to qualifying households. See if you qualify.",
+            "h1": "Free Government Phone in Aberdeen Proving Ground, MD"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 617
+        },
+        {
+          "url": "https://government-phone.co/tx/abernathy/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "85f2e9da4ee2e81b829b8db6cb32cbc5",
+          "contentLength": 7334,
+          "wordCount": 1110,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abernathy, TX (2025 Guide)",
+            "metaDescription": "Get a FREE government phone in Abernathy, TX (pop. 3K). Learn about Lifeline &#38; ACP programs, eligibility requirements, and how to apply. Updated 2025 guide.",
+            "h1": "Free Government Phone in Abernathy, TX"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 427
+        },
+        {
+          "url": "https://government-phone.co/nm/abeytas/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "4df0f732575604ade90920eb3141bc1c",
+          "contentLength": 6691,
+          "wordCount": 1026,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abeytas, NM (2025 Guide)",
+            "metaDescription": "Abeytas, NM residents: Qualify for a FREE smartphone through Lifeline. Check eligibility, find providers &#38; apply today. Complete 2025 guide.",
+            "h1": "Free Government Phone in Abeytas, NM"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 445
+        },
+        {
+          "url": "https://government-phone.co/ne/abie/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6e3718415984ba8544e09ee9a4af33b4",
+          "contentLength": 6400,
+          "wordCount": 993,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abie, NE (2025 Guide)",
+            "metaDescription": "Abie, NE free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Abie, NE"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 348
+        },
+        {
+          "url": "https://government-phone.co/ks/abilene/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "5a56768fc2801a08d2834d9b24fe9914",
+          "contentLength": 6679,
+          "wordCount": 1024,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abilene, KS (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abilene? Federal Lifeline program provides free smartphones to eligible KS residents. Apply now.",
+            "h1": "Free Government Phone in Abilene, KS"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 440
+        },
+        {
+          "url": "https://government-phone.co/tx/abilene/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "f11f012eecad5747407f3efc63bc3d2c",
+          "contentLength": 7147,
+          "wordCount": 1094,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abilene, TX (2025 Guide)",
+            "metaDescription": "Looking for free phone service in Abilene? Federal Lifeline program provides free smartphones to eligible TX residents. Apply now.",
+            "h1": "Free Government Phone in Abilene, TX"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 464
+        },
+        {
+          "url": "https://government-phone.co/il/abingdon/",
+          "status": 200,
+          "valid": true,
+          "contentHash": "6ee38cd72cefd6da21abb8990ee381e5",
+          "contentLength": 7015,
+          "wordCount": 1062,
+          "isThinContent": false,
+          "seoData": {
+            "title": "Free Government Phone in Abingdon, IL (2025 Guide)",
+            "metaDescription": "Abingdon, IL free government phone guide. Lifeline &#38; ACP programs explained. Check eligibility requirements and apply online today.",
+            "h1": "Free Government Phone in Abingdon, IL"
+          },
+          "hasTitle": true,
+          "hasMetaDesc": true,
+          "hasH1": true,
+          "responseTime": 377
+        }
+      ],
+      "contentHashes": {},
+      "stats": {
+        "total": 43582,
+        "valid": 47,
+        "invalid": 53,
+        "thinContent": 0,
+        "missingTitle": 0,
+        "missingMetaDesc": 0,
+        "missingH1": 0
+      }
+    }
+  },
+  "duplicateContent": [],
+  "thinContent": [
+    {
+      "site": "free-government-phone.org",
+      "url": "https://free-government-phone.org/providers/",
+      "contentLength": 21,
+      "wordCount": 3
+    }
+  ],
+  "missingSEO": [
+    {
+      "site": "free-government-phone.org",
+      "url": "https://free-government-phone.org/providers/",
+      "issue": "Missing title tag"
+    },
+    {
+      "site": "free-government-phone.org",
+      "url": "https://free-government-phone.org/providers/",
+      "issue": "Missing meta description"
+    },
+    {
+      "site": "free-government-phone.org",
+      "url": "https://free-government-phone.org/providers/",
+      "issue": "Missing H1 tag"
+    }
+  ],
+  "errors": [
+    {
+      "site": "free-government-phone.org",
+      "url": "https://free-government-phone.org/free-government-phone-near-me/",
+      "error": "HTTP 302"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/apply/",
+      "error": "HTTP 302"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/al/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ak/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/az/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ar/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ca/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/co/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ct/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/de/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/dc/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/fl/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ga/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/hi/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/id/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/il/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/in/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ia/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ks/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ky/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/la/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/me/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/md/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ma/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/mi/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/mn/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ms/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/mo/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/mt/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ne/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nv/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nh/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nj/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nm/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ny/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nc/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/nd/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/oh/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ok/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/or/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/pa/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/pr/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ri/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/sc/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/sd/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/tn/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/tx/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/ut/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/vt/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/va/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/wa/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/wv/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/wi/",
+      "error": "HTTP 500"
+    },
+    {
+      "site": "government-phone.co",
+      "url": "https://government-phone.co/wy/",
+      "error": "HTTP 500"
+    }
+  ],
+  "summary": {
+    "totalSites": 2,
+    "totalPagesAudited": 44648,
+    "validPages": 146,
+    "invalidPages": 54,
+    "duplicateContentIssues": 0,
+    "thinContentIssues": 1,
+    "missingSEOIssues": 3,
+    "errors": 54
+  }
+}

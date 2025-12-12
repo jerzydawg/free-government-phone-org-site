@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-12T12:05:13.459Z",
+  "siteUrl": "https://free-government-phone.org",
+  "sitemapUrl": "https://free-government-phone.org/sitemap.xml",
+  "robotsUrl": "https://free-government-phone.org/robots.txt",
+  "checks": {
+    "sitemapAccessible": true,
+    "sitemapFormat": true,
+    "sitemapSize": true,
+    "robotsTxtExists": true,
+    "robotsTxtReferencesSitemap": true,
+    "noDuplicates": false,
+    "urlStructure": true,
+    "cityPagesWorking": true,
+    "statePagesWorking": true,
+    "staticPagesWorking": true
+  },
+  "stats": {
+    "totalUrls": 1066,
+    "staticPages": 14,
+    "statePages": 52,
+    "cityPages": 1000,
+    "duplicates": 1,
+    "testedUrls": 14,
+    "validUrls": 14,
+    "invalidUrls": 0,
+    "sitemapSizeMB": "0.18"
+  },
+  "issues": [
+    "Found 1 duplicate URLs"
+  ],
+  "warnings": [],
+  "recommendations": [
+    "Fix duplicate URLs in sitemap generation code"
+  ]
+}

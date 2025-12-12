@@ -824,13 +824,6 @@ const HEADING_FAQ_VARIATIONS = [
   `Free Government Phone FAQ Section in {city}, {state}`,
   `Free Government Phone Questions`,
 ];
-  `Program Questions for {city}`,
-  `{city}, {state} Q&A`,
-  `Free Service Questions`,
-  `{city} Application FAQ`,
-  `Questions from {city} Residents`,
-  `{city} Program Information`,
-];
 
 // ============================================
 // Main Export Interface

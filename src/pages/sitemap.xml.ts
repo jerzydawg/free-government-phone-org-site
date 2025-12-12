@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { supabase } from '../lib/supabase';
-import { getSiteURL } from '../lib/site-config';
+import { getSiteURL, useSubdomains, getCitySubdomainURL } from '../lib/site-config';
 import { createCitySlug } from '../lib/slug-utils.js';
 
 export const GET: APIRoute = async () => {
@@ -112,9 +112,15 @@ export const GET: APIRoute = async () => {
 
   // Add city pages (deduplicate by URL)
   const cityUrls = new Set<string>();
+  const useSubdomainMode = useSubdomains();
+  
   for (const city of cities) {
     const citySlug = createCitySlug(city.name);
-    const cityUrl = `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
+    
+    // Use subdomain URL if subdomain mode is enabled, otherwise use path-based URL
+    const cityUrl = useSubdomainMode 
+      ? getCitySubdomainURL(citySlug, city.state_abbr.toLowerCase())
+      : `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
     
     // Skip if URL already exists (prevent duplicates)
     if (cityUrls.has(cityUrl)) {

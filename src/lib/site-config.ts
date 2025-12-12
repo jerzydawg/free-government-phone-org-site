@@ -219,3 +219,72 @@ export function getOwnerEmail(): string {
   return getSiteConfig().ownerEmail
 }
 
+/**
+ * Check if subdomain mode is enabled for this site
+ * Currently only enabled for free-government-phone.org
+ */
+export function useSubdomains(): boolean {
+  const domain = getDomain()
+  return domain === 'free-government-phone.org'
+}
+
+/**
+ * Parse subdomain to extract city and state
+ * Format: {city-slug}-{state-abbr}.free-government-phone.org
+ * Example: wayne-mi.free-government-phone.org -> { city: 'wayne', state: 'mi' }
+ */
+export function parseSubdomain(hostname: string): { city: string; state: string } | null {
+  const domain = getDomain()
+  if (!useSubdomains()) return null
+  
+  // Remove port if present
+  const host = hostname.split(':')[0].toLowerCase()
+  
+  // Check if it's a subdomain of our domain
+  if (!host.endsWith(`.${domain}`)) return null
+  
+  // Extract subdomain part
+  const subdomain = host.replace(`.${domain}`, '')
+  
+  // Skip www and other non-city subdomains
+  if (subdomain === 'www' || subdomain === '') return null
+  
+  // Parse format: {city-slug}-{state-abbr}
+  // Find the last hyphen which should separate city from state
+  const lastHyphenIndex = subdomain.lastIndexOf('-')
+  if (lastHyphenIndex === -1) return null
+  
+  const citySlug = subdomain.substring(0, lastHyphenIndex)
+  const stateAbbr = subdomain.substring(lastHyphenIndex + 1)
+  
+  // Validate state abbreviation is 2 characters
+  if (stateAbbr.length !== 2) return null
+  
+  return {
+    city: citySlug,
+    state: stateAbbr.toLowerCase()
+  }
+}
+
+/**
+ * Generate subdomain URL for a city
+ * Format: https://{city-slug}-{state-abbr}.free-government-phone.org/
+ */
+export function getCitySubdomainURL(citySlug: string, stateAbbr: string): string {
+  const domain = getDomain()
+  if (!useSubdomains()) {
+    // Fallback to path-based URL
+    return `https://${domain}/${stateAbbr.toLowerCase()}/${citySlug}/`
+  }
+  return `https://${citySlug}-${stateAbbr.toLowerCase()}.${domain}/`
+}
+
+/**
+ * Get current request's subdomain info (if any)
+ * Should be called from page context where Astro.request is available
+ */
+export function getCurrentSubdomain(request: Request): { city: string; state: string } | null {
+  const url = new URL(request.url)
+  return parseSubdomain(url.hostname)
+}
+

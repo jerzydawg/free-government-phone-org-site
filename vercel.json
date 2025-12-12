@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.free-government-phone.org"
+        }
+      ],
+      "destination": "https://free-government-phone.org/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
@@ -9,16 +22,6 @@
         }
       ],
       "destination": "/:state/"
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "(?<state>[a-z]{2})\\.(?<domain>.*)"
-        }
-      ],
-      "destination": "/:state/:path*"
     },
     {
       "source": "/",
@@ -35,10 +38,21 @@
       "has": [
         {
           "type": "host",
+          "value": "(?<state>[a-z]{2})\\.(?<domain>.*)"
+        }
+      ],
+      "destination": "/:state/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
           "value": "(?<city>[a-z0-9-]+)-(?<state>[a-z]{2})\\.(?<domain>.*)"
         }
       ],
-      "destination": "/:state/:city/:path*"
+      "destination": "/:state/:city/"
     }
   ]
 }
+

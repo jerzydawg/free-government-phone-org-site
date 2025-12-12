@@ -30,14 +30,15 @@ export interface SiteConfig {
 // ===== SITE CONFIG - REPLACED AT BUILD TIME =====
 // DO NOT MODIFY THIS SECTION MANUALLY - IT IS AUTO-GENERATED
 const SITE_CONFIG_DATA = {
-  domain: "example.com",
-  siteName: "Free Phone Service",
+  domain: "free-government-phone.org",
+  siteName: "Free Government Phone",
   keyword: "Free Government Phone",
   keywordId: "free-government-phone",
   keywordLabel: "Free Government Phone",
-  ownerEmail: "admin@example.com",
-  designStyle: "basic" as DesignStyle,
-  environment: "staging" as const,
+  ownerEmail: "pixellead8000@gmail.com",
+  designStyle: "advanced" as DesignStyle,
+  useSubdomains: true,
+  environment: "production" as const,
   createdAt: new Date().toISOString(),
   version: "1.0.0"
 };
@@ -184,7 +185,15 @@ export function getKeywordLabel(): string {
  * Get domain
  */
 export function getDomain(): string {
-  return getSiteConfig().domain
+  const config = getSiteConfig()
+  // If domain is example.com (fallback), use SITE_CONFIG_DATA directly
+  if (!config.domain || config.domain === 'example.com' || config.domain.includes('example')) {
+    if (SITE_CONFIG_DATA.domain && SITE_CONFIG_DATA.domain !== 'example.com') {
+      console.warn(`[getDomain] Using SITE_CONFIG_DATA.domain directly: ${SITE_CONFIG_DATA.domain}`)
+      return SITE_CONFIG_DATA.domain
+    }
+  }
+  return config.domain
 }
 
 /**
@@ -197,7 +206,14 @@ export function getSiteURL(): string {
   // Validate domain is not default/placeholder
   if (!domain || domain === 'example.com' || domain.includes('example')) {
     console.error('CRITICAL: Domain not properly set! Using fallback. This will cause canonical URL issues.')
+    console.error('SITE_CONFIG_DATA:', JSON.stringify(SITE_CONFIG_DATA, null, 2))
     // In production, this should never happen - domain must be set during deployment
+    // Don't throw error in production - use the configured domain from SITE_CONFIG_DATA directly
+    const configuredDomain = SITE_CONFIG_DATA.domain || 'free-government-phone.org'
+    if (configuredDomain && configuredDomain !== 'example.com') {
+      console.warn(`Using configured domain from SITE_CONFIG_DATA: ${configuredDomain}`)
+      return `https://${configuredDomain}`
+    }
     throw new Error(`Domain not properly configured for site. Expected unique domain, got: ${domain}`)
   }
   
@@ -242,14 +258,11 @@ export function useSubdomains(): boolean {
 }
 
 /**
- * Parse subdomain to extract city and state, or state only
- * Formats:
- * - {city-slug}-{state-abbr}.free-government-phone.org -> { city: 'wayne', state: 'mi' }
- * - {state-abbr}.free-government-phone.org -> { city: null, state: 'wv' }
+ * Parse subdomain to extract city and state
+ * Format: {city-slug}-{state-abbr}.free-government-phone.org
  * Example: wayne-mi.free-government-phone.org -> { city: 'wayne', state: 'mi' }
- * Example: wv.free-government-phone.org -> { city: null, state: 'wv' }
  */
-export function parseSubdomain(hostname: string): { city: string | null; state: string } | null {
+export function parseSubdomain(hostname: string): { city: string; state: string } | null {
   const domain = getDomain()
   if (!useSubdomains()) return null
   
@@ -262,16 +275,8 @@ export function parseSubdomain(hostname: string): { city: string | null; state: 
   // Extract subdomain part
   const subdomain = host.replace(`.${domain}`, '')
   
-  // Skip www and other non-city/state subdomains
+  // Skip www and other non-city subdomains
   if (subdomain === 'www' || subdomain === '') return null
-  
-  // Check if it's a state-only subdomain (2 letters, no hyphens)
-  if (subdomain.length === 2 && /^[a-z]{2}$/.test(subdomain)) {
-    return {
-      city: null,
-      state: subdomain.toLowerCase()
-    }
-  }
   
   // Parse format: {city-slug}-{state-abbr}
   // Find the last hyphen which should separate city from state

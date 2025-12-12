@@ -22,13 +22,22 @@ export const onRequest = async (context: any, next: any) => {
   const isWwwDomain = host === `www.${configuredDomain}`;
   const isSubdomain = host.endsWith(`.${configuredDomain}`) && !isWwwDomain;
 
-  // If subdomain mode is enabled, validate subdomain format
-  // Vercel rewrites will handle routing subdomains to city pages
+  // If subdomain mode is enabled, validate subdomain format and strip paths
+  // Vercel rewrites will handle routing subdomains to city/state pages
   if (useSubdomains() && isSubdomain) {
     const subdomainInfo = parseSubdomain(host);
-    // If it's a valid city subdomain, allow it (Vercel rewrites will route it)
-    // If it's an invalid subdomain, let the route handler return 404
-    if (subdomainInfo) {
+    const subdomainPart = host.split('.')[0];
+    
+    // Check if it's a state subdomain (2-letter abbreviation, e.g., "nj")
+    const isStateSubdomain = subdomainPart.length === 2 && /^[a-z]{2}$/.test(subdomainPart);
+    
+    // If it's a valid city subdomain or state subdomain, redirect any path to root
+    if (subdomainInfo || isStateSubdomain) {
+      // If there's a path (not just /), redirect to subdomain root
+      if (url.pathname !== '/') {
+        const subdomainRoot = `https://${host}/`;
+        return context.redirect(subdomainRoot, 301);
+      }
       return next();
     }
     // Invalid subdomain - let route handler return 404

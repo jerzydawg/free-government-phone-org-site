@@ -1,6 +1,7 @@
 ---
 import { getDesignDNA, getDomain } from '../lib/site-config';
 import { getCTAVariation } from '../lib/variations/shared/cta-variations';
+import { getReadableTextColor } from '../lib/color-utils';
 
 interface Props {
   context?: string;
@@ -17,6 +18,7 @@ const {
 const designDNA = getDesignDNA();
 const domain = getDomain();
 const ctaText = getCTAVariation(domain, context);
+const readableTextColor = getReadableTextColor(designDNA.colors.text);
 
 const sizeClasses = {
   small: 'py-2 px-6 text-sm',
@@ -33,7 +35,7 @@ const sizeClasses = {
   >
     {ctaText}
   </a>
-  <p class="text-xs md:text-sm text-white font-medium mt-4" style={`color: ${designDNA.colors.text};`}>✓ No credit check • ✓ Takes 2 minutes • ✓ Free forever</p>
+  <p class="text-xs md:text-sm font-medium mt-4" style={`color: #111827 !important;`}>✓ No credit check • ✓ Takes 2 minutes • ✓ Free forever</p>
 </div>
 
 

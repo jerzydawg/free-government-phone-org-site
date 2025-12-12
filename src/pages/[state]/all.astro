@@ -6,8 +6,10 @@ import { createCitySlug } from '../../lib/slug-utils.js';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import RelatedContent from '../../components/RelatedContent.astro';
 import { getSiteURL, getDesignDNA } from '../../lib/site-config';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 const designDNA = getDesignDNA();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
 const SITE_URL = getSiteURL();
 
@@ -149,7 +151,7 @@ const alphabet = Object.keys(citiesByLetter).sort();
           <h1 class="text-gray-900 text-3xl md:text-4xl font-bold mb-4 ">
             All Cities in {stateData.name}
           </h1>
-          <p class="text-gray-900 text-xl mb-6" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
+          <p class="text-white text-xl mb-6" style={`color: #FFFFFF !important;`}>
             {totalCities.toLocaleString()} cities with free government phone programs
           </p>
           <a href={`/${stateData.abbreviation.toLowerCase()}/`} class="inline-flex items-center text-white hover:text-white transition-colors">
@@ -184,7 +186,7 @@ const alphabet = Object.keys(citiesByLetter).sort();
         <div class="max-w-4xl mx-auto">
           <h2 class="text-gray-900 text-3xl font-bold mb-6 text-center">Free Government Phone Programs Available in All {stateData.name} Cities</h2>
           <p class="text-gray-900 text-lg mb-4">
-            Government phone assistance programs are available to eligible residents in all {totalCities.toLocaleString()} cities throughout {stateData.name}. Whether you live in a major metropolitan area or a small rural community, federal programs like <a href="/lifeline-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline font-semibold">Lifeline</a> and <a href="/acp-program" class="text-green-600 hover:underline font-semibold">ACP (Affordable Connectivity Program)</a> provide essential communication services to qualifying households.
+            Government phone assistance programs are available to eligible residents in all {totalCities.toLocaleString()} cities throughout {stateData.name}. Whether you live in a major metropolitan area or a small rural community, federal programs like <a href="/lifeline-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline font-semibold">Lifeline</a> and <a href="/acp-program" class="text-green-600 hover:underline font-semibold">ACP (Affordable Connectivity Program)</a> provide essential communication services to qualifying households.
           </p>
           <p class="text-gray-900 text-lg mb-4">
             These programs ensure that all Americans have access to phone and internet services, regardless of their location or financial situation. Benefits include monthly service discounts, free smartphones, unlimited talk and text, and data allowances. The exact benefits and available providers may vary by city, but the core programs are available statewide.
@@ -196,7 +198,7 @@ const alphabet = Object.keys(citiesByLetter).sort();
             The application process is simple and can be completed online in just a few minutes. Most applicants receive instant approval, especially those qualifying through program participation. Once approved, benefits are applied directly to your monthly service bill, reducing or eliminating your communication costs. You can combine Lifeline and ACP benefits for maximum savings.
           </p>
           <p class="text-gray-900 text-lg mb-6">
-            Below, you'll find a complete alphabetical listing of all cities in {stateData.name} where government phone programs are available. Click on any city name to learn more about programs, providers, and eligibility requirements specific to that location. You can also <a href="/eligibility" style={`color: ${designDNA.colors.primary};`} class="hover:underline font-semibold">check your eligibility</a> or <a href="/providers" class="text-green-600 hover:underline font-semibold">compare providers</a> to find the best option for your needs.
+            Below, you'll find a complete alphabetical listing of all cities in {stateData.name} where government phone programs are available. Click on any city name to learn more about programs, providers, and eligibility requirements specific to that location. You can also <a href="/eligibility" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline font-semibold">check your eligibility</a> or <a href="/providers" class="text-green-600 hover:underline font-semibold">compare providers</a> to find the best option for your needs.
           </p>
         </div>
       </div>
@@ -222,7 +224,7 @@ const alphabet = Object.keys(citiesByLetter).sort();
                 href={`/${stateData.abbreviation.toLowerCase()}/${createCitySlug(city.name)}/`}
                 style={`border-color: #E5E7EB;`} class="group block bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-200 border" onmouseover={`this.style.borderColor='${designDNA.colors.primary}80';`} onmouseout="this.style.borderColor='#E5E7EB';"
               >
-                <h3 class="text-gray-900 font-medium transition-colors truncate" style={`color: inherit;`} onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='inherit';">
+                <h3 class="text-gray-900 font-medium transition-colors truncate" style={`color: inherit;`} onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout="this.style.color='inherit';">
                   {city.name}
                 </h3>
                 {city.population && (
@@ -254,7 +256,7 @@ const alphabet = Object.keys(citiesByLetter).sort();
     <section style={`background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});`} class="text-white py-8">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-gray-900 text-2xl font-bold mb-4 ">Ready to Get Your Free Government Phone?</h2>
-        <p class="mb-6 max-w-xl mx-auto" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
+        <p class="mb-6 max-w-xl mx-auto text-white" style={`color: #FFFFFF !important;`}>
           Government phone programs are available in all {totalCities.toLocaleString()} cities in {stateData.name}
         </p>
         <a href="/apply" class="block md:inline-block w-full md:w-auto max-w-md md:max-w-none mx-auto py-4 px-10 text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition-all duration-300" style={`background: linear-gradient(135deg, ${designDNA.colors.accent} 0%, ${designDNA.colors.accentDark || designDNA.colors.accent} 100%); color: white;`}>

@@ -42,7 +42,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
     </div>
 
     <!-- Trust Badges -->
-    <div class="flex justify-center items-center flex-wrap gap-2 text-sm text-slate-500 mb-8" style={`color: ${designDNA.colors.text};`}>
+    <div class="flex justify-center items-center flex-wrap gap-2 text-sm text-slate-400 mb-8">
       <span>{footerContent.trustBadgeSet[0]}</span>
       <span>•</span>
       <span>{footerContent.trustBadgeSet[1]}</span>
@@ -51,16 +51,9 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
     </div>
 
     <!-- Disclaimer -->
-    <div class="mb-6" style={`color: ${designDNA.colors.text};`}>
-      <p class="text-slate-600 text-xs max-w-3xl mx-auto">
+    <div class="mb-6">
+      <p class="text-slate-400 text-xs max-w-3xl mx-auto">
         {footerContent.disclaimer}
-      </p>
-    </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-slate-800 pt-8">
-      <p class="text-slate-500 text-sm">
-        {footerContent.copyright}
       </p>
     </div>
   </div>

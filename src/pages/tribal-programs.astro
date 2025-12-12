@@ -5,12 +5,14 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import { getSiteURL, getSiteName, getDomain, getKeywordId, getDesignDNA } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const SITE_NAME = getSiteName();
 const DOMAIN = getDomain();
 const designDNA = getDesignDNA();
 const keywordId = getKeywordId();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
 // Load keyword-specific variations with error handling
 let h1Content = { h1: 'Tribal Free Government Phone Programs' };
@@ -152,7 +154,7 @@ const faqData = {
         Tribal communities often encounter unique challenges in accessing affordable communication services. The federal government and many states provide specialized programs and enhanced benefits for residents of tribal lands to help bridge the digital divide.
       </p>
       <p class="text-gray-900">
-        Tribal communication assistance programs offer higher discounts and additional support for eligible households on tribal lands. These benefits are available through <a href="/lifeline-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline">Lifeline</a>, <a href="/acp-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline">ACP</a>, and state initiatives.
+        Tribal communication assistance programs offer higher discounts and additional support for eligible households on tribal lands. These benefits are available through <a href="/lifeline-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">Lifeline</a>, <a href="/acp-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">ACP</a>, and state initiatives.
       </p>
     </section>
 
@@ -170,8 +172,8 @@ const faqData = {
           </ul>
         </div>
         <div style={`background: ${designDNA.colors.primary}15;`} class="p-6 rounded-lg">
-          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${designDNA.colors.primary};`}>ACP Benefits (Tribal)</h3>
-          <ul class="space-y-2" style={`color: ${designDNA.colors.primary}CC;`}>
+          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${readablePrimaryColor} !important;`}>ACP Benefits (Tribal)</h3>
+          <ul class="space-y-2 text-gray-700" style={`color: #374151 !important;`}>
             <li>• Up to $75/month off internet service</li>
             <li>• One-time $100 device discount</li>
             <li>• High-speed internet access</li>
@@ -350,7 +352,7 @@ const faqData = {
 
     <div class="bg-gray-50 p-6 rounded-lg">
       <p class="text-gray-900">
-        <strong>Need help with tribal benefits?</strong> Visit our <a href="/faq" style={`color: ${designDNA.colors.primary};`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${designDNA.colors.primary};`} class="hover:underline">contact us</a> for personalized assistance with tribal programs. 
+        <strong>Need help with tribal benefits?</strong> Visit our <a href="/faq" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">contact us</a> for personalized assistance with tribal programs. 
         We're here to help you access the enhanced benefits available to tribal land residents!
       </p>
     </div>

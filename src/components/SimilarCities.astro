@@ -45,28 +45,28 @@ if (filteredCities.length === 0) {
 <section class="py-12 bg-gradient-to-b from-white to-gray-50">
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-8" style={`color: ${designDNA.colors.text};`}>
-        <h2 class="text-3xl font-bold style={`color: ${designDNA.colors.primary};`} mb-2" style={`color: ${designDNA.colors.text};`}>
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold mb-2 text-gray-900" style={`color: #111827 !important;`}>
           {similarCitiesTitle}
         </h2>
-        <p class="style={`color: ${designDNA.colors.text};`}">
+        <p class="text-gray-700" style={`color: #374151 !important;`}>
           Explore free government phone programs in cities similar to {currentCityName}
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8" style={`color: ${designDNA.colors.text};`}>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {filteredCities.map((city) => (
           <a 
             href={`/${city.state_abbr.toLowerCase()}/${createCitySlug(city.name)}/`}
             class="group block p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 border border-gray-200 similar-city-card"
             aria-label={`View free government phone programs in ${city.name}, ${city.state_abbr}`}
           >
-            <div class="flex items-start justify-between mb-3" style={`color: ${designDNA.colors.text};`}>
+            <div class="flex items-start justify-between mb-3">
               <div>
-                <h3 class="font-bold text-lg style={`color: ${designDNA.colors.primary};`} city-name transition-colors" style={`color: ${designDNA.colors.text};`}>
+                <h3 class="font-bold text-lg city-name transition-colors text-gray-900" style={`color: #111827 !important;`}>
                   {city.name}
                 </h3>
-                <p class="text-sm style={`color: ${designDNA.colors.text};`}" style={`color: ${designDNA.colors.text};`}>{city.state_name}</p>
+                <p class="text-sm text-gray-700" style={`color: #374151 !important;`}>{city.state_name}</p>
               </div>
               <span class="text-xs font-bold px-3 py-1 rounded-full" style={`background: ${readablePrimaryBg}; color: ${readablePrimaryColor};`}>
                 {city.state_abbr}
@@ -74,8 +74,8 @@ if (filteredCities.length === 0) {
             </div>
             
             {city.population && (
-              <div class="flex items-center text-sm style={`color: ${designDNA.colors.text};`} mb-3" style={`color: ${designDNA.colors.text};`}>
-                <svg class="w-4 h-4 mr-2" style={`color: ${designDNA.colors.text};`} fill="currentColor" viewBox="0 0 20 20">
+              <div class="flex items-center text-sm mb-3 text-gray-600" style={`color: #4B5563 !important;`}>
+                <svg class="w-4 h-4 mr-2 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
                 </svg>
                 {city.population.toLocaleString()} residents

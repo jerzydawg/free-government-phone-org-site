@@ -3,6 +3,7 @@ import { getSiteName, getKeyword, getDesignDNA, getDomain } from '../lib/site-co
 import { getContentVariations, getTextVariation } from '../lib/city-content-variations';
 import { getUrgencyBadge, getSecondaryHeadline } from '../lib/microcopy-variations';
 import { getCTAVariation } from '../lib/variations/shared/cta-variations';
+import { getReadableTextColor } from '../lib/color-utils';
 
 // Props (can accept custom H1 from parent)
 interface Props {
@@ -58,7 +59,7 @@ if (h1Text.includes(keywordToHighlight)) {
       <h1 class="text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight animate-fade-in">
         {hasKeyword ? (
           <>
-            {beforeKeyword}<span class="text-gray-900 text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={`color: ${designDNA.colors.accent};`}>{keywordToHighlight}</span>{afterKeyword}
+            {beforeKeyword}<span class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={`color: #FFFFFF !important;`}>{keywordToHighlight}</span>{afterKeyword}
           </>
         ) : (
           <span>{beforeKeyword}</span>
@@ -88,7 +89,7 @@ if (h1Text.includes(keywordToHighlight)) {
 
       <!-- Single Responsive Value Proposition - Dynamic content -->
       <p class="text-gray-900 text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-6 md:mb-8 max-w-sm md:max-w-3xl mx-auto">
-        <span class="text-gray-900 font-semibold" style={`color: ${designDNA.colors.accent};`}>FREE</span> {content.heroTagline}<span class="text-gray-900 hidden md:inline"> {content.heroSubtext}</span>
+        <span class="text-white font-semibold" style={`color: #FFFFFF !important;`}>FREE</span> {content.heroTagline}<span class="text-white hidden md:inline"> {content.heroSubtext}</span>
       </p>
 
       <!-- Single Responsive Primary CTA Section -->

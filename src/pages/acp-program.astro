@@ -6,12 +6,14 @@ import RelatedContent from '../components/RelatedContent.astro';
 import ProgramCities from '../components/ProgramCities.astro';
 import { getSiteURL, getSiteName, getDomain, getKeywordId, getDesignDNA } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const SITE_NAME = getSiteName();
 const DOMAIN = getDomain();
 const keywordId = getKeywordId();
 const designDNA = getDesignDNA();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
 // Load keyword-specific variations with error handling
 let h1Content = { h1: 'Affordable Connectivity Program (ACP) Free Phone' };
@@ -144,9 +146,9 @@ const faqData = {
     <AboveFoldCTA context="acp" />
     
     <div style={`background: ${designDNA.colors.primary}15; border-left: 4px solid ${designDNA.colors.primary}80;`} class="p-4 mb-8 text-gray-900">
-      <p style={`color: ${designDNA.colors.primary};`} class="font-medium">
+      <p style={`color: ${readablePrimaryColor} !important;`} class="font-medium">
         <strong>Quick Fact:</strong> The ACP provides up to $30/month discount on internet and phone service ($75 on Tribal lands). 
-        <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="hover:underline">Verify your eligibility now →</a>
+        <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">Verify your eligibility now →</a>
       </p>
     </div>
 
@@ -156,8 +158,8 @@ const faqData = {
         The <strong>Affordable Connectivity Program (ACP)</strong> is a federal benefit that helps qualifying households pay for internet and phone service. ACP provides a monthly discount of up to $30 (or $75 on Tribal lands) to ensure everyone can maintain connectivity in our digital world.
       </p>
       <p class="text-gray-900">
-        The ACP was created to bridge the digital divide and make high-speed internet and phone service accessible to all Americans. It can be combined with the <a href="/lifeline-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline font-semibold">Lifeline Free Government Phone</a> for even greater savings. 
-        Compare <a href="/programs" class="text-green-600 hover:underline">all government phone programs</a> to understand which benefits work best for your household, or <a href="/eligibility" style={`color: ${designDNA.colors.primary};`} class="hover:underline">check your eligibility</a> for multiple programs simultaneously.
+        The ACP was created to bridge the digital divide and make high-speed internet and phone service accessible to all Americans. It can be combined with the <a href="/lifeline-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline font-semibold">Lifeline Free Government Phone</a> for even greater savings. 
+        Compare <a href="/programs" class="text-green-600 hover:underline">all government phone programs</a> to understand which benefits work best for your household, or <a href="/eligibility" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">check your eligibility</a> for multiple programs simultaneously.
       </p>
     </section>
 
@@ -206,8 +208,8 @@ const faqData = {
       <h2 class="text-gray-900 text-2xl font-semibold mb-4 ">ACP Benefits & Savings</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div style={`background: ${designDNA.colors.primary}15;`} class="p-6 rounded-lg">
-          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${designDNA.colors.primary};`}>Monthly Savings</h3>
-          <ul class="space-y-2" style={`color: ${designDNA.colors.primary}CC;`}>
+          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${readablePrimaryColor} !important;`}>Monthly Savings</h3>
+          <ul class="space-y-2 text-gray-700" style={`color: #374151 !important;`}>
             <li>• Up to $30/month discount on internet service</li>
             <li>• Up to $75/month on Tribal lands</li>
             <li>• One-time $100 discount on devices</li>
@@ -251,7 +253,7 @@ const faqData = {
         
         <div class="border border-gray-200 rounded-lg p-6">
           <h3 class="text-gray-900 text-xl font-medium mb-3 ">Can I keep my current provider?</h3>
-          <p class="text-gray-900">Yes, if your current internet or phone provider participates in the ACP program. Check with your provider or use our <a href="/providers" style={`color: ${designDNA.colors.primary};`} class="hover:underline">provider finder</a> to see available options in your area.</p>
+          <p class="text-gray-900">Yes, if your current internet or phone provider participates in the ACP program. Check with your provider or use our <a href="/providers" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">provider finder</a> to see available options in your area.</p>
         </div>
       </div>
     </section>
@@ -263,7 +265,7 @@ const faqData = {
         <a href="/apply" rel="noopener noreferrer" class="inline-block py-4 px-10 text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition-all duration-300 no-underline text-center" style={`background: linear-gradient(135deg, ${designDNA.colors.accent} 0%, ${designDNA.colors.accentDark || designDNA.colors.accent} 100%); color: white;`}>
           Check Your Eligibility
         </a>
-        <a href="/providers" style={`border-color: white;`} class="bg-transparent border-2 hover:bg-white text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 no-underline text-center" onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='white';">
+        <a href="/providers" style={`border-color: white;`} class="bg-transparent border-2 hover:bg-white text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 no-underline text-center" onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout="this.style.color='white';">
           Find Providers
         </a>
       </div>
@@ -277,7 +279,7 @@ const faqData = {
 
     <div class="bg-gray-50 p-6 rounded-lg mb-8 text-gray-900">
       <p class="text-gray-900 mb-4 ">
-        <strong>Need help?</strong> Visit our <a href="/faq" style={`color: ${designDNA.colors.primary};`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${designDNA.colors.primary};`} class="hover:underline">contact us</a> for personalized assistance. 
+        <strong>Need help?</strong> Visit our <a href="/faq" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">contact us</a> for personalized assistance. 
         The ACP program is here to help you stay connected!
       </p>
     </div>
@@ -288,7 +290,7 @@ const faqData = {
         <h2 class="text-gray-900 text-3xl font-bold text-center mb-8 ">Related Programs & Resources</h2>
         <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <a href="/lifeline-program" style={`background: ${designDNA.colors.primary}15;`} class="rounded-lg p-6 transition-colors" onmouseover={`this.style.background='${designDNA.colors.primary}25';`} onmouseout={`this.style.background='${designDNA.colors.primary}15';`}>
-            <h3 class="text-gray-900 text-lg font-bold mb-2" style={`color: ${designDNA.colors.primary};`}>Lifeline Program</h3>
+            <h3 class="text-gray-900 text-lg font-bold mb-2" style={`color: ${readablePrimaryColor} !important;`}>Lifeline Program</h3>
             <p class="text-gray-900 text-sm ">Learn about the federal Lifeline program and how it can be combined with ACP for maximum savings.</p>
           </a>
           <a href="/programs" class="bg-green-50 rounded-lg p-6 hover:bg-green-100 transition-colors">

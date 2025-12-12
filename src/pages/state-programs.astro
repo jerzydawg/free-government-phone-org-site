@@ -5,12 +5,14 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import { getSiteURL, getSiteName, getDomain, getKeywordId, getDesignDNA } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const SITE_NAME = getSiteName();
 const DOMAIN = getDomain();
 const designDNA = getDesignDNA();
 const keywordId = getKeywordId();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
 // Load keyword-specific variations with error handling
 let h1Content = { h1: 'State Free Government Phone Programs' };
@@ -140,16 +142,16 @@ const faqData = {
     <AboveFoldCTA context="state-programs" />
     
     <div style={`background: ${designDNA.colors.primary}15; border-left: 4px solid ${designDNA.colors.primary}80;`} class="p-4 mb-8 text-gray-900">
-      <p style={`color: ${designDNA.colors.primary};`} class="font-medium">
+      <p style={`color: ${readablePrimaryColor} !important;`} class="font-medium">
         <strong>Pro Tip:</strong> Many states offer additional communication assistance programs beyond federal benefits. 
-        <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="hover:underline">Verify your eligibility</a> to maximize your savings!
+        <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">Verify your eligibility</a> to maximize your savings!
       </p>
     </div>
 
     <section class="mb-8 text-gray-900">
       <h2 class="text-gray-900 text-2xl font-semibold mb-4 ">What Are State Phone & Internet Programs?</h2>
       <p class="text-gray-900 text-lg mb-4 ">
-        In addition to federal programs like <a href="/lifeline-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline">Lifeline</a> and <a href="/acp-program" style={`color: ${designDNA.colors.primary};`} class="hover:underline">ACP</a>, many states offer their own phone and internet assistance programs. These state-specific options can provide extra benefits or fill gaps not covered by national programs.
+        In addition to federal programs like <a href="/lifeline-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">Lifeline</a> and <a href="/acp-program" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">ACP</a>, many states offer their own phone and internet assistance programs. These state-specific options can provide extra benefits or fill gaps not covered by national programs.
       </p>
       <p class="text-gray-900">
         State programs may offer additional discounts, devices, or support for residents who qualify. Some states have partnerships with local providers or run their own initiatives to ensure everyone can stay connected.
@@ -170,8 +172,8 @@ const faqData = {
           </ul>
         </div>
         <div style={`background: ${designDNA.colors.primary}15;`} class="p-6 rounded-lg">
-          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${designDNA.colors.primary};`}>Eligibility Requirements</h3>
-          <ul class="space-y-2" style={`color: ${designDNA.colors.primary}CC;`}>
+          <h3 class="text-gray-900 text-xl font-medium mb-3" style={`color: ${readablePrimaryColor} !important;`}>Eligibility Requirements</h3>
+          <ul class="space-y-2 text-gray-700" style={`color: #374151 !important;`}>
             <li>• Often similar to federal program criteria</li>
             <li>• Some states have additional qualification options</li>
             <li>• May require state residency verification</li>
@@ -188,7 +190,7 @@ const faqData = {
         <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
           <h3 class="text-gray-900 text-lg font-medium mb-2 ">California LifeLine</h3>
           <p class="text-gray-900 mb-3 ">Additional discounts for California residents on phone and internet service.</p>
-          <a href="/ca" style={`color: ${designDNA.colors.primary};`} class="hover:underline text-sm">Learn more →</a>
+          <a href="/ca" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline text-sm">Learn more →</a>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
@@ -302,7 +304,7 @@ const faqData = {
         
         <div class="border border-gray-200 rounded-lg p-6">
           <h3 class="text-gray-900 text-xl font-medium mb-3 ">How do I find my state's program?</h3>
-          <p class="text-gray-900">To find your state's program, check your state's public utility commission website, contact local providers, or use our <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="hover:underline">eligibility checker</a> to see what programs you qualify for in your area.</p>
+          <p class="text-gray-900">To find your state's program, check your state's public utility commission website, contact local providers, or use our <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">eligibility checker</a> to see what programs you qualify for in your area.</p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-6">
@@ -347,7 +349,7 @@ const faqData = {
 
     <div class="bg-gray-50 p-6 rounded-lg">
       <p class="text-gray-900">
-        <strong>Need help finding your state's program?</strong> Visit our <a href="/faq" style={`color: ${designDNA.colors.primary};`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${designDNA.colors.primary};`} class="hover:underline">contact us</a> for personalized assistance with state-specific programs. 
+        <strong>Need help finding your state's program?</strong> Visit our <a href="/faq" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">FAQ page</a> for more answers, or <a href="/contact" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">contact us</a> for personalized assistance with state-specific programs. 
         We're here to help you access all available benefits!
       </p>
     </div>

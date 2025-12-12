@@ -7,6 +7,7 @@ import { getSiteName, getKeyword, getDesignDNA, getDomain } from '../../lib/site
 import { getContentVariations, getCTASectionVariations } from '../../lib/city-content-variations';
 import { getLearnMoreText } from '../../lib/microcopy-variations';
 import { getCTAVariation } from '../../lib/variations/shared/cta-variations';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 interface Props {
   customH1?: string;
@@ -21,6 +22,9 @@ const content = getContentVariations(domain);
 const ctaSection = getCTASectionVariations(domain, keyword);
 const learnMoreText = getLearnMoreText(domain);
 const h1Text = customH1 || keyword;
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readableSecondaryColor = getReadableTextColor(designDNA.colors.secondary);
+const readableAccentColor = getReadableTextColor(designDNA.colors.accent);
 
 // Generate a unique layout variant based on domain
 function hashDomain(str: string): number {
@@ -77,15 +81,15 @@ const layoutVariant = hashDomain(domain) % 4; // 0-3 for different layouts
         <!-- Stats Row -->
         <div class="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
           <div class="text-center">
-            <div class="text-4xl md:text-5xl font-black mb-2" style={`color: ${designDNA.colors.primary};`}>{content.heroStats.stat1.value}</div>
+            <div class="text-4xl md:text-5xl font-black mb-2 text-white" style={`color: #FFFFFF !important;`}>{content.heroStats.stat1.value}</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider">{content.heroStats.stat1.label}</div>
           </div>
           <div class="text-center border-x border-slate-700">
-            <div class="text-4xl md:text-5xl font-black mb-2" style={`color: ${designDNA.colors.accent};`}>{content.heroStats.stat2.value}</div>
+            <div class="text-4xl md:text-5xl font-black mb-2 text-white" style={`color: #FFFFFF !important;`}>{content.heroStats.stat2.value}</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider">{content.heroStats.stat2.label}</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl md:text-5xl font-black mb-2" style={`color: ${designDNA.colors.secondary};`}>{content.heroStats.stat3.value}</div>
+            <div class="text-4xl md:text-5xl font-black mb-2 text-white" style={`color: #FFFFFF !important;`}>{content.heroStats.stat3.value}</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider">{content.heroStats.stat3.label}</div>
           </div>
         </div>
@@ -94,7 +98,7 @@ const layoutVariant = hashDomain(domain) % 4; // 0-3 for different layouts
       <!-- Layout 2: Left-aligned with right image area -->
       <div class="grid lg:grid-cols-2 gap-16 items-center w-full">
         <div>
-          <span class="text-gray-900 inline-block px-4 py-2 rounded-lg text-sm font-bold mb-6" style={`background: ${designDNA.colors.primary}20; color: ${designDNA.colors.primary};`}>
+          <span class="text-gray-900 inline-block px-4 py-2 rounded-lg text-sm font-bold mb-6" style={`background: ${designDNA.colors.primary}20; color: ${readablePrimaryColor} !important;`}>
             {content.trustBadges[0]}
           </span>
           
@@ -150,7 +154,7 @@ const layoutVariant = hashDomain(domain) % 4; // 0-3 for different layouts
             <div class="relative">
               <div class="absolute -left-4 top-0 w-1 h-full rounded-full" style={`background: linear-gradient(180deg, ${designDNA.colors.primary}, ${designDNA.colors.accent});`}></div>
               
-              <span class="text-gray-900 text-sm font-bold uppercase tracking-widest mb-4 block" style={`color: ${designDNA.colors.accent};`}>
+              <span class="text-gray-900 text-sm font-bold uppercase tracking-widest mb-4 block text-white" style={`color: #FFFFFF !important;`}>
                 {siteName}
               </span>
               

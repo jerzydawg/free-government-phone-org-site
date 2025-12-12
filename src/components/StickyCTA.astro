@@ -2,12 +2,14 @@
 import { getDesignDNA, getKeyword, getDomain } from '../lib/site-config';
 import { getContentVariations } from '../lib/city-content-variations';
 import { getLimitedTimeStickyText } from '../lib/microcopy-variations';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const designDNA = getDesignDNA();
 const keyword = getKeyword();
 const domain = getDomain();
 const content = getContentVariations(domain);
 const limitedTimeText = getLimitedTimeStickyText(domain);
+const readableTextColor = '#FFFFFF'; // White for text on colored gradient background
 
 // Smart keyword formatting - avoid"Get Your my gov phone" grammar issues
 const keywordLower = keyword.toLowerCase();
@@ -26,17 +28,17 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
           <!-- Urgency Timer -->
           <div class="bg-red-500 text-white px-4 py-2 rounded-lg">
             <div class="flex items-center space-x-2">
-              <span class="font-semibold" style={`color: ${designDNA.colors.text};`}>{limitedTimeText}</span>
+              <span class="font-semibold text-white">{limitedTimeText}</span>
             </div>
           </div>
           
           <!-- Main Message - Dynamic -->
           <div class="text-white">
-            <p class="text-lg font-bold" style={`color: ${designDNA.colors.text};`}>
+            <p class="text-lg font-bold text-white">
               Get {keywordDisplay} Today! 
               <span class="text-orange-300">{content.valueProps[2]}</span>
             </p>
-            <p class="text-sm opacity-80 text-white" style={`color: ${designDNA.colors.text};`}>
+            <p class="text-sm opacity-80 text-white">
               {content.trustBadges[0]} • {content.trustBadges[1]} • {content.trustBadges[2]}
             </p>
           </div>

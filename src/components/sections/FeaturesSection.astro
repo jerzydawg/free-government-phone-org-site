@@ -6,6 +6,7 @@
 import { getDesignDNA, getSiteName, getDomain, getKeywordId } from '../../lib/site-config';
 import { getContentVariations, getFeaturesSectionVariations } from '../../lib/city-content-variations';
 import { loadKeywordVariations } from '../../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 const designDNA = getDesignDNA();
 const siteName = getSiteName();
@@ -29,37 +30,37 @@ try {
 
 <section class="py-12 md:py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12" style={`color: ${designDNA.colors.text};`}>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900" style={`color: #111827 !important;`}>
       {sectionH2.h2}
     </h2>
     <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
       <div class="text-center">
         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={`background-color: ${designDNA.colors.primary}20;`}>
-          <span class="text-2xl" style={`color: ${designDNA.colors.text};`}>{content.icons.money}</span>
+          <span class="text-2xl text-gray-900" style={`color: #111827 !important;`}>{content.icons.money}</span>
         </div>
-        <h3 class="text-lg font-semibold mb-2" style={`color: ${designDNA.colors.text};`}>{content.featureTitles.noCost}</h3>
-        <p class="" style={`color: ${designDNA.colors.text};`}>{features.feature1Description}</p>
+        <h3 class="text-lg font-semibold mb-2 text-gray-900" style={`color: #111827 !important;`}>{content.featureTitles.noCost}</h3>
+        <p class="text-gray-700" style={`color: #374151 !important;`}>{features.feature1Description}</p>
       </div>
       <div class="text-center">
         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={`background-color: ${designDNA.colors.accent}20;`}>
-          <span class="text-2xl" style={`color: ${designDNA.colors.text};`}>{content.icons.phone}</span>
+          <span class="text-2xl text-gray-900" style={`color: #111827 !important;`}>{content.icons.phone}</span>
         </div>
-        <h3 class="text-lg font-semibold mb-2" style={`color: ${designDNA.colors.text};`}>{content.featureTitles.freePhone}</h3>
-        <p class="" style={`color: ${designDNA.colors.text};`}>{features.feature2Description}</p>
+        <h3 class="text-lg font-semibold mb-2 text-gray-900" style={`color: #111827 !important;`}>{content.featureTitles.freePhone}</h3>
+        <p class="text-gray-700" style={`color: #374151 !important;`}>{features.feature2Description}</p>
       </div>
       <div class="text-center">
         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={`background-color: ${designDNA.colors.secondary}20;`}>
-          <span class="text-2xl" style={`color: ${designDNA.colors.text};`}>🌐</span>
+          <span class="text-2xl text-gray-900" style={`color: #111827 !important;`}>🌐</span>
         </div>
-        <h3 class="text-lg font-semibold mb-2" style={`color: ${designDNA.colors.text};`}>{content.featureTitles.connectivity}</h3>
-        <p class="" style={`color: ${designDNA.colors.text};`}>{features.feature3Description}</p>
+        <h3 class="text-lg font-semibold mb-2 text-gray-900" style={`color: #111827 !important;`}>{content.featureTitles.connectivity}</h3>
+        <p class="text-gray-700" style={`color: #374151 !important;`}>{features.feature3Description}</p>
       </div>
       <div class="text-center">
         <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={`background-color: ${designDNA.colors.accent}20;`}>
-          <span class="text-2xl" style={`color: ${designDNA.colors.text};`}>{content.icons.speed}</span>
+          <span class="text-2xl text-gray-900" style={`color: #111827 !important;`}>{content.icons.speed}</span>
         </div>
-        <h3 class="text-lg font-semibold mb-2" style={`color: ${designDNA.colors.text};`}>{content.featureTitles.approval}</h3>
-        <p class="" style={`color: ${designDNA.colors.text};`}>{features.feature4Description}</p>
+        <h3 class="text-lg font-semibold mb-2 text-gray-900" style={`color: #111827 !important;`}>{content.featureTitles.approval}</h3>
+        <p class="text-gray-700" style={`color: #374151 !important;`}>{features.feature4Description}</p>
       </div>
     </div>
   </div>

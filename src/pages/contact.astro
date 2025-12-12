@@ -5,12 +5,15 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import { getSiteURL, getDomain, getKeywordId, getDesignDNA, getSiteName } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const domain = getDomain();
 const keywordId = getKeywordId();
 const designDNA = getDesignDNA();
 const SITE_NAME = getSiteName();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readableAccentColor = getReadableTextColor(designDNA.colors.accent);
 
 // Load keyword-specific variations with comprehensive error handling
 let metaContent = { title: 'Contact Us | Free Government Phone Support', description: 'Get help with your free government phone application and questions' };
@@ -89,9 +92,9 @@ const canonicalURL = `${SITE_URL}/contact/`;
               assist with questions about Lifeline, ACP, and other federal communication assistance programs.
             </p>
             <p class="text-gray-900 mb-4">
-              Before contacting us, you may find answers to common questions on our <a href="/faq" style={`color: ${designDNA.colors.primary};`} class="hover:underline">FAQ page</a>. 
+              Before contacting us, you may find answers to common questions on our <a href="/faq" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">FAQ page</a>. 
               For immediate assistance with your application, you can <a href="/apply" class="text-green-600 hover:underline font-semibold">start your application online</a> 
-              or check your <a href="/eligibility" style={`color: ${designDNA.colors.primary};`} class="hover:underline">eligibility status</a>.
+              or check your <a href="/eligibility" style={`color: ${readablePrimaryColor} !important;`} class="hover:underline">eligibility status</a>.
             </p>
           </div>
         </div>
@@ -105,7 +108,7 @@ const canonicalURL = `${SITE_URL}/contact/`;
           <div class="grid md:grid-cols-2 gap-6">
             <!-- Application Help -->
             <div class="bg-white rounded-lg shadow-lg p-6">
-              <h3 class="text-gray-900 text-xl font-bold mb-4" style={`color: ${designDNA.colors.primary};`}>
+              <h3 class="text-gray-900 text-xl font-bold mb-4" style={`color: ${readablePrimaryColor} !important;`}>
                 Application Assistance
               </h3>
               <p class="text-gray-900 mb-4">
@@ -119,7 +122,7 @@ const canonicalURL = `${SITE_URL}/contact/`;
 
             <!-- Eligibility Questions -->
             <div class="bg-white rounded-lg shadow-lg p-6">
-              <h3 class="text-gray-900 text-xl font-bold mb-4" style={`color: ${designDNA.colors.accent};`}>
+              <h3 class="text-gray-900 text-xl font-bold mb-4" style={`color: ${readableAccentColor} !important;`}>
                 Eligibility Questions
               </h3>
               <p class="text-gray-900 mb-4">
@@ -161,7 +164,7 @@ const canonicalURL = `${SITE_URL}/contact/`;
         </h2>
         <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <a href="/programs" class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 text-center">
-            <div class="text-3xl mb-4 text-gray-900" style={`color: ${designDNA.colors.primary};`}>📋</div>
+            <div class="text-3xl mb-4 text-gray-900" style={`color: ${readablePrimaryColor} !important;`}>📋</div>
             <h3 class="text-gray-900 text-lg font-bold mb-2 ">Program Guide</h3>
             <p class="text-gray-900">
               Learn about Lifeline and ACP programs and their benefits.

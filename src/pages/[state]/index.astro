@@ -10,12 +10,15 @@ import RelatedContent from '../../components/RelatedContent.astro';
 import { getSiteURL, getDomain, getKeywordId, getSiteName, getDesignDNA } from '../../lib/site-config';
 import { getStateContentVariations } from '../../lib/state-content-variations';
 import { loadKeywordVariations } from '../../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const DOMAIN = getDomain();
 const SITE_NAME = getSiteName();
 const keywordId = getKeywordId(); // Already has fallback in getKeywordId() function
 const designDNA = getDesignDNA();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readableSecondaryColor = getReadableTextColor(designDNA.colors.secondary);
 
 // Load keyword-specific variations for state pages with error handling
 let getH3Variation: any = null;
@@ -400,10 +403,10 @@ const canonicalURL = `${SITE_URL}/${stateData.abbreviation.toLowerCase()}/`;
           <p class="text-gray-900 text-xl md:text-2xl mb-8 text-white" set:html={variations.intro} />
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block text-center">
+            <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block text-center">
               Check Eligibility
             </a>
-            <a href="/apply" rel="noopener noreferrer" style={`border-color: white;`} class="border-2 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white transition-colors inline-block text-center" onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='white';">
+            <a href="/apply" rel="noopener noreferrer" style={`border-color: white;`} class="border-2 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white transition-colors inline-block text-center" onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout="this.style.color='white';">
               View Programs
             </a>
           </div>
@@ -419,11 +422,11 @@ const canonicalURL = `${SITE_URL}/${stateData.abbreviation.toLowerCase()}/`;
           <p class="text-gray-900 text-center mb-8 " set:html={variations.programsAvailable} />
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-gray-50 p-6 rounded-lg">
-              <h3 class="text-gray-900 text-2xl font-bold mb-4" style={`color: ${designDNA.colors.primary};`}>{getH3Variation(`${DOMAIN}-${state}`, 'state-program-1').h3}</h3>
+              <h3 class="text-gray-900 text-2xl font-bold mb-4" style={`color: ${readablePrimaryColor} !important;`}>{getH3Variation(`${DOMAIN}-${state}`, 'state-program-1').h3}</h3>
               <p class="text-gray-900 mb-4 ">
                 Get up to $30/month off your internet bill and a one-time $100 discount on a device.
               </p>
-              <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="font-semibold hover:underline">Learn More →</a>
+              <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="font-semibold hover:underline">Learn More →</a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg">
               <h3 class="text-gray-900 text-2xl font-bold text-green-600 mb-4">{getH3Variation(`${DOMAIN}-${state}`, 'state-program-2').h3}</h3>
@@ -461,7 +464,7 @@ const canonicalURL = `${SITE_URL}/${stateData.abbreviation.toLowerCase()}/`;
             <div class="text-center mt-8">
               <a 
                 href={`/${stateData.abbreviation.toLowerCase()}/all/`}
-                style={`background: ${designDNA.colors.primary};`} class="inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-lg transition-colors text-center" onmouseover={`this.style.background='${designDNA.colors.secondary}';`} onmouseout={`this.style.background='${designDNA.colors.primary}';`}
+                style={`background: ${readablePrimaryColor} !important;`} class="inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-lg transition-colors text-center" onmouseover={`this.style.background='${readableSecondaryColor}';`} onmouseout={`this.style.background='${readablePrimaryColor}';`}
               >
                 View All Cities in {stateData.name}
                 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -479,7 +482,7 @@ const canonicalURL = `${SITE_URL}/${stateData.abbreviation.toLowerCase()}/`;
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-gray-900 text-3xl font-bold mb-6 ">{variations.cta.headline}</h2>
         <p class="text-gray-900 text-xl mb-8 ">{variations.cta.subtext}</p>
-        <a href="/apply" rel="noopener noreferrer" style={`color: ${designDNA.colors.primary};`} class="bg-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-block text-center">
+        <a href="/apply" rel="noopener noreferrer" style={`color: ${readablePrimaryColor} !important;`} class="bg-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-block text-center">
           {variations.cta.button}
         </a>
       </div>

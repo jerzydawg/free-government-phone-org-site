@@ -31,7 +31,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
   <div class="border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="rounded-xl p-6 md:p-8 text-center" style={`background: linear-gradient(135deg, ${designDNA.colors.primary} 0%, ${designDNA.colors.secondary} 100%);`}>
-        <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white" style={`color: ${designDNA.colors.text};`}>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white" style={`color: #FFFFFF !important;`}>
           {footerContent.ctaHeadline}
         </h2>
         <p class="text-white/90 mb-6 max-w-2xl mx-auto">
@@ -71,7 +71,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
 
       <!-- Company -->
       <div>
-        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${designDNA.colors.text};`}>{footerContent.companySectionTitle}</h3>
+        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${readablePrimaryColor} !important;`}>{footerContent.companySectionTitle}</h3>
         <ul class="space-y-2">
           <li><a href="/states" class="text-slate-500 hover:text-white transition-colors text-sm">{getAllStatesText(domain)}</a></li>
         </ul>
@@ -80,7 +80,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
       <!-- About -->
       <div>
         <h3 class="text-lg font-bold mb-4 text-white">{siteName}</h3>
-        <p class="text-slate-500 text-sm mb-4" style={`color: ${designDNA.colors.text};`}>
+        <p class="text-slate-500 text-sm mb-4" style={`color: #E5E7EB !important;`}>
           {footerContent.aboutText}
         </p>
         <div class="flex items-center flex-wrap gap-1 text-xs text-slate-500">
@@ -97,15 +97,6 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
     <p class="text-slate-600 text-xs text-center max-w-4xl mx-auto">
       {footerContent.disclaimer}
     </p>
-  </div>
-
-  <!-- Copyright -->
-  <div class="border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <p class="text-slate-500 text-sm text-center">
-        {footerContent.copyright}
-      </p>
-    </div>
   </div>
 </footer>
 

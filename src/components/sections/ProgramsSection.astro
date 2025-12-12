@@ -6,11 +6,15 @@
 import { getDesignDNA, getKeyword, getDomain, getKeywordId } from '../../lib/site-config';
 import { getContentVariations, getProgramsSectionVariations } from '../../lib/city-content-variations';
 import { loadKeywordVariations } from '../../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 const designDNA = getDesignDNA();
 const keyword = getKeyword();
 const domain = getDomain();
 const keywordId = getKeywordId();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readableSecondaryColor = getReadableTextColor(designDNA.colors.secondary);
+const readableAccentColor = getReadableTextColor(designDNA.colors.accent);
 
 // Get content variations
 const content = getContentVariations(domain);
@@ -36,7 +40,7 @@ try {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6">
       <!-- Lifeline Program -->
       <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
-        <div class="text-4xl mb-4" style={`color: ${designDNA.colors.primary};`}>{content.icons.phone}</div>
+        <div class="text-4xl mb-4" style={`color: ${readablePrimaryColor} !important;`}>{content.icons.phone}</div>
         <h3 class="text-gray-900 text-xl font-bold mb-3 ">{programs.lifelineTitle}</h3>
         <p class="text-gray-900 mb-4 ">
           {programs.lifelineDescription}
@@ -46,14 +50,14 @@ try {
             <li>• {bullet}</li>
           ))}
         </ul>
-        <a href="/lifeline-program" class="font-semibold hover:opacity-80" style={`color: ${designDNA.colors.primary};`}>
+        <a href="/lifeline-program" class="font-semibold hover:opacity-80" style={`color: ${readablePrimaryColor} !important;`}>
           {programs.lifelineCta} →
         </a>
       </div>
 
       <!-- ACP Program -->
       <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
-        <div class="text-4xl mb-4" style={`color: ${designDNA.colors.accent};`}>{content.icons.money}</div>
+        <div class="text-4xl mb-4" style={`color: ${readableAccentColor} !important;`}>{content.icons.money}</div>
         <h3 class="text-gray-900 text-xl font-bold mb-3 ">{programs.acpTitle}</h3>
         <p class="text-gray-900 mb-4 ">
           {programs.acpDescription}
@@ -63,14 +67,14 @@ try {
             <li>• {bullet}</li>
           ))}
         </ul>
-        <a href="/acp-program" class="font-semibold hover:opacity-80" style={`color: ${designDNA.colors.accent};`}>
+        <a href="/acp-program" class="font-semibold hover:opacity-80" style={`color: ${readableAccentColor} !important;`}>
           {programs.acpCta} →
         </a>
       </div>
 
       <!-- Tribal Programs -->
       <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
-        <div class="text-4xl mb-4" style={`color: ${designDNA.colors.secondary};`}>{content.icons.support}</div>
+        <div class="text-4xl mb-4" style={`color: ${readableSecondaryColor} !important;`}>{content.icons.support}</div>
         <h3 class="text-gray-900 text-xl font-bold mb-3 ">{programs.tribalTitle}</h3>
         <p class="text-gray-900 mb-4 ">
           {programs.tribalDescription}
@@ -80,7 +84,7 @@ try {
             <li>• {bullet}</li>
           ))}
         </ul>
-        <a href="/tribal-programs" class="font-semibold hover:opacity-80" style={`color: ${designDNA.colors.secondary};`}>
+        <a href="/tribal-programs" class="font-semibold hover:opacity-80" style={`color: ${readableSecondaryColor} !important;`}>
           {programs.tribalCta} →
         </a>
       </div>

@@ -505,6 +505,54 @@ const currentPath = Astro.url.pathname;
     color: #111827 !important; /* Force dark gray */
   }
   
+  /* ============================================
+     CRITICAL: Prevent designDNA.colors.text from being light/unreadable
+     ============================================ */
+  
+  /* Force all text using designDNA.colors.text to be dark on light backgrounds */
+  /* This catches inline styles like: style="color: ${designDNA.colors.text}" */
+  /* Only apply to elements that are likely on light backgrounds */
+  p[style*="designDNA.colors.text"],
+  span[style*="designDNA.colors.text"],
+  div[style*="designDNA.colors.text"],
+  a[style*="designDNA.colors.text"]:not([style*="background"]),
+  h1[style*="designDNA.colors.text"],
+  h2[style*="designDNA.colors.text"],
+  h3[style*="designDNA.colors.text"],
+  h4[style*="designDNA.colors.text"],
+  h5[style*="designDNA.colors.text"],
+  h6[style*="designDNA.colors.text"],
+  li[style*="designDNA.colors.text"] {
+    /* Only force dark if element is on a light background (has white/light bg class or no dark bg) */
+    color: #111827 !important; /* Force dark gray for readability */
+  }
+  
+  /* Force all text using designDNA.colors.textOnPrimary to be white on colored backgrounds */
+  p[style*="designDNA.colors.textOnPrimary"],
+  span[style*="designDNA.colors.textOnPrimary"],
+  div[style*="designDNA.colors.textOnPrimary"],
+  a[style*="designDNA.colors.textOnPrimary"],
+  h1[style*="designDNA.colors.textOnPrimary"],
+  h2[style*="designDNA.colors.textOnPrimary"],
+  h3[style*="designDNA.colors.textOnPrimary"] {
+    color: #FFFFFF !important; /* Force white for readability on colored backgrounds */
+  }
+  
+  /* Force all text using designDNA.colors.primary/secondary/accent to use readable version */
+  /* This catches: style="color: ${designDNA.colors.primary}" */
+  p[style*="designDNA.colors.primary"][style*="color"],
+  span[style*="designDNA.colors.primary"][style*="color"],
+  div[style*="designDNA.colors.primary"][style*="color"],
+  a[style*="designDNA.colors.primary"][style*="color"],
+  h1[style*="designDNA.colors.primary"][style*="color"],
+  h2[style*="designDNA.colors.primary"][style*="color"],
+  h3[style*="designDNA.colors.primary"][style*="color"],
+  h4[style*="designDNA.colors.primary"][style*="color"],
+  h5[style*="designDNA.colors.primary"][style*="color"],
+  h6[style*="designDNA.colors.primary"][style*="color"] {
+    color: var(--color-primary-readable, #096d9a) !important;
+  }
+  
   /* Global rule: All text using primary color CSS variable must use readable version */
   /* This catches inline styles, Tailwind classes, and any other usage */
   [style*="color: var(--color-primary)"],

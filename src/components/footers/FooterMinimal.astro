@@ -13,6 +13,7 @@ const keyword = getKeyword();
 const designDNA = getDesignDNA();
 const footerContent = getFooterVariations(domain, keyword);
 const navContent = getNavVariations(domain);
+const readableTextColor = getReadableTextColor(designDNA.colors.text);
 ---
 
 <footer class="bg-white border-t border-gray-200">
@@ -20,25 +21,25 @@ const navContent = getNavVariations(domain);
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
       <!-- Logo -->
       <div class="flex items-center">
-        <span class="font-semibold" style={`color: ${designDNA.colors.text};`}>{siteName}</span>
+        <span class="font-semibold text-gray-900" style={`color: #111827 !important;`}>{siteName}</span>
       </div>
 
       <!-- Links -->
       <div class="flex items-center space-x-6">
-        <a href="/eligibility" class="text-sm hover: transition-colors" style={`color: ${designDNA.colors.text};`}>{navContent.navItems.find(i => i.href === '/eligibility')?.label || 'Eligibility'}</a>
-        <a href="/providers" class="text-sm hover: transition-colors" style={`color: ${designDNA.colors.text};`}>{navContent.navItems.find(i => i.href === '/providers')?.label || 'Providers'}</a>
-        <a href="/faq" class="text-sm hover: transition-colors" style={`color: ${designDNA.colors.text};`}>{navContent.navItems.find(i => i.href === '/faq')?.label || 'FAQ'}</a>
+        <a href="/eligibility" class="text-sm hover: transition-colors text-gray-900" style={`color: #111827 !important;`}>{navContent.navItems.find(i => i.href === '/eligibility')?.label || 'Eligibility'}</a>
+        <a href="/providers" class="text-sm hover: transition-colors text-gray-900" style={`color: #111827 !important;`}>{navContent.navItems.find(i => i.href === '/providers')?.label || 'Providers'}</a>
+        <a href="/faq" class="text-sm hover: transition-colors text-gray-900" style={`color: #111827 !important;`}>{navContent.navItems.find(i => i.href === '/faq')?.label || 'FAQ'}</a>
       </div>
 
       <!-- Copyright -->
-      <p class="text-sm" style={`color: ${designDNA.colors.text};`}>
+      <p class="text-sm text-gray-900" style={`color: #111827 !important;`}>
         {footerContent.copyright}
       </p>
     </div>
     
     <!-- Disclaimer -->
     <div class="mt-6 pt-4 border-t border-gray-100">
-      <p class="text-xs text-center max-w-4xl mx-auto" style={`color: ${designDNA.colors.text};`}>
+      <p class="text-xs text-center max-w-4xl mx-auto text-gray-700" style={`color: #374151 !important;`}>
         {footerContent.disclaimer}
       </p>
     </div>

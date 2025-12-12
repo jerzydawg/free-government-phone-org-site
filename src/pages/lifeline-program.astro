@@ -6,12 +6,15 @@ import RelatedContent from '../components/RelatedContent.astro';
 import ProgramCities from '../components/ProgramCities.astro';
 import { getSiteURL, getSiteName, getDomain, getKeywordId, getDesignDNA } from '../lib/site-config';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
+import { getReadableTextColor } from '../lib/color-utils';
 
 const SITE_URL = getSiteURL();
 const SITE_NAME = getSiteName();
 const DOMAIN = getDomain();
 const keywordId = getKeywordId(); // Already has fallback in getKeywordId() function
 const designDNA = getDesignDNA();
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
+const readableTextOnPrimary = designDNA.colors.textOnPrimary && getReadableTextColor(designDNA.colors.textOnPrimary) || '#FFFFFF';
 
 // Load keyword-specific variations with comprehensive error handling
 let h1Content = { h1: 'Lifeline Free Government Phone Program' };
@@ -126,9 +129,9 @@ const faqData = {
   <nav class="bg-gray-50 py-3" style="display: none;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <ol class="flex items-center space-x-2 text-sm text-gray-900">
-        <li><a href="/" style={`color: inherit;`} onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='inherit';">Home</a></li>
+        <li><a href="/" style={`color: inherit;`} onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout="this.style.color='inherit';">Home</a></li>
         <li class="text-gray-900">/</li>
-        <li><a href="/programs" style={`color: inherit;`} onmouseover={`this.style.color='${designDNA.colors.primary}';`} onmouseout="this.style.color='inherit';">Programs</a></li>
+        <li><a href="/programs" style={`color: inherit;`} onmouseover={`this.style.color='${readablePrimaryColor}';`} onmouseout="this.style.color='inherit';">Programs</a></li>
         <li class="text-gray-900">/</li>
         <li class="text-gray-900 font-medium">Lifeline Program</li>
       </ol>
@@ -153,7 +156,7 @@ const faqData = {
       <div style={`background: linear-gradient(135deg, #ECFDF5 0%, ${designDNA.colors.primary}15 100%);`} class="rounded-2xl p-6 mb-8 text-gray-900">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <div class="text-3xl font-bold mb-2 text-gray-900" style={`color: ${designDNA.colors.primary};`}>$9.25</div>
+            <div class="text-3xl font-bold mb-2 text-gray-900" style={`color: ${readablePrimaryColor} !important;`}>$9.25</div>
             <div class="text-sm text-gray-900">Monthly Discount</div>
           </div>
           <div>
@@ -175,14 +178,14 @@ const faqData = {
     <!-- Quick Eligibility Checker -->
     <section class="mb-16">
       <div style={`background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});`} class="rounded-2xl p-6 text-white text-center">
-        <h2 class="text-gray-900 text-3xl font-bold mb-4 ">Verify Your Lifeline Qualification</h2>
-        <p class="text-gray-900 text-xl mb-8 max-w-2xl mx-auto">
+        <h2 class="text-white text-3xl font-bold mb-4" style={`color: #FFFFFF !important;`}>Verify Your Lifeline Qualification</h2>
+        <p class="text-white text-xl mb-8 max-w-2xl mx-auto" style={`color: #FFFFFF !important;`}>
           Check if you qualify for Lifeline Free Government Phone in just 2 minutes. Most Americans are eligible!
         </p>
         <a href="/apply" rel="noopener noreferrer" class="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg transform hover:scale-105 transition-all duration-200 inline-block text-center">
           CHECK ELIGIBILITY NOW
         </a>
-        <p class="text-gray-900 text-sm mt-6" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
+        <p class="text-white text-sm mt-6" style={`color: #FFFFFF !important;`}>
           ⚡ Takes 2 minutes • 🔒 100% Secure • 💰 No hidden fees
         </p>
       </div>
@@ -210,25 +213,25 @@ const faqData = {
               <h4 class="text-gray-900 font-semibold mb-3 ">Key Benefits:</h4>
               <ul class="space-y-2 text-gray-900">
                 <li class="text-gray-900 flex items-start">
-                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${designDNA.colors.primary};`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${readablePrimaryColor} !important;`} fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                   Up to $9.25/month discount on phone or internet service
                 </li>
                 <li class="text-gray-900 flex items-start">
-                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${designDNA.colors.primary};`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${readablePrimaryColor} !important;`} fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                   Available in all 50 states and territories
                 </li>
                 <li class="text-gray-900 flex items-start">
-                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${designDNA.colors.primary};`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${readablePrimaryColor} !important;`} fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                   No contracts or credit checks required
                 </li>
                 <li class="text-gray-900 flex items-start">
-                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${designDNA.colors.primary};`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" style={`color: ${readablePrimaryColor} !important;`} fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                   Can be combined with other government assistance
@@ -383,7 +386,7 @@ const faqData = {
                 <span class="text-gray-900 flex-shrink-0 w-8 h-8 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4" style={`background: ${designDNA.colors.primary};`}>1</span>
                 <div>
                   <h4 class="text-gray-900 font-semibold ">Check Your Eligibility</h4>
-                  <p class="text-gray-900">Use our <a href="/eligibility" style={`color: ${designDNA.colors.primary};`} class="underline">eligibility checker</a> to see if you qualify in just 2 minutes</p>
+                  <p class="text-gray-900">Use our <a href="/eligibility" style={`color: ${readablePrimaryColor} !important;`} class="underline">eligibility checker</a> to see if you qualify in just 2 minutes</p>
                 </div>
               </li>
               <li class="text-gray-900 flex items-start">
@@ -397,7 +400,7 @@ const faqData = {
                 <span class="text-gray-900 flex-shrink-0 w-8 h-8 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4" style={`background: ${designDNA.colors.primary};`}>3</span>
                 <div>
                   <h4 class="text-gray-900 font-semibold ">Choose a Provider</h4>
-                  <p class="text-gray-900">Compare <a href="/providers" style={`color: ${designDNA.colors.primary};`} class="underline">providers</a> in your area and select the best option</p>
+                  <p class="text-gray-900">Compare <a href="/providers" style={`color: ${readablePrimaryColor} !important;`} class="underline">providers</a> in your area and select the best option</p>
                 </div>
               </li>
               <li class="text-gray-900 flex items-start">
@@ -518,8 +521,8 @@ const faqData = {
 
     <!-- CTA Section -->
     <section style={`background: linear-gradient(135deg, ${designDNA.colors.primary}, ${designDNA.colors.secondary});`} class="text-center rounded-2xl p-6 text-white">
-      <h2 class="text-gray-900 text-3xl font-bold mb-4 ">Ready to Get Your Free Phone Service?</h2>
-      <p class="text-gray-900 text-xl mb-8 max-w-2xl mx-auto">
+      <h2 class="text-white text-3xl font-bold mb-4" style={`color: #FFFFFF !important;`}>Ready to Get Your Free Phone Service?</h2>
+      <p class="text-white text-xl mb-8 max-w-2xl mx-auto" style={`color: #FFFFFF !important;`}>
         Join <strong>millions of Americans</strong> who already have free phone service through the Lifeline Program. 
         The application takes less than 2 minutes and you could save <strong>$111 per year</strong>.
       </p>
@@ -531,7 +534,7 @@ const faqData = {
           LEARN ABOUT ACP
         </a>
       </div>
-      <p class="text-gray-900 text-sm mt-6" style={`color: ${designDNA.colors.textOnPrimary}CC;`}>
+      <p class="text-white text-sm mt-6" style={`color: #FFFFFF !important;`}>
         ⚡ Takes 2 minutes • 🔒 100% Secure • 💰 No hidden fees
       </p>
     </section>

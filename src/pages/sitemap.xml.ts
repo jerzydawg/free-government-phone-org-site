@@ -86,11 +86,20 @@ export const GET: APIRoute = async () => {
 `;
   }
 
-  // Add city pages
+  // Add city pages (deduplicate by URL)
+  const cityUrls = new Set<string>();
   for (const city of cities) {
     const citySlug = createCitySlug(city.name);
+    const cityUrl = `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
+    
+    // Skip if URL already exists (prevent duplicates)
+    if (cityUrls.has(cityUrl)) {
+      continue;
+    }
+    cityUrls.add(cityUrl);
+    
     xml += `  <url>
-    <loc>${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/</loc>
+    <loc>${cityUrl}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

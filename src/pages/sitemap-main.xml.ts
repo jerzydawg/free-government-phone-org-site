@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { supabase } from '../lib/supabase';
-import { getSiteURL } from '../lib/site-config';
+import { getSiteURL, useSubdomains, getStateSubdomainURL } from '../lib/site-config';
 
 // Main sitemap - static pages + state pages
 export const GET: APIRoute = async () => {
@@ -55,10 +55,14 @@ export const GET: APIRoute = async () => {
 `;
   }
 
-  // Add state pages
+  // Add state pages - use subdomain format if enabled (e.g., nj.free-government-phone.org)
+  const useSubdomainMode = useSubdomains();
   for (const state of states) {
+    const stateUrl = useSubdomainMode 
+      ? getStateSubdomainURL(state.abbreviation.toLowerCase())
+      : `${SITE_URL}/${state.abbreviation.toLowerCase()}/`;
     xml += `  <url>
-    <loc>${SITE_URL}/${state.abbreviation.toLowerCase()}/</loc>
+    <loc>${stateUrl}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

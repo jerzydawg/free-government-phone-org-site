@@ -30,15 +30,14 @@ export interface SiteConfig {
 // ===== SITE CONFIG - REPLACED AT BUILD TIME =====
 // DO NOT MODIFY THIS SECTION MANUALLY - IT IS AUTO-GENERATED
 const SITE_CONFIG_DATA = {
-  domain: "free-government-phone.org",
-  siteName: "Free Government Phone",
+  domain: "example.com",
+  siteName: "Free Phone Service",
   keyword: "Free Government Phone",
   keywordId: "free-government-phone",
   keywordLabel: "Free Government Phone",
-  ownerEmail: "admin@free-government-phone.org",
+  ownerEmail: "admin@example.com",
   designStyle: "basic" as DesignStyle,
-  useSubdomains: true,
-  environment: "production" as const,
+  environment: "staging" as const,
   createdAt: new Date().toISOString(),
   version: "1.0.0"
 };
@@ -278,6 +277,19 @@ export function parseSubdomain(hostname: string): { city: string; state: string 
     city: citySlug,
     state: stateAbbr.toLowerCase()
   }
+}
+
+/**
+ * Generate subdomain URL for a state
+ * Format: https://{state-abbr}.free-government-phone.org/
+ */
+export function getStateSubdomainURL(stateAbbr: string): string {
+  const domain = getDomain()
+  if (!useSubdomains()) {
+    // Fallback to path-based URL
+    return `https://${domain}/${stateAbbr.toLowerCase()}/`
+  }
+  return `https://${stateAbbr.toLowerCase()}.${domain}/`
 }
 
 /**

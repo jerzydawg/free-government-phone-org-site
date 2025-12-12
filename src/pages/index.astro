@@ -7,12 +7,25 @@ import FeaturesSection from '../components/sections/FeaturesSection.astro';
 import StatesSection from '../components/sections/StatesSection.astro';
 import CitiesSection from '../components/sections/CitiesSection.astro';
 import CTASection from '../components/sections/CTASection.astro';
-import { getSiteConfig, getDesignDNA, getSiteName, getKeyword, getDomain, getSiteURL, getKeywordId } from '../lib/site-config';
+import { getSiteConfig, getDesignDNA, getSiteName, getKeyword, getDomain, getSiteURL, getKeywordId, useSubdomains, parseSubdomain } from '../lib/site-config';
 import { generateCSSVariables, getGoogleFontsURL } from '../lib/design-dna';
 import { getContentVariations } from '../lib/city-content-variations';
 import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
 
 export const prerender = false;
+
+// Check if this is a subdomain request (for city pages)
+// For new sites, subdomains will be used from the start
+// Vercel rewrites should handle routing, but as fallback we check here too
+const hostname = Astro.request.headers.get('host') || '';
+const subdomainInfo = useSubdomains() ? parseSubdomain(hostname) : null;
+
+// If subdomain detected, redirect to city page route (Vercel rewrites should catch this first)
+// This is a fallback in case rewrites don't work
+if (subdomainInfo) {
+  const { city: citySlug, state: stateAbbr } = subdomainInfo;
+  return Astro.redirect(`/${stateAbbr}/${citySlug}/`, 307);
+}
 
 // Get site configuration
 const siteConfig = getSiteConfig();

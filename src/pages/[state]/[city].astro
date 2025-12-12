@@ -14,7 +14,7 @@ import {
   type CityData,
   type StateData
 } from '../../lib/city-content-variations';
-import { getSiteURL, getDomain, getDesignDNA, getKeywordId, getSiteName } from '../../lib/site-config';
+import { getSiteURL, getDomain, getDesignDNA, getKeywordId, getSiteName, useSubdomains, getCitySubdomainURL, parseSubdomain } from '../../lib/site-config';
 import { loadKeywordVariations } from '../../lib/variations/shared/keyword-loader';
 import { getReadableTextColor } from '../../lib/color-utils';
 
@@ -269,7 +269,13 @@ if (getMetaVariations) {
 
 // Ensure canonical URL has trailing slash
 const citySlug = createCitySlug(cityName);
-const canonicalUrl = new URL(`/${stateAbbr.toLowerCase()}/${citySlug}/`, SITE_URL);
+// Detect if this page is being accessed via subdomain
+const hostname = Astro.request.headers.get('host') || '';
+const isSubdomainAccess = useSubdomains() && parseSubdomain(hostname) !== null;
+// Use subdomain URL if subdomain mode is enabled, otherwise use path-based URL
+const canonicalUrl = useSubdomains() 
+  ? new URL(getCitySubdomainURL(citySlug, stateAbbr.toLowerCase()))
+  : new URL(`/${stateAbbr.toLowerCase()}/${citySlug}/`, SITE_URL);
 
 // Enhanced structured data with city-specific information
 const structuredData = {

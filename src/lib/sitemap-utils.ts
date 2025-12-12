@@ -82,49 +82,73 @@ async function fetchAllDeduplicatedCities(): Promise<Array<{ name: string; state
 }
 
 export async function getCitiesForSitemap(offset: number, limit: number): Promise<Array<{ name: string; state_abbr: string }>> {
-  // Use cached deduplicated cities for fast slicing
-  const allCities = await fetchAllDeduplicatedCities();
-  
-  // Return the slice for this sitemap chunk
-  const cities = allCities.slice(offset, offset + limit);
-  
-  console.log(`[Sitemap] Chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, total: ${allCities.length})`);
-  
-  return cities;
+  try {
+    // Use cached deduplicated cities for fast slicing
+    const allCities = await fetchAllDeduplicatedCities();
+    
+    // Return the slice for this sitemap chunk
+    const cities = allCities.slice(offset, offset + limit);
+    
+    console.log(`[Sitemap] Chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, total: ${allCities.length})`);
+    
+    return cities;
+  } catch (error) {
+    console.error(`[Sitemap] Error getting cities for sitemap (offset: ${offset}, limit: ${limit}):`, error);
+    // Return empty array on error - the sitemap will still be valid XML
+    return [];
+  }
 }
 
 export function generateCitySitemapXML(cities: Array<{ name: string; state_abbr: string }>): string {
-  const SITE_URL = getSiteURL();
-  const today = new Date().toISOString().split('T')[0];
-  const useSubdomainMode = useSubdomains();
+  try {
+    const SITE_URL = getSiteURL();
+    const today = new Date().toISOString().split('T')[0];
+    const useSubdomainMode = useSubdomains();
 
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-  // Add city pages - match reference site: changefreq=weekly, priority=0.8
-  const cityUrls = new Set<string>();
-  for (const city of cities) {
-    const citySlug = createCitySlug(city.name);
-    const cityUrl = useSubdomainMode 
-      ? getCitySubdomainURL(citySlug, city.state_abbr.toLowerCase())
-      : `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
-    
-    // Skip duplicates
-    if (cityUrls.has(cityUrl)) {
-      continue;
-    }
-    cityUrls.add(cityUrl);
-    
-    xml += `  <url>
+    // Add city pages - match reference site: changefreq=weekly, priority=0.8
+    const cityUrls = new Set<string>();
+    for (const city of cities) {
+      try {
+        if (!city.name || !city.state_abbr) {
+          continue; // Skip invalid entries
+        }
+        
+        const citySlug = createCitySlug(city.name);
+        const cityUrl = useSubdomainMode 
+          ? getCitySubdomainURL(citySlug, city.state_abbr.toLowerCase())
+          : `${SITE_URL}/${city.state_abbr.toLowerCase()}/${citySlug}/`;
+        
+        // Skip duplicates
+        if (cityUrls.has(cityUrl)) {
+          continue;
+        }
+        cityUrls.add(cityUrl);
+        
+        xml += `  <url>
     <loc>${cityUrl}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 `;
-  }
+      } catch (cityError) {
+        console.error(`[Sitemap] Error processing city ${city.name}:`, cityError);
+        // Continue with next city
+        continue;
+      }
+    }
 
-  xml += `</urlset>`;
-  return xml;
+    xml += `</urlset>`;
+    return xml;
+  } catch (error) {
+    console.error('[Sitemap] Error generating city sitemap XML:', error);
+    // Return empty but valid XML
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+</urlset>`;
+  }
 }

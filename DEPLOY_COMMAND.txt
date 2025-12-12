@@ -1,0 +1,7 @@
+Run this command to deploy:
+
+cd /Users/bartstrellz/govsaas/sites/free-government-phone-org-site && vercel deploy --prod --yes
+
+Or use the script:
+./vercel-deploy.sh
+

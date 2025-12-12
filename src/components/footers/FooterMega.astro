@@ -7,6 +7,7 @@ import { getSiteName, getKeyword, getDomain, getSiteURL, getDesignDNA } from '..
 import { getContentVariations, getFooterVariations, getCTASectionVariations, getNavVariations } from '../../lib/city-content-variations';
 import { getLifelineProgramText, getACPProgramText, getTribalProgramsText, getStateProgramsText, getContactUsText, getAllStatesText } from '../../lib/microcopy-variations';
 import { getCTAVariation } from '../../lib/variations/shared/cta-variations';
+import { getReadableTextColor } from '../../lib/color-utils';
 
 const siteName = getSiteName();
 const keyword = getKeyword();
@@ -17,6 +18,7 @@ const content = getContentVariations(domain);
 const footerContent = getFooterVariations(domain, keyword);
 const ctaSection = getCTASectionVariations(domain, keyword);
 const navContent = getNavVariations(domain);
+const readablePrimaryColor = getReadableTextColor(designDNA.colors.primary);
 
 const keywordLower = keyword.toLowerCase();
 const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith('your ') || keywordLower.startsWith('a ') || keywordLower.startsWith('the ')
@@ -47,7 +49,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       <!-- Programs -->
       <div>
-        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${designDNA.colors.text};`}>{footerContent.programsSectionTitle}</h3>
+        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${readablePrimaryColor} !important;`}>{footerContent.programsSectionTitle}</h3>
         <ul class="space-y-2">
           <li><a href="/lifeline-program" class="text-slate-500 hover:text-white transition-colors text-sm">{getLifelineProgramText(domain)}</a></li>
           <li><a href="/acp-program" class="text-slate-500 hover:text-white transition-colors text-sm">{getACPProgramText(domain)}</a></li>
@@ -58,7 +60,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
 
       <!-- Resources -->
       <div>
-        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${designDNA.colors.text};`}>{footerContent.resourcesSectionTitle}</h3>
+        <h3 class="text-lg font-bold mb-4 text-white" style={`color: ${readablePrimaryColor} !important;`}>{footerContent.resourcesSectionTitle}</h3>
         <ul class="space-y-2">
           <li><a href="/eligibility" class="text-slate-500 hover:text-white transition-colors text-sm">{ctaSection.tertiaryButton}</a></li>
           <li><a href="/providers" class="text-slate-500 hover:text-white transition-colors text-sm">{ctaSection.secondaryButton}</a></li>

@@ -18,7 +18,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
 
 <!-- Desktop Sticky Bar -->
 <div class="hidden md:block fixed bottom-0 left-0 right-0 z-50 transform translate-y-full transition-transform duration-300" id="sticky-cta">
-  <div class="shadow-2xl border-t-4 border-yellow-400" style={`background: linear-gradient(90deg, ${designDNA.colors.primary} 0%, ${designDNA.colors.secondary} 100%);`}>
+  <div class="shadow-2xl border-t-4 border-orange-600" style={`background: linear-gradient(90deg, ${designDNA.colors.primary} 0%, ${designDNA.colors.secondary} 100%);`}>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex items-center justify-between">
         <!-- Left Side - Offer -->
@@ -34,7 +34,7 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
           <div class="text-white">
             <p class="text-lg font-bold" style={`color: ${designDNA.colors.text};`}>
               Get {keywordDisplay} Today! 
-              <span class="text-yellow-300">{content.valueProps[2]}</span>
+              <span class="text-orange-300">{content.valueProps[2]}</span>
             </p>
             <p class="text-sm opacity-80 text-white" style={`color: ${designDNA.colors.text};`}>
               {content.trustBadges[0]} • {content.trustBadges[1]} • {content.trustBadges[2]}
@@ -45,11 +45,11 @@ const keywordDisplay = keywordLower.startsWith('my ') || keywordLower.startsWith
         <!-- Right Side - CTA -->
         <div class="flex items-center space-x-4">
           <div class="text-right hidden lg:block">
-            <p class="text-yellow-300 font-bold text-lg">{content.heroStats.stat2.value}</p>
+            <p class="text-orange-300 font-bold text-lg">{content.heroStats.stat2.value}</p>
             <p class="text-white text-sm">{content.heroStats.stat2.label}</p>
           </div>
           
-          <a href="/apply" rel="noopener noreferrer" class="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 whitespace-nowrap text-shadow-sm" style={`color: ${designDNA.colors.text};`}>
+          <a href="/apply" rel="noopener noreferrer" class="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 whitespace-nowrap text-shadow-sm">
             {content.ctaButton} →
           </a>
         </div>

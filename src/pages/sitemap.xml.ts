@@ -38,20 +38,44 @@ export const GET: APIRoute = async () => {
     }
   }
 
-  // Fetch all cities for sitemap
+  // Fetch all cities for sitemap (with pagination to get all 40k+ cities)
   let cities: Array<{ name: string; state_abbr: string }> = [];
   if (supabase) {
     try {
-      // Fetch all cities (no limit - Google allows up to 50k URLs per sitemap)
-      const { data } = await supabase
-        .from('cities')
-        .select('name, states(abbreviation)')
-        .order('population', { ascending: false });
-      if (data) {
-        cities = data.map((city: any) => ({
-          name: city.name,
-          state_abbr: city.states?.abbreviation || ''
-        })).filter((c: any) => c.state_abbr);
+      // Fetch all cities using pagination (Supabase default limit is 1000)
+      const pageSize = 1000;
+      let hasMore = true;
+      let page = 0;
+      
+      while (hasMore) {
+        const { data, error } = await supabase
+          .from('cities')
+          .select('name, states(abbreviation)')
+          .order('population', { ascending: false })
+          .range(page * pageSize, (page + 1) * pageSize - 1);
+        
+        if (error) {
+          console.error('Error fetching cities page:', page, error);
+          break;
+        }
+        
+        if (data && data.length > 0) {
+          const pageCities = data.map((city: any) => ({
+            name: city.name,
+            state_abbr: city.states?.abbreviation || ''
+          })).filter((c: any) => c.state_abbr);
+          
+          cities.push(...pageCities);
+          
+          // If we got fewer than pageSize, we've reached the end
+          if (data.length < pageSize) {
+            hasMore = false;
+          } else {
+            page++;
+          }
+        } else {
+          hasMore = false;
+        }
       }
     } catch (e) {
       console.error('Error fetching cities for sitemap:', e);

@@ -1,14 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+import { getSiteName, getKeyword, getDomain, getSiteURL, getKeywordId } from '../lib/site-config';
+import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
 
 const siteName = getSiteName();
 const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
+const keywordId = getKeywordId();
 
-const title = `All Free Phone Programs - ${siteName}`;
-const description = `Discover every free phone program available in 2025. From Lifeline to ACP, find the perfect Free Government Phone option that matches your needs and situation.`;
+// Load keyword-specific variations with comprehensive error handling
+let h1Content = { h1: 'All Free Government Phone Programs' };
+let metaContent = { 
+  title: `All Free Phone Programs - ${siteName}`,
+  description: `Discover every free phone program available in 2025. From Lifeline to ACP, find the perfect Free Government Phone option that matches your needs and situation.`
+};
+
+try {
+  const keywordModule = await loadKeywordVariations(keywordId);
+  
+  if (keywordModule && typeof keywordModule.getH1Variation === 'function' && typeof keywordModule.getMetaVariations === 'function') {
+    try {
+      h1Content = keywordModule.getH1Variation(domain, 'programs');
+      metaContent = keywordModule.getMetaVariations(siteName, domain, 'programs');
+      
+      // Validate results - ensure it's not null/undefined/empty
+      if (!h1Content || !h1Content.h1 || typeof h1Content.h1 !== 'string' || 
+          h1Content.h1.trim() === '' || h1Content.h1 === 'null' || h1Content.h1 === 'undefined') {
+        h1Content = { h1: 'All Free Government Phone Programs' };
+      }
+      if (!metaContent || !metaContent.title || !metaContent.description) {
+        metaContent = { 
+          title: `All Free Phone Programs - ${siteName}`,
+          description: `Discover every free phone program available in 2025. From Lifeline to ACP, find the perfect Free Government Phone option that matches your needs and situation.`
+        };
+      }
+    } catch (variationError: any) {
+      console.error('Error calling variation functions:', variationError?.message || variationError);
+    }
+  }
+} catch (e: any) {
+  console.error('Failed to load keyword variations for programs page:', e?.message || e);
+}
+
+const title = metaContent.title;
+const description = metaContent.description;
 ---
 
 <Layout title={title} description={description}>
@@ -134,7 +170,7 @@ const description = `Discover every free phone program available in 2025. From L
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Free Government Phone</h1>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{h1Content.h1}</h1>
         <p class="text-xl text-gray-600 mb-8">Explore every available program to find the perfect free phone service that fits your needs and qualifications.</p>
         <a href="/apply" class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg inline-block">Find Your Perfect Program</a>
         <p class="text-sm text-gray-600 mt-3">Compare all options • No credit checks required</p>

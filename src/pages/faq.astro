@@ -1,14 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getSiteName, getKeyword, getDomain, getSiteURL } from '../lib/site-config';
+import { getSiteName, getKeyword, getDomain, getSiteURL, getKeywordId } from '../lib/site-config';
+import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
 
 const siteName = getSiteName();
 const keyword = getKeyword();
 const domain = getDomain();
 const siteURL = getSiteURL();
+const keywordId = getKeywordId();
 
-const title = `${keyword} - Common Questions Answered`;
-const description = "Get answers to frequently asked questions about free government phone programs. Learn about eligibility, application process, and available services.";
+// Load keyword-specific variations with comprehensive error handling
+let h1Content = { h1: 'Frequently Asked Questions' };
+let metaContent = { 
+  title: `${keyword} - Common Questions Answered`,
+  description: "Get answers to frequently asked questions about free government phone programs. Learn about eligibility, application process, and available services."
+};
+
+try {
+  const keywordModule = await loadKeywordVariations(keywordId);
+  
+  if (keywordModule && typeof keywordModule.getH1Variation === 'function' && typeof keywordModule.getMetaVariations === 'function') {
+    try {
+      h1Content = keywordModule.getH1Variation(domain, 'faq');
+      metaContent = keywordModule.getMetaVariations(siteName, domain, 'faq');
+      
+      // Validate results - ensure it's not null/undefined/empty
+      if (!h1Content || !h1Content.h1 || typeof h1Content.h1 !== 'string' || 
+          h1Content.h1.trim() === '' || h1Content.h1 === 'null' || h1Content.h1 === 'undefined') {
+        h1Content = { h1: 'Frequently Asked Questions' };
+      }
+      if (!metaContent || !metaContent.title || !metaContent.description) {
+        metaContent = { 
+          title: `${keyword} - Common Questions Answered`,
+          description: "Get answers to frequently asked questions about free government phone programs. Learn about eligibility, application process, and available services."
+        };
+      }
+    } catch (variationError: any) {
+      console.error('Error calling variation functions:', variationError?.message || variationError);
+    }
+  }
+} catch (e: any) {
+  console.error('Failed to load keyword variations for FAQ page:', e?.message || e);
+}
+
+const title = metaContent.title;
+const description = metaContent.description;
 const canonicalURL = new URL('/faq', siteURL);
 ---
 
@@ -92,7 +128,7 @@ const canonicalURL = new URL('/faq', siteURL);
 
   <div class="max-w-4xl mx-auto px-4 py-8">
     <header class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Free Government Phone</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{h1Content.h1}</h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find answers to your most important questions about getting a free phone through federal assistance programs.</p>
     </header>
 

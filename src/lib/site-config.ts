@@ -15,6 +15,7 @@ export interface SiteConfig {
   ownerEmail: string
   designStyle: DesignStyle  // 'basic' or 'advanced'
   designDNA?: Partial<DesignDNA>
+  useSubdomains?: boolean  // Enable subdomain routing for city pages (e.g., city-state.domain.com)
   content?: {
     homepage?: {
       h1?: string
@@ -29,15 +30,15 @@ export interface SiteConfig {
 // ===== SITE CONFIG - REPLACED AT BUILD TIME =====
 // DO NOT MODIFY THIS SECTION MANUALLY - IT IS AUTO-GENERATED
 const SITE_CONFIG_DATA = {
-  domain: "free-government-phone.org",
-  siteName: "Free Government Phone",
+  domain: "example.com",
+  siteName: "Free Phone Service",
   keyword: "Free Government Phone",
   keywordId: "free-government-phone",
   keywordLabel: "Free Government Phone",
-  ownerEmail: "pixellead8000@gmail.com",
-  designStyle: "advanced" as DesignStyle,
-  environment: "production" as const,
-  createdAt: "2025-12-12T10:59:45.271Z",
+  ownerEmail: "admin@example.com",
+  designStyle: "basic" as DesignStyle,
+  environment: "staging" as const,
+  createdAt: new Date().toISOString(),
   version: "1.0.0"
 };
 // ===== END SITE CONFIG =====
@@ -77,6 +78,9 @@ export function getSiteConfig(): SiteConfig {
     ownerEmail: SITE_CONFIG_DATA.ownerEmail || DEFAULT_CONFIG.ownerEmail,
     designStyle: SITE_CONFIG_DATA.designStyle || DEFAULT_CONFIG.designStyle,
     designDNA: (SITE_CONFIG_DATA as any).designDNA || undefined, // Custom design from Claude
+    useSubdomains: (SITE_CONFIG_DATA as any).useSubdomains !== undefined 
+      ? (SITE_CONFIG_DATA as any).useSubdomains 
+      : undefined, // Per-site subdomain configuration
     environment: SITE_CONFIG_DATA.environment || DEFAULT_CONFIG.environment,
     createdAt: SITE_CONFIG_DATA.createdAt || DEFAULT_CONFIG.createdAt,
     version: SITE_CONFIG_DATA.version || DEFAULT_CONFIG.version
@@ -221,11 +225,20 @@ export function getOwnerEmail(): string {
 
 /**
  * Check if subdomain mode is enabled for this site
- * Currently only enabled for free-government-phone.org
+ * Checks site config first (allows per-site configuration), then falls back to domain check
+ * This enables mass deployment where each site can independently enable/disable subdomain routing
  */
 export function useSubdomains(): boolean {
-  const domain = getDomain()
-  return domain === 'free-government-phone.org'
+  const config = getSiteConfig();
+  
+  // Check site config first (allows per-site configuration)
+  if (config.useSubdomains !== undefined) {
+    return config.useSubdomains;
+  }
+  
+  // Fallback to domain check for backward compatibility
+  const domain = getDomain();
+  return domain === 'free-government-phone.org' || domain === 'government-phone.org';
 }
 
 /**

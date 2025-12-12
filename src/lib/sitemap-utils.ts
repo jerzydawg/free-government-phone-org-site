@@ -82,8 +82,8 @@ async function fetchAllDeduplicatedCities(): Promise<Array<{ name: string; state
 }
 
 export async function getCitiesForSitemap(offset: number, limit: number): Promise<Array<{ name: string; state_abbr: string }>> {
-  // Optimized: Fetch only the cities needed for this specific chunk
-  // This is much faster than fetching all cities and slicing
+  // Optimized: Fetch cities incrementally until we have enough unique ones for this chunk
+  // We need to fetch from the beginning to deduplicate, but stop as soon as we have enough
   const useSubdomainMode = useSubdomains();
   const SITE_URL = getSiteURL();
   const cityUrls = new Set<string>();
@@ -95,12 +95,11 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
 
   try {
     const pageSize = 1000; // Supabase page size
-    let currentOffset = 0;
     let page = 0;
-    const targetEnd = offset + limit;
+    const targetCount = offset + limit; // We need this many unique cities total
     
-    // Fetch cities in pages until we have enough unique cities for this chunk
-    while (deduplicatedCities.length < limit && currentOffset < targetEnd + pageSize) {
+    // Fetch cities in pages until we have enough unique cities to cover the chunk
+    while (deduplicatedCities.length < targetCount) {
       const { data, error } = await supabase
         .from('cities')
         .select('name, states(abbreviation)')
@@ -129,18 +128,18 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
             cityUrls.add(cityUrl);
             deduplicatedCities.push({ name: cityName, state_abbr: stateAbbr });
             
-            // Stop if we have enough cities for this chunk
-            if (deduplicatedCities.length >= targetEnd) {
+            // Stop early if we have enough cities
+            if (deduplicatedCities.length >= targetCount) {
               break;
             }
           }
         }
         
-        if (data.length < pageSize) {
-          break; // No more data
+        // Stop if no more data or we have enough
+        if (data.length < pageSize || deduplicatedCities.length >= targetCount) {
+          break;
         }
         page++;
-        currentOffset += data.length;
       } else {
         break; // No more data
       }
@@ -149,7 +148,7 @@ export async function getCitiesForSitemap(offset: number, limit: number): Promis
     // Return only the slice needed for this sitemap chunk
     const cities = deduplicatedCities.slice(offset, offset + limit);
     
-    console.log(`[Sitemap] Chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, fetched pages: ${page + 1})`);
+    console.log(`[Sitemap] Chunk: ${cities.length} cities (offset: ${offset}, limit: ${limit}, fetched: ${deduplicatedCities.length} unique, pages: ${page + 1})`);
     
     return cities;
   } catch (e) {

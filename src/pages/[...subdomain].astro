@@ -24,9 +24,23 @@ export const prerender = false;
 const domain = getDomain();
 const host = Astro.request.headers.get('host') || '';
 const subdomainInfo = parseSubdomain(host);
+const subdomainPart = host.split('.')[0];
+
+// Check if it's a state subdomain (2-letter abbreviation, e.g., "nj")
+const isStateSubdomain = subdomainPart.length === 2 && /^[a-z]{2}$/.test(subdomainPart);
 
 // If not a subdomain request or subdomain mode disabled, return 404
-if (!useSubdomains() || !subdomainInfo) {
+if (!useSubdomains()) {
+  return Astro.redirect('/404', 404);
+}
+
+// If it's a state subdomain, let it pass through to [state]/index.astro via Vercel rewrite
+if (isStateSubdomain && !subdomainInfo) {
+  return; // Let Vercel rewrite handle it
+}
+
+// If it's not a valid city subdomain, return 404
+if (!subdomainInfo) {
   return Astro.redirect('/404', 404);
 }
 

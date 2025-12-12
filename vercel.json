@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "www.free-government-phone.org"
         }
       ],
-      "destination": "https://free-government-phone.org/:1",
+      "destination": "https://free-government-phone.org/:path*",
       "permanent": true
     }
   ]

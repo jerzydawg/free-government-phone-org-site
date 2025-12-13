@@ -14,17 +14,17 @@ import { loadKeywordVariations } from '../lib/variations/shared/keyword-loader';
 
 export const prerender = false;
 
-// Check if this is a subdomain request (for city pages)
-// For new sites, subdomains will be used from the start
-// Vercel rewrites should handle routing, but as fallback we check here too
+// Check if this is a subdomain request (for state pages only)
+// NEW: Subdomains are state-only (e.g., kentucky.domain.com)
+// City pages are accessed via .php files under state subdomains
 const hostname = Astro.request.headers.get('host') || '';
 const subdomainInfo = useSubdomains() ? parseSubdomain(hostname) : null;
 
-// If subdomain detected, redirect to city page route (Vercel rewrites should catch this first)
-// This is a fallback in case rewrites don't work
-if (subdomainInfo) {
-  const { city: citySlug, state: stateAbbr } = subdomainInfo;
-  return Astro.redirect(`/${stateAbbr}/${citySlug}/`, 307);
+// If state subdomain detected, rewrite to state page
+// State subdomain: kentucky.domain.com/ -> rewrite to /ky/
+if (useSubdomains() && subdomainInfo) {
+  const rewritePath = `/${subdomainInfo.stateAbbr.toLowerCase()}/`;
+  return Astro.rewrite(rewritePath);
 }
 
 // Get site configuration

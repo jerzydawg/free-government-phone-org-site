@@ -5,3 +5,6 @@ cd /Users/bartstrellz/govsaas/sites/free-government-phone-org-site && vercel dep
 Or use the script:
 ./vercel-deploy.sh
 
+
+
+

@@ -26,3 +26,6 @@ git push -u origin main --force
 
 echo "Done! Check: https://vercel.com/jerzydawgs-projects/free-government-phone-org-site/deployments"
 
+
+
+

@@ -40,3 +40,6 @@ echo "Check deployment status at:"
 echo "https://vercel.com/jerzydawgs-projects/free-government-phone-org-site/deployments"
 echo ""
 
+
+
+

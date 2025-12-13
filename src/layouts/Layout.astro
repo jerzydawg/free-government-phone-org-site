@@ -145,7 +145,7 @@ const currentPath = Astro.url.pathname;
         <!-- Menu Items - Dynamic from navContent -->
         <nav class="flex-1 py-6 overflow-y-auto">
           {navContent.navItems.map((item) => (
-            <a href={item.href} class="mobile-nav-link block px-6 py-4 text-gray-900 hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary-readable)] transition-colors border-b border-gray-100">
+            <a href={item.href === '/' ? siteURL : item.href} class="mobile-nav-link block px-6 py-4 text-gray-900 hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary)] transition-colors border-b border-gray-100">
               <div class="flex items-center">
                 <svg class="w-5 h-5 mr-3 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {item.href === '/' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />}
@@ -163,7 +163,7 @@ const currentPath = Astro.url.pathname;
         
         <!-- Menu Footer -->
         <div class="p-6 border-t border-gray-200">
-            <a href="/apply" rel="noopener noreferrer" class="block w-full bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg text-center transition-all transform hover:scale-105 text-shadow-sm">
+            <a href={`${siteURL}/apply`} rel="noopener noreferrer" class="block w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-bold py-4 px-6 rounded-xl shadow-lg text-center transition-all transform hover:scale-105 text-shadow-sm">
             {mobileMenu.ctaButton}
           </a>
           <p class="text-gray-900 text-xs  text-center mt-3">{mobileMenu.ctaSubtext}</p>
@@ -183,7 +183,7 @@ const currentPath = Astro.url.pathname;
           </button>
           
           <!-- Logo -->
-          <a href="/" class="flex items-center">
+          <a href={siteURL} class="flex items-center">
             <span class="text-gray-900 font-bold ">{siteName}</span>
           </a>
         </div>
@@ -196,7 +196,7 @@ const currentPath = Astro.url.pathname;
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <div class="flex items-center">
-            <a href="/" class="flex items-center">
+            <a href={siteURL} class="flex items-center">
               <div class="text-xl font-bold text-gray-900">{siteName}</div>
             </a>
           </div>
@@ -204,9 +204,9 @@ const currentPath = Astro.url.pathname;
           <!-- Desktop Navigation & CTA - Dynamic from navContent -->
           <div class="flex items-center space-x-8">
             {navContent.navItems.map((item) => (
-              <a href={item.href} class="nav-link text-gray-900 font-medium transition-colors duration-200">{item.label}</a>
+              <a href={item.href === '/' ? siteURL : item.href} class="nav-link text-gray-900 font-medium transition-colors duration-200">{item.label}</a>
             ))}
-            <a href="/apply" rel="noopener noreferrer" class="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-2 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 text-shadow-sm">{navContent.ctaText}</a>
+            <a href={`${siteURL}/apply`} rel="noopener noreferrer" class="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-bold py-2 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 text-shadow-sm">{navContent.ctaText}</a>
           </div>
         </div>
       </div>
@@ -367,13 +367,13 @@ const currentPath = Astro.url.pathname;
     border-width: 0;
   }
   
-  /* Dynamic hover colors using CSS variables - Always use readable version for text */
+  /* Dynamic hover colors using CSS variables */
   .nav-link:hover {
-    color: var(--color-primary-readable, var(--color-primary)) !important;
+    color: var(--color-primary) !important;
   }
   .nav-link-mobile:hover {
     background-color: color-mix(in srgb, var(--color-primary) 10%, white);
-    color: var(--color-primary-readable, var(--color-primary)) !important;
+    color: var(--color-primary) !important;
   }
   .nav-link-mobile:active {
     background-color: color-mix(in srgb, var(--color-primary) 20%, white);
@@ -391,255 +391,11 @@ const currentPath = Astro.url.pathname;
     background-color: var(--color-primary) !important;
   }
   
-  /* Dynamic link colors - Always use readable version for text */
+  /* Dynamic link colors */
   .dynamic-link {
-    color: var(--color-primary-readable, var(--color-primary));
+    color: var(--color-primary);
   }
   .dynamic-link:hover {
     opacity: 0.8;
-  }
-  
-  /* Global rule: Prevent light colors for text - force readable primary color */
-  /* This ensures any text using primary color is always readable */
-  [style*="color: var(--color-primary)"],
-  [style*="color:var(--color-primary)"],
-  .text-\\[var\\(--color-primary\\)\\] {
-    color: var(--color-primary-readable, var(--color-primary)) !important;
-  }
-  
-  /* Ensure state abbreviations and badges use readable colors */
-  /* Match patterns like: style="background-color: X; color: var(--color-primary)" */
-  span[style*="var(--color-primary)"][style*="color"],
-  div[style*="var(--color-primary)"][style*="color"],
-  a[style*="var(--color-primary)"][style*="color"],
-  p[style*="var(--color-primary)"][style*="color"],
-  h1[style*="var(--color-primary)"][style*="color"],
-  h2[style*="var(--color-primary)"][style*="color"],
-  h3[style*="var(--color-primary)"][style*="color"] {
-    color: var(--color-primary-readable, var(--color-primary)) !important;
-  }
-  
-  /* Prevent light orange/yellow colors from being used for text */
-  /* Force dark colors for any light color text */
-  .text-orange-200,
-  .text-orange-300,
-  .text-orange-400,
-  .text-orange-500,
-  .text-yellow-200,
-  .text-yellow-300,
-  .text-yellow-400 {
-    color: #92400E !important; /* Dark orange */
-  }
-  
-  .text-orange-600 {
-    color: #EA580C !important; /* Darker orange */
-  }
-  
-  /* ============================================
-     GLOBAL RULES: Prevent ALL Light Colors for Text
-     ============================================ */
-  
-  /* Prevent light color Tailwind classes for text (all colors) */
-  /* Light shades (100-400) are too light for readable text */
-  .text-red-100, .text-red-200, .text-red-300, .text-red-400,
-  .text-orange-100, .text-orange-200, .text-orange-300, .text-orange-400, .text-orange-500,
-  .text-amber-100, .text-amber-200, .text-amber-300, .text-amber-400, .text-amber-500,
-  .text-yellow-100, .text-yellow-200, .text-yellow-300, .text-yellow-400, .text-yellow-500,
-  .text-lime-100, .text-lime-200, .text-lime-300, .text-lime-400, .text-lime-500,
-  .text-green-100, .text-green-200, .text-green-300, .text-green-400, .text-green-500,
-  .text-emerald-100, .text-emerald-200, .text-emerald-300, .text-emerald-400, .text-emerald-500,
-  .text-teal-100, .text-teal-200, .text-teal-300, .text-teal-400, .text-teal-500,
-  .text-cyan-100, .text-cyan-200, .text-cyan-300, .text-cyan-400, .text-cyan-500,
-  .text-sky-100, .text-sky-200, .text-sky-300, .text-sky-400, .text-sky-500,
-  .text-blue-100, .text-blue-200, .text-blue-300, .text-blue-400, .text-blue-500,
-  .text-indigo-100, .text-indigo-200, .text-indigo-300, .text-indigo-400, .text-indigo-500,
-  .text-violet-100, .text-violet-200, .text-violet-300, .text-violet-400, .text-violet-500,
-  .text-purple-100, .text-purple-200, .text-purple-300, .text-purple-400, .text-purple-500,
-  .text-fuchsia-100, .text-fuchsia-200, .text-fuchsia-300, .text-fuchsia-400, .text-fuchsia-500,
-  .text-pink-100, .text-pink-200, .text-pink-300, .text-pink-400, .text-pink-500,
-  .text-rose-100, .text-rose-200, .text-rose-300, .text-rose-400, .text-rose-500 {
-    color: #111827 !important; /* Force dark gray for all light colors */
-  }
-  
-  /* Prevent light gradient backgrounds from being used for text */
-  .bg-gradient-to-r.from-yellow-400.to-orange-500,
-  .bg-gradient-to-r.from-yellow-500.to-orange-600,
-  .bg-gradient-to-r.from-yellow-300.to-orange-400,
-  .bg-gradient-to-r.from-amber-400.to-orange-500,
-  .bg-gradient-to-r.from-orange-400.to-red-500 {
-    background: linear-gradient(to right, #ea580c, #c2410c) !important; /* Dark orange gradient */
-  }
-  
-  /* Prevent any light hex colors used for text (common light color hex codes) */
-  [style*="color: #FB923C"],  /* orange-400 */
-  [style*="color: #F59E0B"],  /* amber-500 */
-  [style*="color: #FBBF24"],  /* amber-400 */
-  [style*="color: #FCD34D"],  /* amber-300 */
-  [style*="color: #FDE047"],  /* yellow-300 */
-  [style*="color: #FEF08A"],  /* yellow-200 */
-  [style*="color: #FEF9C3"],  /* yellow-100 */
-  [style*="color: #FF8A65"],  /* deep-orange-300 */
-  [style*="color: #FF7043"],  /* deep-orange-400 */
-  [style*="color: #FF9800"],  /* orange-500 */
-  [style*="color: #FFB74D"],  /* orange-300 */
-  [style*="color: #FFCC80"],  /* orange-200 */
-  [style*="color: #FFE0B2"],  /* orange-100 */
-  [style*="color: #FFF9C4"],  /* yellow-100 */
-  [style*="color: #FFF59D"],  /* yellow-200 */
-  [style*="color: #FFF176"],  /* yellow-300 */
-  [style*="color: #FFEB3B"],  /* yellow-400 */
-  [style*="color: #FFC107"] {  /* amber-500 */
-    color: #111827 !important; /* Force dark gray */
-  }
-  
-  /* Prevent light colors in rgba/rgb format for text */
-  [style*="color: rgba(251, 146, 60"],  /* orange-400 */
-  [style*="color: rgba(245, 158, 11"],  /* amber-500 */
-  [style*="color: rgba(251, 191, 36"],  /* amber-400 */
-  [style*="color: rgba(253, 211, 77"],  /* amber-300 */
-  [style*="color: rgba(255, 152, 0"],   /* orange-500 */
-  [style*="color: rgb(251, 146, 60"],   /* orange-400 */
-  [style*="color: rgb(245, 158, 11"],   /* amber-500 */
-  [style*="color: rgb(251, 191, 36"],   /* amber-400 */
-  [style*="color: rgb(255, 152, 0"] {    /* orange-500 */
-    color: #111827 !important; /* Force dark gray */
-  }
-  
-  /* ============================================
-     CRITICAL: Prevent designDNA.colors.text from being light/unreadable
-     ============================================ */
-  
-  /* Force all text using designDNA.colors.text to be dark on light backgrounds */
-  /* This catches inline styles like: style="color: ${designDNA.colors.text}" */
-  /* Only apply to elements that are likely on light backgrounds */
-  p[style*="designDNA.colors.text"],
-  span[style*="designDNA.colors.text"],
-  div[style*="designDNA.colors.text"],
-  a[style*="designDNA.colors.text"]:not([style*="background"]),
-  h1[style*="designDNA.colors.text"],
-  h2[style*="designDNA.colors.text"],
-  h3[style*="designDNA.colors.text"],
-  h4[style*="designDNA.colors.text"],
-  h5[style*="designDNA.colors.text"],
-  h6[style*="designDNA.colors.text"],
-  li[style*="designDNA.colors.text"] {
-    /* Only force dark if element is on a light background (has white/light bg class or no dark bg) */
-    color: #111827 !important; /* Force dark gray for readability */
-  }
-  
-  /* Force all text using designDNA.colors.textOnPrimary to be white on colored backgrounds */
-  p[style*="designDNA.colors.textOnPrimary"],
-  span[style*="designDNA.colors.textOnPrimary"],
-  div[style*="designDNA.colors.textOnPrimary"],
-  a[style*="designDNA.colors.textOnPrimary"],
-  h1[style*="designDNA.colors.textOnPrimary"],
-  h2[style*="designDNA.colors.textOnPrimary"],
-  h3[style*="designDNA.colors.textOnPrimary"] {
-    color: #FFFFFF !important; /* Force white for readability on colored backgrounds */
-  }
-  
-  /* Force all text using designDNA.colors.primary/secondary/accent to use readable version */
-  /* This catches: style="color: ${designDNA.colors.primary}" */
-  p[style*="designDNA.colors.primary"][style*="color"],
-  span[style*="designDNA.colors.primary"][style*="color"],
-  div[style*="designDNA.colors.primary"][style*="color"],
-  a[style*="designDNA.colors.primary"][style*="color"],
-  h1[style*="designDNA.colors.primary"][style*="color"],
-  h2[style*="designDNA.colors.primary"][style*="color"],
-  h3[style*="designDNA.colors.primary"][style*="color"],
-  h4[style*="designDNA.colors.primary"][style*="color"],
-  h5[style*="designDNA.colors.primary"][style*="color"],
-  h6[style*="designDNA.colors.primary"][style*="color"] {
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* Global rule: All text using primary color CSS variable must use readable version */
-  /* This catches inline styles, Tailwind classes, and any other usage */
-  [style*="color: var(--color-primary)"],
-  [style*="color:var(--color-primary)"],
-  [style*="color: var(--color-primary);"],
-  [style*="color:var(--color-primary);"],
-  .text-\\[var\\(--color-primary\\)\\],
-  .text-\\[var\\(--color-primary\\)\\]\\! {
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* Force readable colors for any element with primary color in style attribute for text */
-  span[style*="var(--color-primary)"],
-  div[style*="var(--color-primary)"],
-  a[style*="var(--color-primary)"],
-  p[style*="var(--color-primary)"],
-  h1[style*="var(--color-primary)"],
-  h2[style*="var(--color-primary)"],
-  h3[style*="var(--color-primary)"],
-  h4[style*="var(--color-primary)"],
-  h5[style*="var(--color-primary)"],
-  h6[style*="var(--color-primary)"],
-  li[style*="var(--color-primary)"] {
-    /* Only apply if it's a color style, not background */
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* Ensure state buttons and badges use readable colors */
-  .state-btn,
-  [class*="state-btn"],
-  [class*="badge"],
-  [class*="tag"] {
-    /* State buttons should use readable colors on hover */
-  }
-  
-  .state-btn:hover,
-  [class*="state-btn"]:hover {
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* Prevent any light background with light text color combinations */
-  [style*="background-color: var(--color-primary)"][style*="color: var(--color-primary)"],
-  [style*="background: var(--color-primary)"][style*="color: var(--color-primary)"] {
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* Ensure all city/state name text is dark and readable */
-  [class*="city-name"],
-  [class*="state-name"],
-  [class*="city-abbr"],
-  [class*="state-abbr"] {
-    color: #111827 !important; /* Very dark gray */
-  }
-  
-  /* Popular Cities section - ensure all text is dark */
-  section[class*="cities"],
-  section[class*="Cities"],
-  [id*="cities"],
-  [id*="Cities"] {
-    /* Force dark text colors */
-  }
-  
-  section[class*="cities"] h2,
-  section[class*="cities"] h3,
-  section[class*="cities"] p,
-  section[class*="cities"] span,
-  section[class*="cities"] a {
-    color: #111827 !important;
-  }
-  
-  section[class*="cities"] a[style*="color"] {
-    color: var(--color-primary-readable, #096d9a) !important;
-  }
-  
-  /* States Coverage section - ensure all text is dark */
-  section[class*="state"],
-  section[class*="State"],
-  [id*="states"],
-  [id*="States"] {
-    /* Force dark text colors */
-  }
-  
-  section[class*="state"] h2,
-  section[class*="state"] h3,
-  section[class*="state"] p,
-  section[class*="state"] span,
-  section[class*="state"] a:not([style*="background"]) {
-    color: #111827 !important;
   }
 </style> 
